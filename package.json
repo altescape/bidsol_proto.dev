@@ -1,0 +1,16 @@
+{
+  "name": "bidsol_proto.dev",
+  "version": "0.0.1",
+  "description": "Bid Solutions Prototype",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Watts",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "~3.8.5",
+    "gulp-ruby-sass": "~0.5.0",
+    "gulp-autoprefixer": "0.0.7"
+  }
+}
