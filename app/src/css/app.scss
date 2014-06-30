@@ -1,0 +1,134 @@
+@import "../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap";
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+h1, h2, h3, h4, h5 ,h6 {color: $brand-primary}
+
+a {
+  transition: all .15s linear
+}
+
+.padded-section {
+  padding: 2em 0;
+}
+
+/* Section colours */
+$section-bg-1: #efeddf;
+$section-bg-2: #e4e3d5;
+
+.section-bg-1 {
+  background-color: $section-bg-1;
+}
+.section-bg-2 {
+  background-color: $section-bg-2;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.main-footer {
+  background-color: $gray-darker;
+  color: $gray-light;
+  a {
+    color: $gray-light;
+  }
+  ul {
+    li {
+      margin: 0.5em 0;
+      a {
+        &:hover {
+          color: lighten($gray-light, 10%);
+        }
+      }
+      &:first-child {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-xs-min) {
+  /* rules for mobile horizontal (480 > 768)  */
+}
+@media (min-width: $screen-sm-min) {
+  /* rules for tablet (768 > 992) */
+}
+@media (min-width: $screen-md-min) {
+  /* rules for desktop (992 > 1200) */
+  .navbar-static-top {
+    .navbar-brand {
+      float: left;
+      padding: 0;
+      margin-top: 12px;
+    }
+  }
+  .nav {
+    margin-top: 24px;
+    li {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      &.open {
+        > a:focus {
+          background-color: $gray-light;
+          color: $gray-dark;
+        }
+      }
+      &.dropdown {
+        &:hover, &.open, &:focus {
+          background-color: $gray-light;
+          color: $gray-dark;
+          > ul.dropdown-menu {
+            display: block;
+            a {
+              padding: 3px 20px;
+              text-transform: initial;
+            }
+            a:hover {
+              color: $brand-warning
+            }
+          }
+        }
+      }
+      a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &.btn {
+          border: none;
+          margin-left: 1em;
+          font-size: 0.9em;
+          font-weight: bold;
+          letter-spacing: 1px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          margin-top: 8px;
+          &:hover {
+            background-color: darken($brand-primary, 5%);
+          }
+          &.btn-info {
+            background-color: $gray-light;
+            color: $gray-dark;
+            &:hover {
+              background-color: darken($gray-light, 5%);
+            }
+          }
+        }
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .br-tint {
+    color: $gray !important;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  /* rules for large (> 1200) */
+}
