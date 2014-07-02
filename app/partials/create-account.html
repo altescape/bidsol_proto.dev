@@ -1,0 +1,31 @@
+<section class="main-content section-bg-1 padded-section">
+    <div class="container" ng-controller="CreateAccountCtrl">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1>Create Account</h1>
+
+                <p class="lead">Delivering experience and skills to give you the winning formula.<br>
+                    Our professional team will work with passion to find the best solution for our clients and a perfect career fit for our
+                    candidates.
+                </p>
+
+                <p>Fields marked with <span class="required">*</span> are required</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                {{ tabs }}
+                <tabset justified="true">
+                    <tab heading="Create Candidate Account">
+                        <create-candidate-account-form></create-candidate-account-form>
+                    </tab>
+                    <tab heading="Create Client Account">
+                        <create-client-account-form></create-client-account-form>
+                    </tab>
+                </tabset>
+            </div>
+        </div>
+    </div>
+</section>

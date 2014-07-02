@@ -20,4 +20,16 @@ angular.module('myApp.directives', []).
         restrict: 'E',
         templateUrl : "partials/global/main-footer.html"
       }
+    }).
+    directive('createCandidateAccountForm', function () {
+      return {
+        restrict: 'E',
+        templateUrl : "partials/forms/create-candidate-account-form.html"
+      }
+    }).
+    directive('createClientAccountForm', function () {
+      return {
+        restrict: 'E',
+        templateUrl : "partials/forms/create-client-account-form.html"
+      }
     });
