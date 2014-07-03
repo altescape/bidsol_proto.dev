@@ -26,6 +26,7 @@
     "yamm3": "~1.0.0",
     "angular-bootstrap": "~0.11.0",
     "angular-animate": "~1.2.19",
-    "angular-local-storage": "~0.0.5"
+    "angular-local-storage": "~0.0.5",
+    "angular-ui-router": "~0.2.10"
   }
 }
