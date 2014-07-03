@@ -28,7 +28,7 @@ angular.module('myApp', [
       $routeProvider.when('/my/skills', {templateUrl: 'partials/account/my-skills.html', controller: 'MyAccountCtrl'});
       $routeProvider.otherwise({redirectTo: '/home'});
 
-      $urlRouterProvider.otherwise("/partials/account/my-skills");
+//      $urlRouterProvider.otherwise("/partials/account/my-skills");
 
       $stateProvider
           .state('my-cv', {
