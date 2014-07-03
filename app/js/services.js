@@ -15,14 +15,14 @@ angular.module('myApp.services', []).
           title: "Etiam eget adipiscing dolor, quis lobortis magna",
           desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat nibh, fermentum et erat nec, scelerisque rutrum dolor. Sed bibendum, libero id lobortis hendrerit, nibh nulla dictum dui, in tempor sapien nibh ut tellus. Suspendisse eros arcu, faucibus nec dolor vel, vestibulum fringilla risus.",
           img  : "http://fillmurray.com/231/114",
-          tags : ["Government &amp; Non-Profits", "Cross-Media", "Build Awareness", "Influence Consideration"]
+          tags : ["Government & Non-Profits", "Cross-Media", "Build Awareness", "Influence Consideration"]
         },
         {
           type : "ARTICLE",
           title: "Mauris erat nibh, fermentum et erat nec, scelerisque rutrum dolor. Sed bibendum, libero id lobortis",
           desc : "Sit amet, consectetur adipiscing elit. Mauris erat nibh, fermentum et erat nec, scelerisque rutrum dolor. Sed bibendum, libero id lobortis hendrerit, nibh nulla dictum dui, in tempor sapien nibh ut tellus.",
           img  : "http://fillmurray.com/231/115",
-          tags : ["Bid Software", "Build Awareness", "Government &amp; Non-Profits", "Influence Consideration"]
+          tags : ["Bid Software", "Build Awareness", "Government & Non-Profits", "Influence Consideration"]
         },
         {
           type : "NEWS",

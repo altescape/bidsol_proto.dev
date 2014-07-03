@@ -9,27 +9,33 @@ angular.module('myApp.directives', []).
         elm.text(version);
       };
     }]).
-    directive('navbarStaticTop', function () {
+    directive('navbarStaticTop',function () {
       return {
-        restrict: 'E',
-        templateUrl : "partials/global/navbar-static-top.html"
+        restrict   : 'A',
+        templateUrl: "partials/global/navbar-static-top.html"
       }
     }).
-    directive('mainFooter', function () {
+    directive('mainFooter',function () {
       return {
-        restrict: 'E',
-        templateUrl : "partials/global/main-footer.html"
+        restrict   : 'E',
+        templateUrl: "partials/global/main-footer.html"
       }
     }).
-    directive('createCandidateAccountForm', function () {
+    directive('createCandidateAccountForm',function () {
       return {
-        restrict: 'E',
-        templateUrl : "partials/forms/create-candidate-account-form.html"
+        restrict   : 'E',
+        templateUrl: "partials/forms/create-candidate-account-form.html"
       }
     }).
-    directive('createClientAccountForm', function () {
+    directive('createClientAccountForm',function () {
       return {
-        restrict: 'E',
-        templateUrl : "partials/forms/create-client-account-form.html"
+        restrict   : 'E',
+        templateUrl: "partials/forms/create-client-account-form.html"
+      }
+    }).
+    directive('accountHorizontalSubNav', function () {
+      return {
+        restrict   : 'E',
+        templateUrl: "partials/account/account-horizontal-sub-nav.html"
       }
     });

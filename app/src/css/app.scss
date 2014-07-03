@@ -63,7 +63,10 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 a {
-  transition: all .15s linear
+  transition: all .15s linear;
+  &:hover {
+    color: darken($brand-primary, 10%);
+  }
 }
 
 .padded-section {
@@ -116,6 +119,29 @@ $section-bg-2: #e4e3d5;
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+/* HORIZONTAL SUB NAV */
+
+.horizontal-sub-nav {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3) inset, 0 0 11px rgba(0, 0, 0, 0.1) inset;
+  padding-top: 3px !important;
+  .nav{
+    font-weight: bold;
+    .active {
+      background-color: $section-bg-1;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: none;
+    }
+    a {
+      border-radius: 5px 5px 0 0;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-bottom: none;
+      &:hover {
+        background-color: rgba($section-bg-1, 0.7);
+      }
+    }
   }
 }
 
@@ -381,6 +407,136 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
   }
 }
 
+/* INVISIBLE INPUTS STYLES SO THEY LOOK LIKE TITLES */
+.sp-inp {
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  color: #3F4944;
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.2s linear;
+  &:hover {
+    text-indent: 15px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+/* TRANSPARENT BUTTON */
+.btn-trans {
+  background-color: transparent;
+  color: $brand-primary;
+  border-color: $brand-primary;
+  &:hover {
+    border-color: $gray-darker;
+    color: $gray-darker;
+  }
+}
+
+/* BIG BUTTON */
+.big-butt {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 26px;
+  .glyphicon {
+    font-size: 14px;
+  }
+}
+
+/* LOG OUT */
+@keyframes rotating {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.logging-out-icon {
+  transform-origin: 50% !important;
+  animation: rotating 2s linear infinite;
+  display: inline-block !important;
+  &.ng-hide {
+    display: none !important;
+  }
+}
+
+/* READING SIZE */
+.reading-size {
+  font-size: 150%;
+  line-height: 180%;
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 200%;
+    line-height: 180%;
+  }
+  p {
+    margin: 2em 0;
+    font-family: $font-family-serif;
+  }
+}
+
+/* BLOCK LINK */
+.block-link {
+  display: block;
+  position: relative;
+}
+
+/* NEWS AND ARTICLES TAGS */
+.m-tags {
+  .header {
+    display: inline-block;
+  }
+  .label {
+    transition: opacity .2s linear;
+    transition-delay: .4s;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    a {
+      background-color: rgba($body-bg, .4);
+      padding: 10px;
+      margin: 5px 3px;
+      color: $gray-light;
+      display: block;
+      border-radius: 5px;
+    }
+    &:hover {
+      a {
+        text-decoration: none;
+        background-color: rgba($brand-primary, .1);
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+/* PAGE TRANSITIONS */
+.fade-content {
+  opacity: 1;
+}
+.fade-content.ng-enter,
+.fade-content.ng-leave {
+  transition: all .2s ease;
+}
+.fade-content.ng-enter {
+  opacity: 0;
+}
+.fade-content.ng-enter-active {
+  opacity: 1;
+}
+.fade-content.ng-leave {
+  opacity: 1;
+}
+.fade-content.ng-leave-active {
+  opacity: 0;
+}
+
 @media (min-width: $screen-xs-min) {
   /* rules for mobile horizontal (480 > 768)  */
 }
@@ -406,7 +562,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     }
   }
   .main-navigation {
-    margin-top: 24px;
+    margin-top: 17px;
     li {
       font-size: 0.9em;
       font-weight: bold;
@@ -425,6 +581,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
           color: $gray-dark;
           border-radius: 5px 5px 0 0;
           > ul.dropdown-menu {
+            margin-top: -1px;
             display: block;
           }
         }

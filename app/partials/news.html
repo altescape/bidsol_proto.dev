@@ -1,1 +1,113 @@
-<h1>News</h1>
+<div ng-controller="NewsCtrl">
+
+    <section class="main-content section-bg-2 padded-section pt-70 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" placeholder="Search our news..." class="sp-inp">
+                    <ul class="list-unstyled lead m-tags">
+                        <li class="label"><a href="#">Government & Non-Profits</a></li>
+                        <li class="label"><a href="#">Cross-Media</a></li>
+                        <li class="label"><a href="#">Influence Consideration</a></li>
+                        <li class="label"><a href="#">Government legislation</a></li>
+                        <li class="label"><a href="#">Law</a></li>
+                        <li class="label"><a href="#">New Bids</a></li>
+                        <li class="label"><a href="#">Government & Non-Profits</a></li>
+                        <li class="label"><a href="#">Bid Design</a></li>
+                        <li class="label"><a href="#">Influence Consideration</a></li>
+                        <li class="label"><a href="#">Cross-Media</a></li>
+                        <li class="label"><a href="#">Bid Design</a></li>
+                        <li class="label"><a href="#">Law</a></li>
+                        <li class="label"><a href="#">Government legislation</a></li>
+                        <li class="label"><a href="#">New Bids</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED NEWS PREVIEW -->
+
+    <section class="main-content section-bg-1 padded-section pt-70 pb-70">
+        <div class="container">
+            <div class="row-cover section-bg-0">
+                <a href="/#/news/item" class="col-sm-4 butted block-link">
+                    <span class="img-label">FEATURED</span>
+                    <img alt="260x130" src="http://fillmurray.com/365/203" style="width: 100%">
+                </a>
+                <div class="col-sm-8 pt-30">
+                    <small class="type">NEWS</small>
+                    <h3><a href="/#/news/item">Google for Government Solutions</a></h3>
+
+                    <p>Whether your goal is to educate citizens on important issues, reach special audiences, inspire behavior change, or
+                        encourage immediate action, your communications efforts must reside online. Learn how Google's technology solutions
+                        can deepen your communications strategy across devices and reach Americans where they spend time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP 4 NEWS -->
+
+    <section class="main-content section-bg-1 padded-section pt-0 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" ng-repeat="news in news_collection">
+                    <div class="topics-cards panel">
+                        <small class="type">NEWS</small>
+                        <h4><a href="/#/news/item">{{ news.title }}</a></h4>
+
+                        <p class="desc">{{ news.desc }}</p>
+
+                        <div class="topics-img">
+                            <a href="/#/news/item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
+                            <ul class="topics-cards-tags list-unstyled">
+                                <li ng-repeat="tag in news.tags">
+                                    <a href="#">{{ tag }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP 4 NEWS -->
+
+    <section class="main-content section-bg-1 padded-section pt-0 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" ng-repeat="news in news_collection">
+                    <div class="topics-cards panel">
+                        <small class="type">NEWS</small>
+                        <h4><a href="/#/news/item">{{ news.title }}</a></h4>
+
+                        <p class="desc">{{ news.desc }}</p>
+
+                        <div class="topics-img">
+                            <a href="/#/news/item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
+                            <ul class="topics-cards-tags list-unstyled">
+                                <li ng-repeat="tag in news.tags">
+                                    <a href="#">{{ tag }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+
+    <section class="main-content section-bg-1 padded-section pt-0 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

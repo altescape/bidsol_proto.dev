@@ -7049,57 +7049,60 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 65, app.scss */
 a {
-  -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear; }
+  -webkit-transition: all .15s linear;
+  transition: all .15s linear; }
+  /* line 67, app.scss */
+  a:hover {
+    color: #1d6672; }
 
-/* line 69, app.scss */
+/* line 72, app.scss */
 .padded-section {
   padding: 2em 0; }
 
-/* line 73, app.scss */
+/* line 76, app.scss */
 .required {
   color: #d9534f !important; }
 
-/* line 77, app.scss */
+/* line 80, app.scss */
 .underline {
   text-decoration: underline; }
 
-/* line 81, app.scss */
+/* line 84, app.scss */
 .nav, .pagination, .carousel, .panel-title a, a {
   cursor: pointer; }
 
 /* Section colours */
-/* line 87, app.scss */
+/* line 90, app.scss */
 .section-bg-0 {
   background-color: white; }
 
-/* line 90, app.scss */
+/* line 93, app.scss */
 .section-bg-1 {
   background-color: #efeddf; }
 
-/* line 93, app.scss */
+/* line 96, app.scss */
 .section-bg-2 {
   background-color: #e4e3d5; }
 
-/* line 97, app.scss */
+/* line 100, app.scss */
 .row-cover {
   overflow: hidden; }
-  /* line 99, app.scss */
+  /* line 102, app.scss */
   .row-cover .butted {
     padding-left: 0; }
 
-/* line 104, app.scss */
+/* line 107, app.scss */
 .type {
   color: #d9534f;
   font-weight: bold; }
 
-/* line 109, app.scss */
+/* line 112, app.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0; }
-  /* line 113, app.scss */
+  /* line 116, app.scss */
   .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -7107,31 +7110,54 @@ a {
     width: 100%;
     height: 100%; }
 
+/* HORIZONTAL SUB NAV */
+/* line 127, app.scss */
+.horizontal-sub-nav {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3) inset, 0 0 11px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3) inset, 0 0 11px rgba(0, 0, 0, 0.1) inset;
+  padding-top: 3px !important; }
+  /* line 130, app.scss */
+  .horizontal-sub-nav .nav {
+    font-weight: bold; }
+    /* line 132, app.scss */
+    .horizontal-sub-nav .nav .active {
+      background-color: #efeddf;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: none; }
+    /* line 137, app.scss */
+    .horizontal-sub-nav .nav a {
+      border-radius: 5px 5px 0 0;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-bottom: none; }
+      /* line 141, app.scss */
+      .horizontal-sub-nav .nav a:hover {
+        background-color: rgba(239, 237, 223, 0.7); }
+
 /* FIVE PANELS ON HOME PAGE */
-/* line 124, app.scss */
+/* line 150, app.scss */
 .h-panel h2 {
   font-weight: bold; }
-  /* line 126, app.scss */
+  /* line 152, app.scss */
   .h-panel h2 a:hover {
     text-decoration: none; }
-/* line 130, app.scss */
+/* line 156, app.scss */
 .h-panel .br-tint {
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
-/* line 131, app.scss */
+/* line 157, app.scss */
 .h-panel .lead {
   font-size: 16px;
   line-height: 26px;
   padding: 20px;
   margin-bottom: 5px; }
-/* line 137, app.scss */
+/* line 163, app.scss */
 .h-panel .btn {
   border: none;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 16px; }
-/* line 144, app.scss */
+/* line 170, app.scss */
 .h-panel .icon {
   background-color: #333;
   padding: 5px;
@@ -7142,265 +7168,265 @@ a {
   line-height: 90px;
   font-size: 45px; }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-pink h2 {
   color: #d6366b; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-pink h2 .br-tint {
     color: rgba(214, 54, 107, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-pink h2 a {
     color: #d6366b; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-pink h2 a:hover {
       color: #9f204a; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-pink h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-pink .btn {
   background-color: #d6366b; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-pink .btn:hover, .panel-pink .btn:focus {
     background-color: #b42554; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-pink .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-pink .icon {
   color: #d6366b;
   -webkit-box-shadow: 0 0 0 5px rgba(214, 54, 107, 0.3);
   box-shadow: 0 0 0 5px rgba(214, 54, 107, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-green h2 {
   color: #37a883; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-green h2 .br-tint {
     color: rgba(55, 168, 131, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-green h2 a {
     color: #37a883; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-green h2 a:hover {
       color: #246e56; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-green h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-green .btn {
   background-color: #37a883; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-green .btn:hover, .panel-green .btn:focus {
     background-color: #2a8265; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-green .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-green .icon {
   color: #37a883;
   -webkit-box-shadow: 0 0 0 5px rgba(55, 168, 131, 0.3);
   box-shadow: 0 0 0 5px rgba(55, 168, 131, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-yellow h2 {
   color: #fcaf17; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-yellow h2 .br-tint {
     color: rgba(252, 175, 23, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-yellow h2 a {
     color: #fcaf17; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-yellow h2 a:hover {
       color: #c48303; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-yellow h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-yellow .btn {
   background-color: #fcaf17; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-yellow .btn:hover, .panel-yellow .btn:focus {
     background-color: #dd9403; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-yellow .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-yellow .icon {
   color: #fcaf17;
   -webkit-box-shadow: 0 0 0 5px rgba(252, 175, 23, 0.3);
   box-shadow: 0 0 0 5px rgba(252, 175, 23, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-red h2 {
   color: #e0342b; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-red h2 .br-tint {
     color: rgba(224, 52, 43, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-red h2 a {
     color: #e0342b; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-red h2 a:hover {
       color: #a61f18; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-red h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-red .btn {
   background-color: #e0342b; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-red .btn:hover, .panel-red .btn:focus {
     background-color: #bc241c; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-red .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-red .icon {
   color: #e0342b;
   -webkit-box-shadow: 0 0 0 5px rgba(224, 52, 43, 0.3);
   box-shadow: 0 0 0 5px rgba(224, 52, 43, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-purple h2 {
   color: #956daf; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-purple h2 .br-tint {
     color: rgba(149, 109, 175, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-purple h2 a {
     color: #956daf; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-purple h2 a:hover {
       color: #6e4986; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-purple h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-purple .btn {
   background-color: #956daf; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-purple .btn:hover, .panel-purple .btn:focus {
     background-color: #7c5297; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-purple .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-purple .icon {
   color: #956daf;
   -webkit-box-shadow: 0 0 0 5px rgba(149, 109, 175, 0.3);
   box-shadow: 0 0 0 5px rgba(149, 109, 175, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-blue h2 {
   color: #37c8e7; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-blue h2 .br-tint {
     color: rgba(55, 200, 231, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-blue h2 a {
     color: #37c8e7; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-blue h2 a:hover {
       color: #169ebb; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-blue h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-blue .btn {
   background-color: #37c8e7; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-blue .btn:hover, .panel-blue .btn:focus {
     background-color: #19b1d2; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-blue .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-blue .icon {
   color: #37c8e7;
   -webkit-box-shadow: 0 0 0 5px rgba(55, 200, 231, 0.3);
   box-shadow: 0 0 0 5px rgba(55, 200, 231, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-orange h2 {
   color: #e53319; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-orange h2 .br-tint {
     color: rgba(229, 51, 25, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-orange h2 a {
     color: #e53319; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-orange h2 a:hover {
       color: #a02411; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-orange h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-orange .btn {
   background-color: #e53319; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-orange .btn:hover, .panel-orange .btn:focus {
     background-color: #b72914; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-orange .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-orange .icon {
   color: #e53319;
   -webkit-box-shadow: 0 0 0 5px rgba(229, 51, 25, 0.3);
   box-shadow: 0 0 0 5px rgba(229, 51, 25, 0.3); }
 
-/* line 159, app.scss */
+/* line 185, app.scss */
 .panel-grey h2 {
   color: #626e8d; }
-  /* line 161, app.scss */
+  /* line 187, app.scss */
   .panel-grey h2 .br-tint {
     color: rgba(98, 110, 141, 0.5) !important; }
-  /* line 162, app.scss */
+  /* line 188, app.scss */
   .panel-grey h2 a {
     color: #626e8d; }
-    /* line 164, app.scss */
+    /* line 190, app.scss */
     .panel-grey h2 a:hover {
       color: #434b60; }
-      /* line 166, app.scss */
+      /* line 192, app.scss */
       .panel-grey h2 a:hover .br-tint {
         opacity: .5; }
-/* line 170, app.scss */
+/* line 196, app.scss */
 .panel-grey .btn {
   background-color: #626e8d; }
-  /* line 172, app.scss */
+  /* line 198, app.scss */
   .panel-grey .btn:hover, .panel-grey .btn:focus {
     background-color: #4d576f; }
-  /* line 175, app.scss */
+  /* line 201, app.scss */
   .panel-grey .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 177, app.scss */
+/* line 203, app.scss */
 .panel-grey .icon {
   color: #626e8d;
   -webkit-box-shadow: 0 0 0 5px rgba(98, 110, 141, 0.3);
   box-shadow: 0 0 0 5px rgba(98, 110, 141, 0.3); }
 
-/* line 184, app.scss */
+/* line 210, app.scss */
 .main-footer {
   background-color: #3f4944;
   color: #bfbeb2; }
-  /* line 187, app.scss */
+  /* line 213, app.scss */
   .main-footer a {
     color: #bfbeb2; }
-  /* line 191, app.scss */
+  /* line 217, app.scss */
   .main-footer ul li {
     margin: 0.5em 0; }
-    /* line 194, app.scss */
+    /* line 220, app.scss */
     .main-footer ul li a:hover {
       color: #d6d6ce; }
-    /* line 199, app.scss */
+    /* line 225, app.scss */
     .main-footer ul li:first-child a {
       text-decoration: underline; }
 
 /* SERVICE AND JOBS SECTION ON HOME PAGE */
-/* line 208, app.scss */
+/* line 234, app.scss */
 .h-section-bg {
   background-position: fixed;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #286e9a), to(#288b9a));
@@ -7410,7 +7436,7 @@ a {
   background-size: cover;
   min-height: initial !important;
   position: relative; }
-  /* line 214, app.scss */
+  /* line 240, app.scss */
   .h-section-bg:after {
     background: url(/img/badge.png) top center repeat-x fixed;
     content: "";
@@ -7421,7 +7447,7 @@ a {
     top: 0;
     bottom: 0;
     z-index: 1; }
-  /* line 229, app.scss */
+  /* line 255, app.scss */
   .h-section-bg .h-section {
     position: relative;
     z-index: 2;
@@ -7431,18 +7457,18 @@ a {
     -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3); }
 
-/* line 238, app.scss */
+/* line 264, app.scss */
 .services.active .h-section {
   border-radius: 10px 10px 30px 0; }
 
-/* line 239, app.scss */
+/* line 265, app.scss */
 .jobs.active .h-section {
   border-radius: 10px 10px 0 30px; }
 
-/* line 241, app.scss */
+/* line 267, app.scss */
 .banner-services-links li {
   line-height: 20px; }
-/* line 244, app.scss */
+/* line 270, app.scss */
 .banner-services-links .btn-info {
   background-color: white;
   color: #636365;
@@ -7450,29 +7476,29 @@ a {
   border: none;
   padding-top: 8px;
   padding-bottom: 7px; }
-  /* line 251, app.scss */
+  /* line 277, app.scss */
   .banner-services-links .btn-info:hover {
     background-color: #efeddf; }
-/* line 255, app.scss */
+/* line 281, app.scss */
 .banner-services-links .br-tint {
   color: #288b9a !important; }
 
-/* line 259, app.scss */
+/* line 285, app.scss */
 .ht-t {
   min-height: 380px; }
-  /* line 261, app.scss */
+  /* line 287, app.scss */
   .ht-t .btn-lg, .ht-t .btn-group-lg > .btn {
     font-weight: bold;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 14px;
     letter-spacing: 1px; }
-  /* line 268, app.scss */
+  /* line 294, app.scss */
   .ht-t .btn-alt-cta {
     font-style: italic;
     font-size: 17px; }
 
-/* line 274, app.scss */
+/* line 300, app.scss */
 .ht-nav .ht-nav-link-wrap {
   display: block;
   height: 70px;
@@ -7486,7 +7512,7 @@ a {
   font-size: 20px;
   padding-top: 10px;
   opacity: 0.5; }
-  /* line 286, app.scss */
+  /* line 312, app.scss */
   .ht-nav .ht-nav-link-wrap .glyphicon {
     display: block;
     opacity: .4;
@@ -7499,7 +7525,7 @@ a {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     margin: 0; }
-  /* line 295, app.scss */
+  /* line 321, app.scss */
   .ht-nav .ht-nav-link-wrap.active {
     background-color: #e4e3d5;
     border-radius: 0 0 5px 5px;
@@ -7508,7 +7534,7 @@ a {
     color: #288b9a;
     z-index: 9;
     opacity: 1; }
-    /* line 302, app.scss */
+    /* line 328, app.scss */
     .ht-nav .ht-nav-link-wrap.active .glyphicon {
       opacity: 0.8;
       margin-top: -10px;
@@ -7517,12 +7543,12 @@ a {
       transform: rotateX(0deg);
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg); }
-  /* line 310, app.scss */
+  /* line 336, app.scss */
   .ht-nav .ht-nav-link-wrap:hover {
     text-decoration: none; }
 
 /* TOPIC CARDS */
-/* line 317, app.scss */
+/* line 343, app.scss */
 .img-label {
   position: absolute;
   background: #d9534f;
@@ -7530,19 +7556,19 @@ a {
   padding: 5px 10px;
   font-weight: bold; }
 
-/* line 325, app.scss */
+/* line 351, app.scss */
 .topics-cards {
   overflow: hidden;
   height: 400px;
   padding: 30px 15px 15px;
   position: relative; }
-  /* line 330, app.scss */
+  /* line 356, app.scss */
   .topics-cards .desc {
     margin: 0;
     max-height: 250px;
     overflow: hidden; }
 
-/* line 336, app.scss */
+/* line 362, app.scss */
 .topics-img {
   background: #FFF;
   -webkit-box-sizing: border-box;
@@ -7553,7 +7579,7 @@ a {
   padding: 0 15px 15px;
   position: absolute;
   width: 100%; }
-  /* line 344, app.scss */
+  /* line 370, app.scss */
   .topics-img:before {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, white));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 80%);
@@ -7565,85 +7591,238 @@ a {
     position: relative;
     top: -45px;
     width: 100%; }
-  /* line 354, app.scss */
+  /* line 380, app.scss */
   .topics-img .img {
     margin-bottom: 15px;
     display: block; }
 
-/* line 359, app.scss */
+/* line 385, app.scss */
 .topics-cards-tags {
   clear: both;
   line-height: 125%;
   list-style: none;
   margin: 0;
   position: relative; }
-  /* line 365, app.scss */
+  /* line 391, app.scss */
   .topics-cards-tags li {
     display: inline;
     font-size: 11px;
     text-transform: none;
     white-space: normal; }
-    /* line 370, app.scss */
+    /* line 396, app.scss */
     .topics-cards-tags li a {
       white-space: nowrap; }
-      /* line 372, app.scss */
+      /* line 398, app.scss */
       .topics-cards-tags li a:after {
         content: ","; }
-    /* line 377, app.scss */
+    /* line 403, app.scss */
     .topics-cards-tags li:last-child a:after {
       content: ""; }
+
+/* INVISIBLE INPUTS STYLES SO THEY LOOK LIKE TITLES */
+/* line 411, app.scss */
+.sp-inp {
+  border: none;
+  background: transparent;
+  font-size: 36px;
+  color: #3F4944;
+  width: 100%;
+  padding: 15px 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  /* line 419, app.scss */
+  .sp-inp:hover {
+    text-indent: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset; }
+  /* line 425, app.scss */
+  .sp-inp:focus {
+    outline: none; }
+
+/* TRANSPARENT BUTTON */
+/* line 431, app.scss */
+.btn-trans {
+  background-color: transparent;
+  color: #288b9a;
+  border-color: #288b9a; }
+  /* line 435, app.scss */
+  .btn-trans:hover {
+    border-color: #3f4944;
+    color: #3f4944; }
+
+/* BIG BUTTON */
+/* line 442, app.scss */
+.big-butt {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 26px; }
+  /* line 446, app.scss */
+  .big-butt .glyphicon {
+    font-size: 14px; }
+
+/* LOG OUT */
+@-webkit-keyframes rotating {
+  /* line 453, app.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 456, app.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes rotating {
+  /* line 453, app.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 456, app.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* line 460, app.scss */
+.logging-out-icon {
+  -webkit-transform-origin: 50% !important;
+  -ms-transform-origin: 50% !important;
+  transform-origin: 50% !important;
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  display: inline-block !important; }
+  /* line 464, app.scss */
+  .logging-out-icon.ng-hide {
+    display: none !important; }
+
+/* READING SIZE */
+/* line 470, app.scss */
+.reading-size {
+  font-size: 150%;
+  line-height: 180%; }
+  /* line 473, app.scss */
+  .reading-size h1, .reading-size h2, .reading-size h3, .reading-size h4, .reading-size h5, .reading-size h6 {
+    font-size: 200%;
+    line-height: 180%; }
+  /* line 477, app.scss */
+  .reading-size p {
+    margin: 2em 0;
+    font-family: "freight-display-pro", Georgia, "Times New Roman", Times, serif; }
+
+/* BLOCK LINK */
+/* line 484, app.scss */
+.block-link {
+  display: block;
+  position: relative; }
+
+/* NEWS AND ARTICLES TAGS */
+/* line 491, app.scss */
+.m-tags .header {
+  display: inline-block; }
+/* line 494, app.scss */
+.m-tags .label {
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+  /* line 501, app.scss */
+  .m-tags .label a {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    margin: 5px 3px;
+    color: #bfbeb2;
+    display: block;
+    border-radius: 5px; }
+  /* line 510, app.scss */
+  .m-tags .label:hover a {
+    text-decoration: none;
+    background-color: rgba(40, 139, 154, 0.1);
+    color: #288b9a; }
+
+/* PAGE TRANSITIONS */
+/* line 520, app.scss */
+.fade-content {
+  opacity: 1; }
+
+/* line 524, app.scss */
+.fade-content.ng-enter,
+.fade-content.ng-leave {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+
+/* line 527, app.scss */
+.fade-content.ng-enter {
+  opacity: 0; }
+
+/* line 530, app.scss */
+.fade-content.ng-enter-active {
+  opacity: 1; }
+
+/* line 533, app.scss */
+.fade-content.ng-leave {
+  opacity: 1; }
+
+/* line 536, app.scss */
+.fade-content.ng-leave-active {
+  opacity: 0; }
 
 @media (min-width: 480px) {
   /* rules for mobile horizontal (480 > 768)  */ }
 @media (min-width: 768px) {
   /* rules for tablet (768 > 992) */
-  /* line 389, app.scss */
+  /* line 545, app.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
     margin-top: 18px; } }
 @media (min-width: 992px) {
   /* rules for desktop (992 > 1200) */
-  /* line 397, app.scss */
+  /* line 553, app.scss */
   .h-job-form {
     border-left: 1px solid #CCC;
     padding-left: 15px; }
 
-  /* line 402, app.scss */
+  /* line 558, app.scss */
   .navbar-static-top .navbar-brand {
     float: left;
     padding: 0;
     margin-top: 12px; }
 
-  /* line 408, app.scss */
+  /* line 564, app.scss */
   .main-navigation {
-    margin-top: 24px; }
-    /* line 410, app.scss */
+    margin-top: 17px; }
+    /* line 566, app.scss */
     .main-navigation li {
       font-size: 0.9em;
       font-weight: bold;
       letter-spacing: 1px; }
-      /* line 415, app.scss */
+      /* line 571, app.scss */
       .main-navigation li.open > a.dropdown-toggle, .main-navigation li:hover > a.dropdown-toggle {
         background-color: #efeddf;
         color: #636365;
         border-radius: 5px 5px 0 0;
         -webkit-transition: none;
         transition: none; }
-      /* line 423, app.scss */
+      /* line 579, app.scss */
       .main-navigation li.dropdown:hover, .main-navigation li.dropdown.open, .main-navigation li.dropdown:focus {
         background-color: white;
         color: #636365;
         border-radius: 5px 5px 0 0; }
-        /* line 427, app.scss */
+        /* line 583, app.scss */
         .main-navigation li.dropdown:hover > ul.dropdown-menu, .main-navigation li.dropdown.open > ul.dropdown-menu, .main-navigation li.dropdown:focus > ul.dropdown-menu {
+          margin-top: -1px;
           display: block; }
-      /* line 432, app.scss */
+      /* line 589, app.scss */
       .main-navigation li > a {
         -webkit-transition: none;
         transition: none;
         padding-top: 15px;
         padding-bottom: 15px; }
-        /* line 436, app.scss */
+        /* line 593, app.scss */
         .main-navigation li > a.btn {
           border: none;
           margin-left: 1em;
@@ -7653,37 +7832,37 @@ a {
           padding-top: 8px;
           padding-bottom: 8px;
           margin-top: 8px; }
-          /* line 445, app.scss */
+          /* line 602, app.scss */
           .main-navigation li > a.btn:hover, .main-navigation li > a.btn:focus {
             outline: none;
             background-color: #237986; }
-          /* line 449, app.scss */
+          /* line 606, app.scss */
           .main-navigation li > a.btn.btn-info {
             background-color: #bfbeb2;
             color: #636365; }
-            /* line 452, app.scss */
+            /* line 609, app.scss */
             .main-navigation li > a.btn.btn-info:hover, .main-navigation li > a.btn.btn-info:focus {
               outline: none;
               background-color: #b3b2a4; }
-        /* line 458, app.scss */
+        /* line 615, app.scss */
         .main-navigation li > a:hover {
           background-color: transparent; }
 
-  /* line 464, app.scss */
+  /* line 621, app.scss */
   .dropdown-menu {
     background-color: #efeddf;
     border: none;
     -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); }
-    /* line 468, app.scss */
+    /* line 625, app.scss */
     .dropdown-menu li {
       font-size: 1em;
       font-weight: initial; }
-      /* line 471, app.scss */
+      /* line 628, app.scss */
       .dropdown-menu li.divider {
         background-color: #dedabd; }
 
-  /* line 478, app.scss */
+  /* line 635, app.scss */
   .menu-list li a {
     display: block;
     padding-top: 5px;
@@ -7692,21 +7871,21 @@ a {
     text-transform: initial;
     padding-left: 8px;
     margin-left: -8px; }
-    /* line 486, app.scss */
+    /* line 643, app.scss */
     .menu-list li a:hover {
       color: #3f4944;
       background-color: #efeddf;
       text-decoration: none; }
 
-  /* line 494, app.scss */
+  /* line 651, app.scss */
   .br-tint {
     color: #928c8e !important; }
 
-  /* line 499, app.scss */
+  /* line 656, app.scss */
   .yamm-content blockquote p {
     text-transform: initial; }
 
-  /* line 504, app.scss */
+  /* line 661, app.scss */
   .form-background {
     background: #FFF;
     margin: 0;
@@ -7714,12 +7893,12 @@ a {
     border-left: 1px solid #DDD;
     border-bottom: 1px solid #DDD; }
 
-  /* line 511, app.scss */
+  /* line 668, app.scss */
   legend {
     color: #288b9a;
     border-bottom: 1px solid rgba(40, 139, 154, 0.3); }
 
-  /* line 516, app.scss */
+  /* line 673, app.scss */
   .testimonial .quote {
     font-family: "museo-slab";
     font-style: italic;
@@ -7729,13 +7908,13 @@ a {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     text-align: left; }
-    /* line 524, app.scss */
+    /* line 681, app.scss */
     .testimonial .quote:hover {
       opacity: 1; }
-      /* line 526, app.scss */
+      /* line 683, app.scss */
       .testimonial .quote:hover:before {
         opacity: 1; }
-    /* line 530, app.scss */
+    /* line 687, app.scss */
     .testimonial .quote:before {
       content: "\201C";
       display: block;
