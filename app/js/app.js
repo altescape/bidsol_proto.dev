@@ -43,6 +43,36 @@ angular.module('myApp', [
               "mainView" : {templateUrl: "partials/bid-services.html"}
             }
           })
+          .state('bidrecruit', {
+            url: "/bid-services/bidrecruit",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/bidrecruit.html"}
+            }
+          })
+          .state('bidconsult', {
+            url: "/bid-services/bidconsult",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/bidconsult.html"}
+            }
+          })
+          .state('bidtraining', {
+            url: "/bid-services/bidtraining",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/bidtraining.html"}
+            }
+          })
+          .state('bidsoftware', {
+            url: "/bid-services/bidsoftware",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/bidsoftware.html"}
+            }
+          })
+          .state('biddesign', {
+            url: "/bid-services/biddesign",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/biddesign.html"}
+            }
+          })
           .state('testimonials', {
             url: "/testimonials",
             views : {
@@ -62,6 +92,13 @@ angular.module('myApp', [
               "mainView" : {templateUrl: "partials/news-item.html"}
             }
           })
+          .state('create-account', {
+            url: "/create-account",
+            views : {
+              "mainView" : {templateUrl: "partials/create-account.html"}
+            },
+            controller : 'CreateAccountCtrl'
+          })
           .state('account', {
             url: "/account",
             views : {
@@ -69,8 +106,16 @@ angular.module('myApp', [
             },
             controller : 'MyAccountCtrl'
           })
+          .state('account.search-jobs', {
+            url: "/search-jobs",
+            views : {
+              "mainView" : {templateUrl: "partials/account/my-account.html"},
+              "accountView" : {templateUrl: "partials/account/search-jobs.html"}
+            },
+            controller : 'MyAccountCtrl'
+          })
           .state('account.saved-jobs', {
-            url: "/account/saved-jobs",
+            url: "/saved-jobs",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/saved-jobs.html"}
@@ -78,7 +123,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.saved-searches', {
-            url: "/account/saved-searches",
+            url: "/saved-searches",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/saved-searches.html"}
@@ -86,7 +131,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.timesheets', {
-            url: "/account/timesheets",
+            url: "/timesheets",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/timesheets.html"}
@@ -94,7 +139,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.job-applications', {
-            url: "/account/job-applications",
+            url: "/job-applications",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/job-applications.html"}
@@ -102,7 +147,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.my-cv', {
-            url: "/account/my/cv",
+            url: "/my/cv",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/my-cv.html"}
@@ -110,7 +155,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.my-details', {
-            url: "/account/my/details",
+            url: "/my/details",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/my-details.html"}
@@ -118,7 +163,7 @@ angular.module('myApp', [
             controller : 'MyAccountCtrl'
           })
           .state('account.my-skills', {
-            url: "/account/my/skills",
+            url: "/my/skills",
             views : {
               "mainView" : {templateUrl: "partials/account/my-account.html"},
               "accountView" : {templateUrl: "partials/account/my-skills.html"}

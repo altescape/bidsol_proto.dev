@@ -159,4 +159,130 @@ angular.module('myApp.controllers', [])
 
     }])
     .controller('MyAccountCtrl', ['$scope', '$animate', function ($scope, $animate) {
+
+      $scope.industries = [
+        {name: "Facilities management"},
+        {name: "Financial services"},
+        {name: "Food and beverage"},
+        {name: "Government and public sector"},
+        {name: "Healthcare services"},
+        {name: "Hotels and hotel management"},
+        {name: "Leisure"},
+        {name: "Healthcare"},
+        {name: "Information tech"},
+        {name: "Legal services"},
+        {name: "Real estate and property management"},
+        {name: "Professional services"},
+        {name: "Telecommunications"},
+        {name: "Security and surveillance"},
+        {name: "Financial services"},
+        {name: "etc.."}
+      ];
+      $scope.positions = [
+        {name: "Bid administrator"},
+        {name: "Bid analyst"},
+        {name: "Bid author"},
+        {name: "Bid consultant"},
+        {name: "Bid co-ordinator"},
+        {name: "etc..."}
+      ];
+      $scope.skills = [
+        {name: "APMP"},
+        {name: "Bid best practice"},
+        {name: "Bid governance"},
+        {name: "Bid management"},
+        {name: "Bid process"},
+        {name: "etc..."}
+      ];
+      $scope.qualifications = [
+        {name: "A Levels"},
+        {name: "APMP Foundation"},
+        {name: "APMP Practitioner"},
+        {name: "APMP Professional"},
+        {name: "Bachelors Degree"},
+        {name: "etc..."}
+      ];
+      $scope.locations = [
+        {name: "East London"},
+        {name: "Central London"},
+        {name: "Essex"},
+        {name: "Guildford"},
+        {name: "Telford"},
+        {name: "etc..."}
+      ];
+
+      $scope.$watch('industries', function (lists) {
+        $scope.countIndustries = 0;
+        angular.forEach(lists, function (list) {
+          if (list.checked) {
+            $scope.countIndustries += 1;
+          }
+        })
+      }, true);
+
+      $scope.$watch('positions', function (lists) {
+        $scope.countPositions = 0;
+        angular.forEach(lists, function (list) {
+          if (list.checked) {
+            $scope.countPositions += 1;
+          }
+        })
+      }, true);
+
+      $scope.$watch('skills', function (lists) {
+        $scope.countSkills = 0;
+        angular.forEach(lists, function (list) {
+          if (list.checked) {
+            $scope.countSkills += 1;
+          }
+        })
+      }, true);
+
+      $scope.$watch('qualifications', function (lists) {
+        $scope.countQualifications = 0;
+        angular.forEach(lists, function (list) {
+          if (list.checked) {
+            $scope.countQualifications += 1;
+          }
+        })
+      }, true);
+
+      $scope.$watch('locations', function (lists) {
+        $scope.countLocations = 0;
+        angular.forEach(lists, function (list) {
+          if (list.checked) {
+            $scope.countLocations += 1;
+          }
+        })
+      }, true);
+
+      $scope.checkAll = function (alist) {
+        angular.forEach(alist, function (value, key) {
+          value.checked = true;
+        });
+      };
+
+      $scope.uncheckAll = function (alist) {
+        angular.forEach(alist, function (value, key) {
+          value.checked = false;
+        });
+      };
+
+      /* PAGINATION */
+      $scope.totalItems = 64;
+      $scope.currentPage = 4;
+
+      $scope.setPage = function (pageNo) {
+        $scope.currentPage = pageNo;
+      };
+
+      $scope.pageChanged = function () {
+        console.log('Page changed to: ' + $scope.currentPage);
+      };
+
+      $scope.maxSize = 5;
+      $scope.bigTotalItems = 175;
+      $scope.bigCurrentPage = 1;
+
+
     }]);

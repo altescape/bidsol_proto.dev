@@ -18,18 +18,7 @@
                             <div class="yamm-content">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <ul class="list-unstyled menu-list" role="menu">
-                                            <li><a href="/#/bid-services/bid-recruit"><span class="br-tint">Bid</span>Recruit</a></li>
-                                            <li><a href="/#/bidconsult"><span class="br-tint">Bid</span>Consult</a></li>
-                                            <li><a href="/#/bidtraining"><span class="br-tint">Bid</span>Training</a></li>
-                                            <li><a href="/#/bidsoftware"><span class="br-tint">Bid</span>Software</a></li>
-                                            <li><a href="/#/biddesign"><span class="br-tint">Bid</span>Design</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="/#/bidprinting"><span class="br-tint">Bid</span>Printing</a></li>
-                                            <li><a href="/#/bidindustries"><span class="br-tint">Bid</span>Industries</a></li>
-                                            <li><a href="/#/bidglobal"><span class="br-tint">Bid</span>Global</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="/#/bid-services">View all services</a></li>
+                                        <ul class="list-unstyled menu-list" role="menu" bid-services-menu>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
@@ -89,7 +78,7 @@
                     <a href="/#/resources">RESOURCES</a>
                 </li>
                 <li>
-                    <a ng-hide="loggedin" href="/#/create-account" class="btn btn-primary">CREATE ACCOUNT</a>
+                    <a ng-hide="loggedin" href="/#/create-account" class="btn btn-primary" ui-sref="create-account">CREATE ACCOUNT</a>
                     <a ng-show="loggedin" href="/#/account" ui-sref="account">MY ACCOUNT</a>
                 </li>
                 <li>

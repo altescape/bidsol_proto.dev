@@ -1,1 +1,132 @@
-<h1>Search jobs</h1>
+<div class="row pt-30">
+    <div class="col-sm-3">
+        <h4 class="mt-0 mb-15">Search</h4>
+        <div class="form-group">
+            <div class="input-group">
+                <input class="form-control" type="email" placeholder="Enter keyword">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+            </div>
+        </div>
+        <p class="text-right">
+            <a ng-click="showAdvanced = true" ng-show="showAdvanced === false">Advanced search</a>
+        </p>
+        <div ng-init="showAdvanced = false" ng-hide="showAdvanced === false">
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected disabled>Job type</option>
+                    <option>Permanent</option>
+                    <option>Contract</option>
+                    <option>Any</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected disabled>Hours</option>
+                    <option>Full time</option>
+                    <option>Part time</option>
+                    <option>Both</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option selected disabled>Salary range</option>
+                    <option>£0 - 9,999</option>
+                    <option>£10,000 - 20,000</option>
+                    <option>£20,000 - 30,000</option>
+                    <option>Etc</option>
+                </select>
+            </div>
+            <div class="form-group panel panel-default">
+                <div class="panel-heading"><label class="control-label">Location</label> <span class="pull-right">{{ countLocations }} selected</span></div>
+                <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                    <div class="checkbox" ng-repeat="location in locations">
+                        <label>
+                            <input ng-model="location.checked" type="checkbox" value="{{ location.name }}">
+                            {{ location.name }}
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-12 text-right">
+                            <button class="btn btn-default btn-sm" ng-click="uncheckAll(location)">deselect all</button>
+                            <button class="btn btn-default btn-sm" ng-click="checkAll(location)">select all</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group panel panel-default">
+                <div class="panel-heading"><label class="control-label">Industry</label> <span class="pull-right">{{ countIndustries }} selected</span></div>
+                <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                    <div class="checkbox" ng-repeat="industry in industries">
+                        <label>
+                            <input ng-model="industry.checked" type="checkbox" value="{{ industry.name }}">
+                            {{ industry.name }}
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-12 text-right">
+                            <button class="btn btn-default btn-sm" ng-click="uncheckAll(industries)">deselect all</button>
+                            <button class="btn btn-default btn-sm" ng-click="checkAll(industries)">select all</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group panel panel-default">
+                <div class="panel-heading"><label class="control-label">Disciplines</label> <span class="pull-right">{{ countPositions }} selected</span></div>
+                <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                    <div class="checkbox" ng-repeat="position in positions">
+                        <label>
+                            <input ng-model="position.checked" type="checkbox" value="{{ position.name }}">
+                            {{ position.name }}
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-12 text-right">
+                            <button class="btn btn-default btn-sm" ng-click="uncheckAll(positions)">deselect all</button>
+                            <button class="btn btn-default btn-sm" ng-click="checkAll(positions)">select all</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 mt-5">
+                    <a ng-click="showAdvanced = false" ng-show="showAdvanced === true">Hide Advanced search</a>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-primary pull-right">Search <span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-sm-8 col-sm-offset-1">
+        <div class="row mb-15">
+            <div class="col-sm-12 text-right"><small>RESULTS PER PAGE: <a>10</a> | <a>20</a> | <a>50</a> | <a>100</a></small></div>
+        </div>
+        <table class="table table-striped">
+            <tr>
+                <th style="vertical-align: middle">Name <a class="glyphicon glyphicon-sort" style="font-size: 10px"></a></th>
+                <th style="vertical-align: middle">Location <a class="glyphicon glyphicon-sort" style="font-size: 10px"></a></th>
+                <th style="vertical-align: middle">Salary <a class="glyphicon glyphicon-sort" style="font-size: 10px"></a></th>
+                <th class="text-right" style="vertical-align: middle"></th>
+            </tr>
+            <tr ng-repeat="industry in industries">
+                <td style="vertical-align: middle">{{ industry.name }}</td>
+                <td style="vertical-align: middle">East London</td>
+                <td style="vertical-align: middle">£36,000 p.a.</td>
+                <td class="text-right" style="vertical-align: middle"> <button class="btn btn-primary btn-sm">Apply</button></td>
+            </tr>
+        </table>
+
+        <!-- PAGINATION -->
+        <div class="text-center">
+            <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+        </div>
+
+    </div>
+</div>

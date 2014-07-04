@@ -1,2 +1,129 @@
-<h1>My skills</h1>
-<p>Edit your skills form here</p>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <h2>My skills</h2>
+
+        <p class="lead">Choose your skills</p>
+
+        <form>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="input21" class="control-label">Current/Last position</label>
+                        <select id="input21" class="form-control" required>
+                            <option disabled selected>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>etc</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="input21" class="control-label">Desired position</label>
+                        <select id="input21" class="form-control" required>
+                            <option disabled selected>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>etc</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group panel panel-default">
+                            <div class="panel-heading"><label class="control-label">Industry</label> <span class="pull-right">{{ countIndustries }} selected</span></div>
+                            <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                                <div class="checkbox" ng-repeat="industry in industries">
+                                    <label>
+                                        <input ng-model="industry.checked" type="checkbox" value="{{ industry.name }}">
+                                        {{ industry.name }}
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-sm-12 text-right">
+                                        <button class="btn btn-default btn-sm" ng-click="uncheckAll(industries)">deselect all</button>
+                                        <button class="btn btn-default btn-sm" ng-click="checkAll(industries)">select all</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group panel panel-default">
+                            <div class="panel-heading"><label class="control-label">Past position(s)</label> <span class="pull-right">{{ countPositions }} selected</span></div>
+                            <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                                <div class="checkbox" ng-repeat="position in positions">
+                                    <label>
+                                        <input ng-model="position.checked" type="checkbox" value="{{ position.name }}">
+                                        {{ position.name }}
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-sm-12 text-right">
+                                        <button class="btn btn-default btn-sm" ng-click="uncheckAll(positions)">deselect all</button>
+                                        <button class="btn btn-default btn-sm" ng-click="checkAll(positions)">select all</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group panel panel-default">
+                        <div class="panel-heading"><label class="control-label">Core skills</label> <span class="pull-right">{{ countSkills }} selected</span></div>
+                        <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                            <div class="checkbox" ng-repeat="skill in skills">
+                                <label>
+                                    <input ng-model="skill.checked" type="checkbox" value="{{ skill.name }}">
+                                    {{ skill.name }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button class="btn btn-default btn-sm" ng-click="uncheckAll(skills)">deselect all</button>
+                                    <button class="btn btn-default btn-sm" ng-click="checkAll(skills)">select all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group panel panel-default">
+                        <div class="panel-heading"><label class="control-label">Qualifications</label> <span class="pull-right">{{ countQualifications }} selected</span></div>
+                        <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                            <div class="checkbox" ng-repeat="qualification in qualifications">
+                                <label>
+                                    <input ng-model="qualification.checked" type="checkbox" value="{{ qualification.name }}">
+                                    {{ qualification.name }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button class="btn btn-default btn-sm" ng-click="uncheckAll(qualifications)">deselect all</button>
+                                    <button class="btn btn-default btn-sm" ng-click="checkAll(qualifications)">select all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary pull-right">UPDATE</button>
+            </div>
+        </form>
+
+    </div>
+</div>

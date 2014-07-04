@@ -207,6 +207,23 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
   }
 }
 
+@for $i from 1 through length($panel-slug) {
+  .goo-box-#{nth($panel-slug, $i)} {
+    height: 6px;
+    background-color: nth($panel-color, $i);
+  }
+}
+
+@for $i from 1 through length($panel-slug) {
+  .color-#{nth($panel-slug, $i)} {
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+      background-color: nth($panel-color, $i);
+    }
+    h1, h2, h3, h4, h5, h6 {color: nth($panel-color, $i)}
+  }
+}
+
+
 .main-footer {
   background-color: $gray-darker;
   color: $gray-light;
@@ -477,6 +494,11 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
   p {
     margin: 2em 0;
     font-family: $font-family-serif;
+  }
+  &.sans {
+    p {
+      font-family: $font-family-sans-serif;
+    }
   }
 }
 

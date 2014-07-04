@@ -7,7 +7,7 @@
 // In this case it is a simple value service.
 angular.module('myApp.services', []).
 
-  /* News factory */
+    /* News factory */
     factory('NewsFactory', function () {
       return [
         {

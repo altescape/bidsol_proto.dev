@@ -38,4 +38,27 @@ angular.module('myApp.directives', []).
         restrict   : 'E',
         templateUrl: "partials/account/account-horizontal-sub-nav.html"
       }
+    }).
+    directive('gooBox', function () {
+      return {
+        restrict   : 'E',
+        templateUrl: "partials/global/goo-box.html"
+      }
+    }).
+    directive('bidServicesMenu', function () {
+      return {
+        restrict   : 'A',
+        templateUrl: "partials/global/bid-services-menu.html"
+      }
+    }).
+    directive('dummyContentInfoPage', function () {
+      return {
+        restrict   : 'E',
+        templateUrl: "partials/dummy/dummy-content-info-page.html",
+        scope: {
+          title: '@',
+          tint: '@',
+          color: '@'
+        }
+      }
     });
