@@ -1163,11 +1163,11 @@ textarea {
 
 /* line 48, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #428bca;
+  color: #5eb8d0;
   text-decoration: none; }
   /* line 53, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
   a:hover, a:focus {
-    color: #2a6496;
+    color: #3395af;
     text-decoration: underline; }
   /* line 58, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_scaffolding.scss */
   a:focus {
@@ -1393,11 +1393,11 @@ mark,
 
 /* line 5, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #428bca; }
+  color: #5eb8d0; }
 
 /* line 8, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover {
-  color: #3071a9; }
+  color: #39a5c2; }
 
 /* line 5, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-success {
@@ -1437,11 +1437,11 @@ a.text-danger:hover {
 
 /* line 5, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #428bca; }
+  background-color: #5eb8d0; }
 
 /* line 8, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover {
-  background-color: #3071a9; }
+  background-color: #39a5c2; }
 
 /* line 5, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-success {
@@ -3387,23 +3387,23 @@ select[multiple].input-lg,
 /* line 60, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: white;
-  background-color: #428bca;
-  border-color: #357ebd; }
+  background-color: #5eb8d0;
+  border-color: #4aafca; }
   /* line 15, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: white;
-    background-color: #3071a9;
-    border-color: #285e8e; }
+    background-color: #39a5c2;
+    border-color: #318ea7; }
   /* line 22, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     background-image: none; }
   /* line 32, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #428bca;
-    border-color: #357ebd; }
+    background-color: #5eb8d0;
+    border-color: #4aafca; }
   /* line 38, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-primary .badge {
-    color: #428bca;
+    color: #5eb8d0;
     background-color: white; }
 
 /* line 64, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
@@ -3496,7 +3496,7 @@ select[multiple].input-lg,
 
 /* line 85, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #428bca;
+  color: #5eb8d0;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -3510,7 +3510,7 @@ select[multiple].input-lg,
     border-color: transparent; }
   /* line 105, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
   .btn-link:hover, .btn-link:focus {
-    color: #2a6496;
+    color: #3395af;
     text-decoration: underline;
     background-color: transparent; }
   /* line 113, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_buttons.scss */
@@ -3658,7 +3658,7 @@ tbody.collapse.in {
   color: white;
   text-decoration: none;
   outline: 0;
-  background-color: #428bca; }
+  background-color: #5eb8d0; }
 
 /* line 103, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -4096,7 +4096,7 @@ tbody.collapse.in {
   /* line 48, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_navs.scss */
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #428bca; }
+    border-color: #5eb8d0; }
   /* line 59, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_navs.scss */
   .nav .nav-divider {
     height: 1px;
@@ -4143,7 +4143,7 @@ tbody.collapse.in {
   /* line 133, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_navs.scss */
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: white;
-    background-color: #428bca; }
+    background-color: #5eb8d0; }
 
 /* line 144, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_navs.scss */
 .nav-stacked > li {
@@ -4710,7 +4710,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #428bca;
+      color: #5eb8d0;
       background-color: white;
       border: 1px solid #dddddd;
       margin-left: -1px; }
@@ -4729,7 +4729,7 @@ tbody.collapse.in {
   .pagination > li > a:hover, .pagination > li > a:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
-    color: #2a6496;
+    color: #3395af;
     background-color: #eeeeee;
     border-color: #dddddd; }
   /* line 53, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_pagination.scss */
@@ -4739,8 +4739,8 @@ tbody.collapse.in {
   .pagination > .active > span:focus {
     z-index: 2;
     color: white;
-    background-color: #428bca;
-    border-color: #428bca;
+    background-color: #5eb8d0;
+    border-color: #5eb8d0;
     cursor: default; }
   /* line 68, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_pagination.scss */
   .pagination > .disabled > span,
@@ -4867,10 +4867,10 @@ a.label:hover, a.label:focus {
 
 /* line 48, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_labels.scss */
 .label-primary {
-  background-color: #428bca; }
+  background-color: #5eb8d0; }
   /* line 8, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_labels.scss */
   .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #3071a9; }
+    background-color: #39a5c2; }
 
 /* line 52, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_labels.scss */
 .label-success {
@@ -4927,7 +4927,7 @@ a.label:hover, a.label:focus {
     padding: 1px 5px; }
   /* line 40, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_badges.scss */
   a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-    color: #428bca;
+    color: #5eb8d0;
     background-color: white; }
   /* line 44, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_badges.scss */
   .nav-pills > li > a > .badge {
@@ -5006,7 +5006,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #428bca; }
+  border-color: #5eb8d0; }
 
 /* line 9, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
@@ -5126,7 +5126,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: white;
   text-align: center;
-  background-color: #428bca;
+  background-color: #5eb8d0;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -5280,8 +5280,8 @@ a.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: white;
-  background-color: #428bca;
-  border-color: #428bca; }
+  background-color: #5eb8d0;
+  border-color: #5eb8d0; }
   /* line 99, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_list-group.scss */
   .list-group-item.active .list-group-item-heading,
   .list-group-item.active .list-group-item-heading > small,
@@ -5293,7 +5293,7 @@ a.list-group-item {
     color: inherit; }
   /* line 102, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_list-group.scss */
   .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: #e1edf7; }
+    color: #fcfefe; }
 
 /* line 4, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_list-group.scss */
 .list-group-item-success {
@@ -5627,22 +5627,22 @@ a.list-group-item-danger {
 
 /* line 229, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
 .panel-primary {
-  border-color: #428bca; }
+  border-color: #5eb8d0; }
   /* line 6, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-primary > .panel-heading {
     color: white;
-    background-color: #428bca;
-    border-color: #428bca; }
+    background-color: #5eb8d0;
+    border-color: #5eb8d0; }
     /* line 11, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #428bca; }
+      border-top-color: #5eb8d0; }
     /* line 14, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
     .panel-primary > .panel-heading .badge {
-      color: #428bca;
+      color: #5eb8d0;
       background-color: white; }
   /* line 20, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins/_panels.scss */
   .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #428bca; }
+    border-bottom-color: #5eb8d0; }
 
 /* line 232, ../../../../../../Library/WebServer/Documents/bidsol_proto/bidsol_proto.dev/app/bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_panels.scss */
 .panel-success {
@@ -7044,7 +7044,7 @@ body {
 
 /* line 64, app.scss */
 .c-bl {
-  color: #428bca !important; }
+  color: #5eb8d0 !important; }
 
 /* line 68, app.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -7062,7 +7062,7 @@ a {
   transition: all .15s linear; }
   /* line 74, app.scss */
   a:hover {
-    color: #3071a9; }
+    color: #39a5c2; }
 
 /* line 79, app.scss */
 .padded-section {
@@ -7136,7 +7136,7 @@ a {
       /* line 143, app.scss */
       .horizontal-sub-nav .nav .active:hover {
         background-color: white;
-        color: #2a6496; }
+        color: #3395af; }
     /* line 148, app.scss */
     .horizontal-sub-nav .nav a {
       border-radius: 5px 5px 0 0;
@@ -7536,27 +7536,16 @@ a {
 
 /* SERVICE AND JOBS SECTION ON HOME PAGE */
 /* line 262, app.scss */
+.h-section-wrapper {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5eb8d0), to(#5e9cd0));
+  background-image: -webkit-linear-gradient(top, #5eb8d0 0, #5e9cd0 100%);
+  background-image: linear-gradient(to bottom, #5eb8d0 0, #5e9cd0 100%); }
+
+/* line 265, app.scss */
 .h-section-bg {
-  background-position: fixed;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4269ca), to(#428bca));
-  background-image: -webkit-linear-gradient(top, #4269ca 0, #428bca 100%);
-  background-image: linear-gradient(to bottom, #4269ca 0, #428bca 100%);
-  -webkit-background-size: cover;
-  background-size: cover;
   min-height: initial !important;
   position: relative; }
   /* line 268, app.scss */
-  .h-section-bg:after {
-    background: url(/img/badge.png) top center repeat-x fixed;
-    content: "";
-    left: 0;
-    right: 0;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1; }
-  /* line 283, app.scss */
   .h-section-bg .h-section {
     position: relative;
     z-index: 2;
@@ -7567,19 +7556,19 @@ a {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden; }
 
-/* line 293, app.scss */
+/* line 278, app.scss */
 .services.active .h-section {
   border-radius: 10px 10px 30px 0; }
 
-/* line 294, app.scss */
+/* line 279, app.scss */
 .jobs.active .h-section {
   border-radius: 10px 10px 0 30px; }
 
-/* line 296, app.scss */
+/* line 281, app.scss */
 .banner-services-links li {
   line-height: 20px;
   padding: 0; }
-/* line 300, app.scss */
+/* line 285, app.scss */
 .banner-services-links .btn-info {
   background-color: white;
   color: #333333;
@@ -7587,79 +7576,86 @@ a {
   border: none;
   padding-top: 8px;
   padding-bottom: 7px; }
-  /* line 307, app.scss */
+  /* line 292, app.scss */
   .banner-services-links .btn-info:hover {
     background-color: #eeeeee; }
-/* line 311, app.scss */
+/* line 296, app.scss */
 .banner-services-links .br-tint {
-  color: #428bca !important; }
+  color: #5eb8d0 !important; }
 
-/* line 315, app.scss */
+/* line 300, app.scss */
 .ht-t {
   min-height: 380px; }
-  /* line 317, app.scss */
+  /* line 302, app.scss */
   .ht-t .btn-lg, .ht-t .btn-group-lg > .btn {
     font-weight: bold;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 14px;
     letter-spacing: 1px; }
-  /* line 324, app.scss */
+  /* line 309, app.scss */
   .ht-t .btn-alt-cta {
     font-style: italic;
     font-size: 17px; }
 
-/* line 330, app.scss */
-.ht-nav .ht-nav-link-wrap {
-  display: block;
-  height: 70px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #5bc0de;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  font-size: 20px;
-  padding-top: 10px;
-  opacity: 0.5; }
-  /* line 342, app.scss */
-  .ht-nav .ht-nav-link-wrap .glyphicon {
+/* line 314, app.scss */
+.ht-nav {
+  background-color: transparent; }
+  /* line 316, app.scss */
+  .ht-nav .ht-nav-link-wrap {
     display: block;
-    opacity: .4;
-    -webkit-transition: all 0.4s cubic-bezier(0, 0.82, 0.51, 0.73);
-    transition: all 0.4s cubic-bezier(0, 0.82, 0.51, 0.73);
-    -webkit-transition-delay: .2s;
-    transition-delay: .2s;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    margin: 0; }
-  /* line 351, app.scss */
-  .ht-nav .ht-nav-link-wrap.active {
-    background-color: #e4e3d5;
-    border-radius: 0 0 5px 5px;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #428bca;
-    z-index: 9;
-    opacity: 1; }
-    /* line 358, app.scss */
-    .ht-nav .ht-nav-link-wrap.active .glyphicon {
-      opacity: 0.8;
-      margin-top: -10px;
-      margin-bottom: 10px;
-      -webkit-transform: rotateX(0deg);
-      transform: rotateX(0deg);
-      -webkit-transform: rotateY(0deg);
-      transform: rotateY(0deg); }
-  /* line 366, app.scss */
-  .ht-nav .ht-nav-link-wrap:hover {
-    text-decoration: none; }
+    height: 70px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    font-size: 20px;
+    padding-top: 10px;
+    opacity: 0.5; }
+    /* line 327, app.scss */
+    .ht-nav .ht-nav-link-wrap .glyphicon {
+      display: block;
+      opacity: .4;
+      -webkit-transition: all 0.4s cubic-bezier(0, 0.82, 0.51, 0.73);
+      transition: all 0.4s cubic-bezier(0, 0.82, 0.51, 0.73);
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+      -webkit-transform: rotateX(180deg);
+      transform: rotateX(180deg);
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      margin: 0; }
+    /* line 336, app.scss */
+    .ht-nav .ht-nav-link-wrap.active {
+      background-color: #e4e3d5;
+      border-radius: 0 0 5px 5px;
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #5eb8d0;
+      z-index: 9;
+      opacity: 1; }
+      /* line 343, app.scss */
+      .ht-nav .ht-nav-link-wrap.active .glyphicon {
+        opacity: 0.8;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg); }
+      /* line 350, app.scss */
+      .ht-nav .ht-nav-link-wrap.active:hover {
+        opacity: 1;
+        color: #3eaac7; }
+    /* line 355, app.scss */
+    .ht-nav .ht-nav-link-wrap:hover {
+      text-decoration: none;
+      opacity: .8; }
 
 /* TOPIC CARDS */
-/* line 373, app.scss */
+/* line 363, app.scss */
 .img-label {
   position: absolute;
   background: #d9534f;
@@ -7667,19 +7663,19 @@ a {
   padding: 5px 10px;
   font-weight: bold; }
 
-/* line 381, app.scss */
+/* line 371, app.scss */
 .topics-cards {
   overflow: hidden;
   height: 400px;
   padding: 30px 15px 15px;
   position: relative; }
-  /* line 386, app.scss */
+  /* line 376, app.scss */
   .topics-cards .desc {
     margin: 0;
     max-height: 250px;
     overflow: hidden; }
 
-/* line 392, app.scss */
+/* line 382, app.scss */
 .topics-img {
   background: #FFF;
   -webkit-box-sizing: border-box;
@@ -7690,7 +7686,7 @@ a {
   padding: 0 15px 15px;
   position: absolute;
   width: 100%; }
-  /* line 400, app.scss */
+  /* line 390, app.scss */
   .topics-img:before {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, white));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 80%);
@@ -7702,36 +7698,36 @@ a {
     position: relative;
     top: -45px;
     width: 100%; }
-  /* line 410, app.scss */
+  /* line 400, app.scss */
   .topics-img .img {
     margin-bottom: 15px;
     display: block; }
 
-/* line 415, app.scss */
+/* line 405, app.scss */
 .topics-cards-tags {
   clear: both;
   line-height: 125%;
   list-style: none;
   margin: 0;
   position: relative; }
-  /* line 421, app.scss */
+  /* line 411, app.scss */
   .topics-cards-tags li {
     display: inline;
     font-size: 11px;
     text-transform: none;
     white-space: normal; }
-    /* line 426, app.scss */
+    /* line 416, app.scss */
     .topics-cards-tags li a {
       white-space: nowrap; }
-      /* line 428, app.scss */
+      /* line 418, app.scss */
       .topics-cards-tags li a:after {
         content: ","; }
-    /* line 433, app.scss */
+    /* line 423, app.scss */
     .topics-cards-tags li:last-child a:after {
       content: ""; }
 
 /* INVISIBLE INPUTS STYLES SO THEY LOOK LIKE TITLES */
-/* line 441, app.scss */
+/* line 431, app.scss */
 .sp-inp {
   border: none;
   background: transparent;
@@ -7741,61 +7737,61 @@ a {
   padding: 15px 0;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
-  /* line 449, app.scss */
+  /* line 439, app.scss */
   .sp-inp:hover {
     text-indent: 15px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset; }
-  /* line 455, app.scss */
+  /* line 445, app.scss */
   .sp-inp:focus {
     outline: none; }
 
 /* TRANSPARENT BUTTON */
-/* line 461, app.scss */
+/* line 451, app.scss */
 .btn-trans {
   background-color: transparent;
-  color: #428bca;
-  border-color: #428bca; }
-  /* line 465, app.scss */
+  color: #5eb8d0;
+  border-color: #5eb8d0; }
+  /* line 455, app.scss */
   .btn-trans:hover {
     border-color: #222222;
     color: #222222; }
 
 /* BIG BUTTON */
-/* line 472, app.scss */
+/* line 462, app.scss */
 .big-butt {
   padding-top: 18px;
   padding-bottom: 18px;
   line-height: 26px; }
-  /* line 476, app.scss */
+  /* line 466, app.scss */
   .big-butt .glyphicon {
     font-size: 14px; }
 
 /* LOG OUT */
 @-webkit-keyframes rotating {
-  /* line 483, app.scss */
+  /* line 473, app.scss */
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 486, app.scss */
+  /* line 476, app.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 @keyframes rotating {
-  /* line 483, app.scss */
+  /* line 473, app.scss */
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 486, app.scss */
+  /* line 476, app.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-/* line 490, app.scss */
+/* line 480, app.scss */
 .logging-out-icon {
   -webkit-transform-origin: 50% !important;
   -ms-transform-origin: 50% !important;
@@ -7803,38 +7799,38 @@ a {
   -webkit-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
   display: inline-block !important; }
-  /* line 494, app.scss */
+  /* line 484, app.scss */
   .logging-out-icon.ng-hide {
     display: none !important; }
 
 /* READING SIZE */
-/* line 500, app.scss */
+/* line 490, app.scss */
 .reading-size {
   font-size: 150%;
   line-height: 180%; }
-  /* line 503, app.scss */
+  /* line 493, app.scss */
   .reading-size h1, .reading-size h2, .reading-size h3, .reading-size h4, .reading-size h5, .reading-size h6 {
     font-size: 200%;
     line-height: 180%; }
-  /* line 507, app.scss */
+  /* line 497, app.scss */
   .reading-size p {
     margin: 0 0 2em;
     font-family: Georgia, "Times New Roman", Times, serif; }
-  /* line 512, app.scss */
+  /* line 502, app.scss */
   .reading-size.sans p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* BLOCK LINK */
-/* line 519, app.scss */
+/* line 509, app.scss */
 .block-link {
   display: block;
   position: relative; }
 
 /* NEWS AND ARTICLES TAGS */
-/* line 526, app.scss */
+/* line 516, app.scss */
 .m-tags .header {
   display: inline-block; }
-/* line 529, app.scss */
+/* line 519, app.scss */
 .m-tags .label {
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
@@ -7844,7 +7840,7 @@ a {
   font-weight: normal;
   margin: 0;
   padding: 0; }
-  /* line 536, app.scss */
+  /* line 526, app.scss */
   .m-tags .label a {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 10px;
@@ -7852,34 +7848,34 @@ a {
     color: #777777;
     display: block;
     border-radius: 5px; }
-  /* line 545, app.scss */
+  /* line 535, app.scss */
   .m-tags .label:hover a {
     text-decoration: none;
-    background-color: rgba(66, 139, 202, 0.1);
-    color: #428bca; }
+    background-color: rgba(94, 184, 208, 0.1);
+    color: #5eb8d0; }
 
 /* PAGE TRANSITIONS */
-/* line 555, app.scss */
+/* line 545, app.scss */
 .fade-content {
   opacity: 1; }
 
-/* line 561, app.scss */
+/* line 551, app.scss */
 .fade-content.ng-enter {
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
   opacity: 0; }
 
-/* line 565, app.scss */
+/* line 555, app.scss */
 .fade-content.ng-enter-active {
   -webkit-transition: opacity 0s ease;
   transition: opacity 0s ease;
   opacity: 1; }
 
-/* line 569, app.scss */
+/* line 559, app.scss */
 .fade-content.ng-leave {
   opacity: 1; }
 
-/* line 572, app.scss */
+/* line 562, app.scss */
 .fade-content.ng-leave-active {
   opacity: 0; }
 
@@ -7887,54 +7883,54 @@ a {
   /* rules for mobile horizontal (480 > 768)  */ }
 @media (min-width: 768px) {
   /* rules for tablet (768 > 992) */
-  /* line 581, app.scss */
+  /* line 571, app.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
     margin-top: 18px; } }
 @media (min-width: 992px) {
   /* rules for desktop (992 > 1200) */
-  /* line 589, app.scss */
+  /* line 579, app.scss */
   .h-job-form {
     border-left: 1px solid #CCC;
     padding-left: 15px; }
 
-  /* line 594, app.scss */
+  /* line 584, app.scss */
   .navbar-static-top .navbar-brand {
     float: left;
     padding: 0;
     margin-top: 12px; }
 
-  /* line 600, app.scss */
+  /* line 590, app.scss */
   .main-navigation {
     margin-top: 17px; }
-    /* line 602, app.scss */
+    /* line 592, app.scss */
     .main-navigation li {
       font-size: 0.9em;
       font-weight: bold;
       letter-spacing: 1px; }
-      /* line 607, app.scss */
+      /* line 597, app.scss */
       .main-navigation li.open > a.dropdown-toggle, .main-navigation li:hover > a.dropdown-toggle {
         background-color: #eeeeee;
         color: #333333;
         border-radius: 5px 5px 0 0;
         -webkit-transition: none;
         transition: none; }
-      /* line 615, app.scss */
+      /* line 605, app.scss */
       .main-navigation li.dropdown:hover, .main-navigation li.dropdown.open, .main-navigation li.dropdown:focus {
         background-color: white;
         color: #333333;
         border-radius: 5px 5px 0 0; }
-        /* line 619, app.scss */
+        /* line 609, app.scss */
         .main-navigation li.dropdown:hover > ul.dropdown-menu, .main-navigation li.dropdown.open > ul.dropdown-menu, .main-navigation li.dropdown:focus > ul.dropdown-menu {
           margin-top: -22px;
           display: block; }
-      /* line 625, app.scss */
+      /* line 615, app.scss */
       .main-navigation li > a {
         -webkit-transition: none;
         transition: none;
         padding-top: 15px;
         padding-bottom: 15px; }
-        /* line 629, app.scss */
+        /* line 619, app.scss */
         .main-navigation li > a.btn {
           border: none;
           margin-left: 1em;
@@ -7944,37 +7940,37 @@ a {
           padding-top: 8px;
           padding-bottom: 8px;
           margin-top: 8px; }
-          /* line 638, app.scss */
+          /* line 628, app.scss */
           .main-navigation li > a.btn:hover, .main-navigation li > a.btn:focus {
             outline: none;
-            background-color: #357ebd; }
-          /* line 642, app.scss */
+            background-color: #4aafca; }
+          /* line 632, app.scss */
           .main-navigation li > a.btn.btn-info {
             background-color: #777777;
             color: #333333; }
-            /* line 645, app.scss */
+            /* line 635, app.scss */
             .main-navigation li > a.btn.btn-info:hover, .main-navigation li > a.btn.btn-info:focus {
               outline: none;
               background-color: #6a6a6a; }
-        /* line 651, app.scss */
+        /* line 641, app.scss */
         .main-navigation li > a:hover {
           background-color: transparent; }
 
-  /* line 657, app.scss */
+  /* line 647, app.scss */
   .dropdown-menu {
     background-color: #eeeeee;
     border: none;
     -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); }
-    /* line 661, app.scss */
+    /* line 651, app.scss */
     .dropdown-menu li {
       font-size: 1em;
       font-weight: initial; }
-      /* line 664, app.scss */
+      /* line 654, app.scss */
       .dropdown-menu li.divider {
         background-color: #d5d5d5; }
 
-  /* line 671, app.scss */
+  /* line 661, app.scss */
   .menu-list li a {
     display: block;
     padding-top: 5px;
@@ -7983,21 +7979,21 @@ a {
     text-transform: initial;
     padding-left: 8px;
     margin-left: -8px; }
-    /* line 679, app.scss */
+    /* line 669, app.scss */
     .menu-list li a:hover {
       color: #222222;
       background-color: #eeeeee;
       text-decoration: none; }
 
-  /* line 687, app.scss */
+  /* line 677, app.scss */
   .br-tint {
     color: #555555 !important; }
 
-  /* line 692, app.scss */
+  /* line 682, app.scss */
   .yamm-content blockquote p {
     text-transform: initial; }
 
-  /* line 697, app.scss */
+  /* line 687, app.scss */
   .form-background {
     background: #FFF;
     margin: 0;
@@ -8005,12 +8001,12 @@ a {
     border-left: 1px solid #DDD;
     border-bottom: 1px solid #DDD; }
 
-  /* line 704, app.scss */
+  /* line 694, app.scss */
   legend {
-    color: #428bca;
-    border-bottom: 1px solid rgba(66, 139, 202, 0.3); }
+    color: #5eb8d0;
+    border-bottom: 1px solid rgba(94, 184, 208, 0.3); }
 
-  /* line 709, app.scss */
+  /* line 699, app.scss */
   .testimonial .quote {
     font-family: "museo-slab";
     font-style: italic;
@@ -8020,13 +8016,13 @@ a {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     text-align: left; }
-    /* line 717, app.scss */
+    /* line 707, app.scss */
     .testimonial .quote:hover {
       opacity: 1; }
-      /* line 719, app.scss */
+      /* line 709, app.scss */
       .testimonial .quote:hover:before {
         opacity: 1; }
-    /* line 723, app.scss */
+    /* line 713, app.scss */
     .testimonial .quote:before {
       content: "\201C";
       display: block;

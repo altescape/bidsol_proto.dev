@@ -259,27 +259,12 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 }
 
 /* SERVICE AND JOBS SECTION ON HOME PAGE */
+.h-section-wrapper {
+  background-image: linear-gradient(to bottom,$brand-primary 0,adjust-hue($brand-primary, 15%) 100%);
+}
 .h-section-bg {
-  background-position: fixed;
-  background-image: linear-gradient(to bottom,adjust-hue($brand-primary, 15%) 0,$brand-primary 100%);
-  background-size: cover;
   min-height: initial !important;
   position: relative;
-  &:after {
-    background: url(/img/badge.png) top center repeat-x fixed;
-    content: "";
-    left: 0;
-    right: 0;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-  }
-  &.h-section-1 {
-  }
-  &.h-section-2 {
-  }
   .h-section {
     position: relative;
     z-index: 2;
@@ -327,15 +312,15 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
   }
 }
 .ht-nav {
+  background-color: transparent;
   .ht-nav-link-wrap {
     display: block;
     height: 70px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: $brand-info;
-    transition: all .2s ease-in-out;
+    color: $body-bg;
+    transition: opacity .2s ease-in-out;
     font-size: 20px;
     padding-top: 10px;
     opacity: 0.5;
@@ -362,9 +347,14 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
         transform: rotateX(0deg);
         transform: rotateY(0deg);
       }
+      &:hover {
+        opacity: 1;
+        color: darken($brand-primary, 8%);
+      }
     }
     &:hover {
       text-decoration: none;
+      opacity: .8;
     }
   }
 }
