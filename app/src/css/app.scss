@@ -522,12 +522,13 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 }
 .fade-content.ng-enter,
 .fade-content.ng-leave {
-  transition: all .2s ease;
 }
 .fade-content.ng-enter {
+  transition: opacity 1s ease;
   opacity: 0;
 }
 .fade-content.ng-enter-active {
+  transition: opacity 0s ease;
   opacity: 1;
 }
 .fade-content.ng-leave {

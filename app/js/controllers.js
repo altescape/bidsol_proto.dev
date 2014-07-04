@@ -57,15 +57,15 @@ angular.module('myApp.controllers', [])
         localStorageService.set('signin', signin);
         if (signin.type === 'Candidate') {
           $('#signInModal').modal('hide');
-          $location.url('/news');
+          $location.url('/account');
         }
         if (signin.type === 'Client') {
           $('#signInModal').modal('hide');
-          $location.url('/testimonials');
+          $location.url('/account');
         }
         if (signin.type === 'Partner') {
           $('#signInModal').modal('hide');
-          $location.url('/home');
+          $location.url('/account');
         }
       };
     }])
@@ -125,7 +125,7 @@ angular.module('myApp.controllers', [])
           type    : 'partner',
           company : 'Strategic Proposals',
           image   : ''
-        },
+        }
 
       ];
 
@@ -159,5 +159,4 @@ angular.module('myApp.controllers', [])
 
     }])
     .controller('MyAccountCtrl', ['$scope', '$animate', function ($scope, $animate) {
-      $animate.enabled(false);
     }]);

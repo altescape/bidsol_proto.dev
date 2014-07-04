@@ -1,36 +1,38 @@
-<section class="main-content section-bg-0 padded-section pb-80 pt-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="text-center">Testimonials</h1>
-                <p class="lead text-center">Supporting growth and helping you achieve the business success you crave. As the market leader
-                    we attract top professionals from across the bid and proposal industry</p>
-                <ul class="list-inline text-center">
-                    <li>View testimonials by: </li>
-                    <li><a ng-model="view.type" ng-click="view.type = 'candidate'; state1 = 'active'; state2 = ''; state3 = ''" ng-class="state1" class="btn btn-primary">Candidates</a></li>
-                    <li><a ng-model="view.type" ng-click="view.type = 'client'; state2 = 'active'; state1 = ''; state3 = ''" ng-class="state2" class="btn btn-primary">Clients</a></li>
-                    <li><a ng-model="view.type" ng-click="view.type = 'partner'; state3 = 'active'; state1 = ''; state2 = ''" ng-class="state3" class="btn btn-primary">Partners</a></li>
-                </ul>
+<div ng-controller="TestimonialsCtrl">
+    <section class="main-content section-bg-0 padded-section pb-80 pt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center">Testimonials</h1>
+                    <p class="lead text-center">Supporting growth and helping you achieve the business success you crave. As the market leader
+                        we attract top professionals from across the bid and proposal industry</p>
+                    <ul class="list-inline text-center">
+                        <li>View testimonials by: </li>
+                        <li><a ng-model="view.type" ng-click="view.type = 'candidate'; state1 = 'active'; state2 = ''; state3 = ''" ng-class="state1" class="btn btn-primary">Candidates</a></li>
+                        <li><a ng-model="view.type" ng-click="view.type = 'client'; state2 = 'active'; state1 = ''; state3 = ''" ng-class="state2" class="btn btn-primary">Clients</a></li>
+                        <li><a ng-model="view.type" ng-click="view.type = 'partner'; state3 = 'active'; state1 = ''; state2 = ''" ng-class="state3" class="btn btn-primary">Partners</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="main-content padded-section testimonial {{ testimonial.type }} pb-50" ng-repeat="testimonial in testimonials"
-         ng-class-even="'section-bg-1'" ng-class-odd="'section-bg-2'" ng-show="view.type == testimonial.type">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-8 col-sm-offset-2">
-                <img ng-src="{{ testimonial.image }}" class="mb-30 mt-20">
-                <p class="lead quote">
-                    {{ testimonial.quote }}
-                    <footer>
-                        <p>{{ testimonial.name }} <cite title="Source Title">{{ testimonial.position }} {{ testimonial.company }}</cite></p>
-                        <p><small style="font-size: 10px; opacity: .5">{{ testimonial.type | uppercase }} TESTIMONIAL</small></p>
-                    </footer>
-                </p>
+    <section class="main-content padded-section testimonial {{ testimonial.type }} pb-50" ng-repeat="testimonial in testimonials"
+             ng-class-even="'section-bg-1'" ng-class-odd="'section-bg-2'" ng-show="view.type == testimonial.type">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <img ng-src="{{ testimonial.image }}" class="mb-30 mt-20">
+                    <p class="lead quote">
+                        {{ testimonial.quote }}
+                        <footer>
+                            <p>{{ testimonial.name }} <cite title="Source Title">{{ testimonial.position }} {{ testimonial.company }}</cite></p>
+                            <p><small style="font-size: 10px; opacity: .5">{{ testimonial.type | uppercase }} TESTIMONIAL</small></p>
+                        </footer>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>

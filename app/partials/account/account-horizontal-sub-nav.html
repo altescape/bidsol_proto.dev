@@ -5,32 +5,32 @@
                 <nav role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/#/search-jobs" ng-click="selectedSubTab = 'search-jobs'" ng-class="{'active':selectedSubTab === 'search-jobs'}">Search jobs</a>
+                            <a href="/#/search-jobs" ui-sref="account.search-jobs" ng-click="selectedSubTab = 'search-jobs'" ng-class="{'active':selectedSubTab === 'search-jobs'}">Search jobs</a>
                         </li>
                         <li>
-                            <a href="/#/my/saved-jobs" ng-click="selectedSubTab = 'saved-jobs'" ng-class="{'active':selectedSubTab === 'saved-jobs'}">Saved jobs</a>
+                            <a href="/#/my/saved-jobs" ui-sref="account.saved-jobs" ng-click="selectedSubTab = 'saved-jobs'" ng-class="{'active':selectedSubTab === 'saved-jobs'}">Saved jobs</a>
                         </li>
                         <li>
-                            <a href="/#/my/saved-searches" ng-click="selectedSubTab = 'saved-searches'" ng-class="{'active':selectedSubTab === 'saved-searches'}">Saved searches</a>
+                            <a href="/#/my/saved-searches" ui-sref="account.saved-searches" ng-click="selectedSubTab = 'saved-searches'" ng-class="{'active':selectedSubTab === 'saved-searches'}">Saved searches</a>
                         </li>
                         <li>
-                            <a href="/#/my/timesheets" ng-click="selectedSubTab = 'timesheets'" ng-class="{'active':selectedSubTab === 'timesheets'}">Timesheets</a>
+                            <a href="/#/my/timesheets" ui-sref="account.timesheets" ng-click="selectedSubTab = 'timesheets'" ng-class="{'active':selectedSubTab === 'timesheets'}">Timesheets</a>
                         </li>
                         <li>
-                            <a href="/#/my/job-applications" ng-click="selectedSubTab = 'job-applications'" ng-class="{'active':selectedSubTab === 'job-applications'}">Job applications</a>
+                            <a href="/#/my/job-applications" ui-sref="account.job-applications" ng-click="selectedSubTab = 'job-applications'" ng-class="{'active':selectedSubTab === 'job-applications'}">Job applications</a>
                         </li>
                     </ul>
                 </nav>
                 <nav class="pull-right" role="navigation">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="/#/my/cv" ui-sref="my-cv" ng-click="selectedSubTab = 'my-cv'" ng-class="{'active':selectedSubTab === 'my-cv'}">My CV</a>
+                            <a href="/#/account/my/cv" ui-sref="account.my-cv" ng-click="selectedSubTab = 'my-cv'" ng-class="{'active':selectedSubTab === 'my-cv'}">My CV</a>
                         </li>
                         <li>
-                            <a href="/#/my/details" ui-sref="my-details" ng-click="selectedSubTab = 'my-details'" ng-class="{'active':selectedSubTab === 'my-details'}">My details</a>
+                            <a href="/#/account/my/details" ui-sref="account.my-details" ng-click="selectedSubTab = 'my-details'" ng-class="{'active':selectedSubTab === 'my-details'}">My details</a>
                         </li>
                         <li>
-                            <a href="/#/my/skills" ui-sref="my-skills" ng-click="selectedSubTab = 'my-skills'" ng-class="{'active':selectedSubTab === 'my-skills'}">My skills</a>
+                            <a href="/#/account/my/skills" ui-sref="account.my-skills" ng-click="selectedSubTab = 'my-skills'" ng-class="{'active':selectedSubTab === 'my-skills'}">My skills</a>
                         </li>
                     </ul>
                 </nav>

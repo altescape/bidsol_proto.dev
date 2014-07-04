@@ -7749,25 +7749,23 @@ a {
 .fade-content {
   opacity: 1; }
 
-/* line 524, app.scss */
-.fade-content.ng-enter,
-.fade-content.ng-leave {
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease; }
-
-/* line 527, app.scss */
+/* line 526, app.scss */
 .fade-content.ng-enter {
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
   opacity: 0; }
 
 /* line 530, app.scss */
 .fade-content.ng-enter-active {
+  -webkit-transition: opacity 0s ease;
+  transition: opacity 0s ease;
   opacity: 1; }
 
-/* line 533, app.scss */
+/* line 534, app.scss */
 .fade-content.ng-leave {
   opacity: 1; }
 
-/* line 536, app.scss */
+/* line 537, app.scss */
 .fade-content.ng-leave-active {
   opacity: 0; }
 
@@ -7775,54 +7773,54 @@ a {
   /* rules for mobile horizontal (480 > 768)  */ }
 @media (min-width: 768px) {
   /* rules for tablet (768 > 992) */
-  /* line 545, app.scss */
+  /* line 546, app.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
     margin-top: 18px; } }
 @media (min-width: 992px) {
   /* rules for desktop (992 > 1200) */
-  /* line 553, app.scss */
+  /* line 554, app.scss */
   .h-job-form {
     border-left: 1px solid #CCC;
     padding-left: 15px; }
 
-  /* line 558, app.scss */
+  /* line 559, app.scss */
   .navbar-static-top .navbar-brand {
     float: left;
     padding: 0;
     margin-top: 12px; }
 
-  /* line 564, app.scss */
+  /* line 565, app.scss */
   .main-navigation {
     margin-top: 17px; }
-    /* line 566, app.scss */
+    /* line 567, app.scss */
     .main-navigation li {
       font-size: 0.9em;
       font-weight: bold;
       letter-spacing: 1px; }
-      /* line 571, app.scss */
+      /* line 572, app.scss */
       .main-navigation li.open > a.dropdown-toggle, .main-navigation li:hover > a.dropdown-toggle {
         background-color: #efeddf;
         color: #636365;
         border-radius: 5px 5px 0 0;
         -webkit-transition: none;
         transition: none; }
-      /* line 579, app.scss */
+      /* line 580, app.scss */
       .main-navigation li.dropdown:hover, .main-navigation li.dropdown.open, .main-navigation li.dropdown:focus {
         background-color: white;
         color: #636365;
         border-radius: 5px 5px 0 0; }
-        /* line 583, app.scss */
+        /* line 584, app.scss */
         .main-navigation li.dropdown:hover > ul.dropdown-menu, .main-navigation li.dropdown.open > ul.dropdown-menu, .main-navigation li.dropdown:focus > ul.dropdown-menu {
           margin-top: -1px;
           display: block; }
-      /* line 589, app.scss */
+      /* line 590, app.scss */
       .main-navigation li > a {
         -webkit-transition: none;
         transition: none;
         padding-top: 15px;
         padding-bottom: 15px; }
-        /* line 593, app.scss */
+        /* line 594, app.scss */
         .main-navigation li > a.btn {
           border: none;
           margin-left: 1em;
@@ -7832,37 +7830,37 @@ a {
           padding-top: 8px;
           padding-bottom: 8px;
           margin-top: 8px; }
-          /* line 602, app.scss */
+          /* line 603, app.scss */
           .main-navigation li > a.btn:hover, .main-navigation li > a.btn:focus {
             outline: none;
             background-color: #237986; }
-          /* line 606, app.scss */
+          /* line 607, app.scss */
           .main-navigation li > a.btn.btn-info {
             background-color: #bfbeb2;
             color: #636365; }
-            /* line 609, app.scss */
+            /* line 610, app.scss */
             .main-navigation li > a.btn.btn-info:hover, .main-navigation li > a.btn.btn-info:focus {
               outline: none;
               background-color: #b3b2a4; }
-        /* line 615, app.scss */
+        /* line 616, app.scss */
         .main-navigation li > a:hover {
           background-color: transparent; }
 
-  /* line 621, app.scss */
+  /* line 622, app.scss */
   .dropdown-menu {
     background-color: #efeddf;
     border: none;
     -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); }
-    /* line 625, app.scss */
+    /* line 626, app.scss */
     .dropdown-menu li {
       font-size: 1em;
       font-weight: initial; }
-      /* line 628, app.scss */
+      /* line 629, app.scss */
       .dropdown-menu li.divider {
         background-color: #dedabd; }
 
-  /* line 635, app.scss */
+  /* line 636, app.scss */
   .menu-list li a {
     display: block;
     padding-top: 5px;
@@ -7871,21 +7869,21 @@ a {
     text-transform: initial;
     padding-left: 8px;
     margin-left: -8px; }
-    /* line 643, app.scss */
+    /* line 644, app.scss */
     .menu-list li a:hover {
       color: #3f4944;
       background-color: #efeddf;
       text-decoration: none; }
 
-  /* line 651, app.scss */
+  /* line 652, app.scss */
   .br-tint {
     color: #928c8e !important; }
 
-  /* line 656, app.scss */
+  /* line 657, app.scss */
   .yamm-content blockquote p {
     text-transform: initial; }
 
-  /* line 661, app.scss */
+  /* line 662, app.scss */
   .form-background {
     background: #FFF;
     margin: 0;
@@ -7893,12 +7891,12 @@ a {
     border-left: 1px solid #DDD;
     border-bottom: 1px solid #DDD; }
 
-  /* line 668, app.scss */
+  /* line 669, app.scss */
   legend {
     color: #288b9a;
     border-bottom: 1px solid rgba(40, 139, 154, 0.3); }
 
-  /* line 673, app.scss */
+  /* line 674, app.scss */
   .testimonial .quote {
     font-family: "museo-slab";
     font-style: italic;
@@ -7908,13 +7906,13 @@ a {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     text-align: left; }
-    /* line 681, app.scss */
+    /* line 682, app.scss */
     .testimonial .quote:hover {
       opacity: 1; }
-      /* line 683, app.scss */
+      /* line 684, app.scss */
       .testimonial .quote:hover:before {
         opacity: 1; }
-    /* line 687, app.scss */
+    /* line 688, app.scss */
     .testimonial .quote:before {
       content: "\201C";
       display: block;
