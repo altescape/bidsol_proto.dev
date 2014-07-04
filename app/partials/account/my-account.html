@@ -1,14 +1,96 @@
 <div ng-controller="MyAccountCtrl">
 
-    <account-horizontal-sub-nav></account-horizontal-sub-nav>
+  <account-horizontal-sub-nav></account-horizontal-sub-nav>
 
-    <section class="main-content section-bg-1 padded-section pt-0 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div ui-view="accountView" class="fade-content"></div>
-                </div>
-            </div>
+  <section class="main-content section-bg-0 padded-section pt-0 pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div ui-view="accountView" autoscroll="false" class="fade-content"></div>
+
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content section-bg-2 padded-section pt-45">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h1>Dashboard</h1>
+
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget nibh neque. Mauris semper
+            elementum
+            velit id ultricies. Sed vel felis enim. Etiam massa purus, volutpat at imperdiet a, volutpat nec lacus. Sed
+            id
+            dictum arcu. Quisque consequat rhoncus laoreet. Nulla pellentesque facilisis nunc.</p>
+
+        </div>
+        <div class="col-md-3 col-md-offset-1 text-center">
+          <div class="panel h-panel panel-yellow pt-30 p-lr-10">
+            <span class="glyphicon glyphicon-edit icon"></span>
+
+            <h2><a ui-sref="account.search-jobs" ng-click="selectedSubTab = 'search-jobs'">Get in touch</a></h2>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <p><a ui-sref="account.search-jobs" class="btn btn-primary" ng-click="selectedSubTab = 'search-jobs'">Contact us here</a></p>
+
+
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="panel h-panel panel-pink pt-30 p-lr-10">
+            <span class="glyphicon glyphicon-search icon"></span>
+
+            <h2><a ui-sref="account.search-jobs" ng-click="selectedSubTab = 'search-jobs'">Search jobs</a></h2>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <p><a ui-sref="account.search-jobs" class="btn btn-primary" ng-click="selectedSubTab = 'search-jobs'">View all jobs</a></p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAVED JOBS AND SEARCHES SECTION -->
+
+  <section class="main-content section-bg-1 padded-section pt-45">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Save your searches, <br>save your jobs.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget nibh neque. Mauris semper
+            elementum velit id ultricies. Sed vel felis enim.</p>
+        </div>
+        <div class="col-md-4 col-sm-offset-1 text-center">
+          <div class="panel h-panel panel-green pt-30 p-lr-10">
+
+            <span class="glyphicon glyphicon-floppy-disk icon"></span>
+
+            <h2><a ui-sref="account.saved-searches" ng-click="selectedSubTab = 'saved-searches'"> Saved Searches</a></h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p><a ui-sref="account.saved-searches" class="btn btn-primary" ng-click="selectedSubTab = 'saved-searches'">Your saved searches</a></p>
+
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="panel h-panel panel-blue pt-30 p-lr-10">
+
+            <span class="glyphicon glyphicon-floppy-disk icon"></span>
+
+            <h2><a ui-sref="account.saved-jobs" ng-click="selectedSubTab = 'saved-jobs'"> Saved Jobs</a></h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p><a ui-sref="account.saved-jobs" class="btn btn-primary" ng-click="selectedSubTab = 'saved-jobs'">Your saved searches</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

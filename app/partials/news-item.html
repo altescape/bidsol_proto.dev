@@ -1,30 +1,6 @@
 <div ng-controller="NewsCtrl">
 
-    <section class="main-content section-bg-2 padded-section pt-70 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <input type="text" placeholder="Search our news..." class="sp-inp">
-                    <ul class="list-unstyled lead m-tags">
-                        <li class="label"><a href="#">Government & Non-Profits</a></li>
-                        <li class="label"><a href="#">Cross-Media</a></li>
-                        <li class="label"><a href="#">Influence Consideration</a></li>
-                        <li class="label"><a href="#">Government legislation</a></li>
-                        <li class="label"><a href="#">Law</a></li>
-                        <li class="label"><a href="#">New Bids</a></li>
-                        <li class="label"><a href="#">Government & Non-Profits</a></li>
-                        <li class="label"><a href="#">Bid Design</a></li>
-                        <li class="label"><a href="#">Influence Consideration</a></li>
-                        <li class="label"><a href="#">Cross-Media</a></li>
-                        <li class="label"><a href="#">Bid Design</a></li>
-                        <li class="label"><a href="#">Law</a></li>
-                        <li class="label"><a href="#">Government legislation</a></li>
-                        <li class="label"><a href="#">New Bids</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- FEATURED NEWS PREVIEW -->
 
@@ -99,67 +75,5 @@
         </div>
     </section>
 
-    <!-- TOP 4 NEWS -->
 
-    <section class="main-content section-bg-1 padded-section pt-80 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3" ng-repeat="news in news_collection">
-                    <div class="topics-cards panel">
-                        <small class="type">NEWS</small>
-                        <h4><a href="/#/news/item">{{ news.title }}</a></h4>
-
-                        <p class="desc">{{ news.desc }}</p>
-
-                        <div class="topics-img">
-                            <a href="/#/news/item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
-                            <ul class="topics-cards-tags list-unstyled">
-                                <li ng-repeat="tag in news.tags">
-                                    <a href="#">{{ tag }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TOP 4 NEWS -->
-
-    <section class="main-content section-bg-1 padded-section pt-0 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3" ng-repeat="news in news_collection">
-                    <div class="topics-cards panel">
-                        <small class="type">NEWS</small>
-                        <h4><a href="/#/news/item">{{ news.title }}</a></h4>
-
-                        <p class="desc">{{ news.desc }}</p>
-
-                        <div class="topics-img">
-                            <a href="/#/news/item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
-                            <ul class="topics-cards-tags list-unstyled">
-                                <li ng-repeat="tag in news.tags">
-                                    <a href="#">{{ tag }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PAGINATION -->
-
-    <section class="main-content section-bg-1 padded-section pt-0 pb-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></pagination>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>

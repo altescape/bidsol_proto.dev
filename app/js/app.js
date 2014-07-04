@@ -28,7 +28,7 @@ angular.module('myApp', [
 //      $routeProvider.when('/my/skills', {templateUrl: 'partials/account/my-skills.html', controller: 'MyAccountCtrl'});
 //      $routeProvider.otherwise({redirectTo: '/home'});
 
-//      $urlRouterProvider.otherwise("/partials/account/my-skills");
+      $urlRouterProvider.otherwise("/partials/account/my-skills");
 
       $stateProvider
           .state('home', {
@@ -84,12 +84,14 @@ angular.module('myApp', [
             url: "/news",
             views : {
               "mainView" : {templateUrl: "partials/news.html"}
-            }
+            },
+            disableAutoScrolling: true
           })
-          .state('news-item', {
-            url: "/news/item",
+          .state('news.item', {
+            url: "/item",
             views : {
-              "mainView" : {templateUrl: "partials/news-item.html"}
+              "mainView" : {templateUrl: "partials/news.html"},
+              "newsView" : {templateUrl: "partials/news-item.html"}
             }
           })
           .state('create-account', {
@@ -102,7 +104,8 @@ angular.module('myApp', [
           .state('account', {
             url: "/account",
             views : {
-              "mainView" : {templateUrl: "partials/account/my-account.html"}
+              "mainView" : {templateUrl: "partials/account/my-account.html"},
+              "accountView" : {templateUrl: "partials/account/search-jobs.html"}
             },
             controller : 'MyAccountCtrl'
           })

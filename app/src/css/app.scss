@@ -1,6 +1,13 @@
 @import "../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap";
 @import "grid";
 
+body { padding-top: 90px; }
+
+.navbar-static-top {
+  margin: 0;
+  min-height: 90px;
+}
+
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none;
 }
@@ -130,9 +137,13 @@ $section-bg-2: #e4e3d5;
   .nav{
     font-weight: bold;
     .active {
-      background-color: $section-bg-1;
+      background-color: $body-bg;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-bottom: none;
+      &:hover {
+        background-color: $body-bg;
+        color: darken($brand-primary, 15%);
+      }
     }
     a {
       border-radius: 5px 5px 0 0;
@@ -276,6 +287,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     height: 290px;
     border-radius: 10px 10px 0 0;
     box-shadow: 00 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
   }
 }
 .services.active .h-section {border-radius: 10px 10px 30px 0;}
@@ -283,6 +295,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 .banner-services-links {
   li {
     line-height: 20px;
+    padding: 0;
   }
   .btn-info {
     background-color: white;
@@ -492,7 +505,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     line-height: 180%;
   }
   p {
-    margin: 2em 0;
+    margin: 0 0 2em;
     font-family: $font-family-serif;
   }
   &.sans {
@@ -604,7 +617,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
           color: $gray-dark;
           border-radius: 5px 5px 0 0;
           > ul.dropdown-menu {
-            margin-top: -1px;
+            margin-top: -22px;
             display: block;
           }
         }
