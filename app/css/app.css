@@ -7551,18 +7551,18 @@ a {
     z-index: 2;
     padding-top: 15px;
     height: 290px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0 0 0 0;
     -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden; }
 
 /* line 278, app.scss */
 .services.active .h-section {
-  border-radius: 10px 10px 30px 0; }
+  border-radius: 0 0 30px 0; }
 
 /* line 279, app.scss */
 .jobs.active .h-section {
-  border-radius: 10px 10px 0 30px; }
+  border-radius: 0 0 0 30px; }
 
 /* line 281, app.scss */
 .banner-services-links li {

@@ -5,8 +5,6 @@
 angular.module('myApp.controllers', [])
     .controller('MainNavCtrl', ['$scope', '$routeParams', '$location', '$timeout', 'localStorageService', '$animate', function ($scope, $routeParams, $location, $timeout, localStorageService, $animate) {
 
-      $animate.enabled(true);
-
       $scope.loggedin = false;
       $scope.loggingout = false;
 
@@ -57,15 +55,12 @@ angular.module('myApp.controllers', [])
         localStorageService.set('signin', signin);
         if (signin.type === 'Candidate') {
           $('#signInModal').modal('hide');
-          $location.url('/account');
         }
         if (signin.type === 'Client') {
           $('#signInModal').modal('hide');
-          $location.url('/account');
         }
         if (signin.type === 'Partner') {
           $('#signInModal').modal('hide');
-          $location.url('/account');
         }
       };
     }])

@@ -270,13 +270,13 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     z-index: 2;
     padding-top: 15px;
     height: 290px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0 0 0 0;
     box-shadow: 00 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
   }
 }
-.services.active .h-section {border-radius: 10px 10px 30px 0;}
-.jobs.active .h-section {border-radius: 10px 10px 0 30px;}
+.services.active .h-section {border-radius: 0 0 30px 0;}
+.jobs.active .h-section {border-radius: 0 0 0 30px;}
 .banner-services-links {
   li {
     line-height: 20px;

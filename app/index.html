@@ -38,6 +38,59 @@
 
 <main-footer></main-footer>
 
+<!-- SIGN IN -->
+<div ng-controller="MainNavCtrl" class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Sign in</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="select1" class="col-sm-2 control-label">Account</label>
+            <div class="col-sm-10">
+              <select ng-model="signin.type" id="select1" class="form-control" required>
+                <option selected disabled value="init">Select type</option>
+                <option>Candidate</option>
+                <option>Client</option>
+                <option>Partner</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input ng-model="signin.email" type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+              <input ng-model="signin.password" type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input ng-model="signin.rememberme" type="checkbox"> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button ui-sref="account" ng-click="submit(signin); loggedin = true" type="submit" class="btn btn-default">Sign in</button> &nbsp;&nbsp;&nbsp;Don't have an account? <a href="/#/create-account" data-toggle="modal" ng-click="cancel()" data-target="#createAccountModal">Create one now</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap-sass-twbs/assets/javascripts/bootstrap.js"></script>
 
