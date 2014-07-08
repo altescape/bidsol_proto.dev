@@ -14,21 +14,8 @@ angular.module('myApp', [
       'myApp.controllers'
     ]).
     config(['$routeProvider', '$stateProvider', '$urlRouterProvider', function ($routeProvider, $stateProvider, $urlRouterProvider) {
-//      $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
-//      $routeProvider.when('/create-account', {templateUrl: 'partials/create-account.html', controller: 'CreateAccountCtrl'});
-//      $routeProvider.when('/bid-services', {templateUrl: 'partials/bid-services.html', controller: 'BidServicesCtrl'});
-//      $routeProvider.when('/bid-services/bid-recruit', {templateUrl: 'partials/bid-services/bidrecruit.html', controller: 'BidRecruitCtrl'});
-//      $routeProvider.when('/testimonials', {templateUrl: 'partials/testimonials.html', controller: 'TestimonialsCtrl'});
-//      $routeProvider.when('/news', {templateUrl: 'partials/news.html', controller: 'NewsCtrl'});
-//      $routeProvider.when('/news/item', {templateUrl: 'partials/news-item.html', controller: 'NewsCtrl'});
-//      $routeProvider.when('/resources', {templateUrl: 'partials/resources.html', controller: 'ResourcesCtrl'});
-//      $routeProvider.when('/my-account', {templateUrl: 'partials/account/my-account.html', controller: 'MyAccountCtrl'});
-//      $routeProvider.when('/my/cv', {templateUrl: 'partials/account/my-cv.html', controller: 'MyAccountCtrl'});
-//      $routeProvider.when('/my/details', {templateUrl: 'partials/account/my-details.html', controller: 'MyAccountCtrl'});
-//      $routeProvider.when('/my/skills', {templateUrl: 'partials/account/my-skills.html', controller: 'MyAccountCtrl'});
-//      $routeProvider.otherwise({redirectTo: '/home'});
 
-      $urlRouterProvider.otherwise("/partials/account/my-skills");
+      $urlRouterProvider.otherwise("/home");
 
       $stateProvider
           .state('home', {
@@ -41,6 +28,12 @@ angular.module('myApp', [
             url: "/bid-services",
             views : {
               "mainView" : {templateUrl: "partials/bid-services.html"}
+            }
+          })
+          .state('overview', {
+            url: "/bid-services/overview",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/overview.html"}
             }
           })
           .state('bidrecruit', {
@@ -71,6 +64,12 @@ angular.module('myApp', [
             url: "/bid-services/biddesign",
             views : {
               "mainView" : {templateUrl: "partials/bid-services/biddesign.html"}
+            }
+          })
+          .state('detail', {
+            url: "/bid-services/detail",
+            views : {
+              "mainView" : {templateUrl: "partials/bid-services/detail.html"}
             }
           })
           .state('testimonials', {

@@ -51,10 +51,27 @@ angular.module('myApp.directives', []).
         templateUrl: "partials/global/bid-services-menu.html"
       }
     }).
+    directive('requestCallback', function () {
+      return {
+        restrict   : 'E',
+        templateUrl: "partials/forms/request-callback.html"
+      }
+    }).
     directive('dummyContentInfoPage', function () {
       return {
         restrict   : 'E',
         templateUrl: "partials/dummy/dummy-content-info-page.html",
+        scope: {
+          title: '@',
+          tint: '@',
+          color: '@'
+        }
+      }
+    }).
+    directive('dummyContentOverviewPage', function () {
+      return {
+        restrict   : 'E',
+        templateUrl: "partials/dummy/dummy-content-overview-page.html",
         scope: {
           title: '@',
           tint: '@',

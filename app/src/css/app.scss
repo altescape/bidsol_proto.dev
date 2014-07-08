@@ -65,6 +65,14 @@ $class-slug: pt;
   color: $brand-primary !important;
 }
 
+.op-5 {
+  opacity: .5;
+}
+
+.op-7 {
+  opacity: .7;
+}
+
 h1, h2, h3, h4, h5 ,h6 {
   color: $gray-darker; a {color: $gray-darker; &:hover {color: $gray-darker;} }
 }
@@ -93,6 +101,7 @@ a {
 /* Section colours */
 $section-bg-1: #efeddf;
 $section-bg-2: #e4e3d5;
+$section-bg-3: #69ACBD;
 
 .section-bg-0 {
   background-color: $body-bg;
@@ -103,7 +112,9 @@ $section-bg-2: #e4e3d5;
 .section-bg-2 {
   background-color: $section-bg-2;
 }
-
+.section-bg-3 {
+  background-color: $section-bg-3;
+}
 .row-cover {
   overflow: hidden;
   .butted {
@@ -230,6 +241,13 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
       background-color: nth($panel-color, $i);
     }
+    .nav-pills {
+      .active {
+        .br-tint {
+          color: rgba($body-bg, 0.5) !important;
+        }
+      }
+    }
     h1, h2, h3, h4, h5, h6 {color: nth($panel-color, $i)}
   }
 }
@@ -260,7 +278,9 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 
 /* SERVICE AND JOBS SECTION ON HOME PAGE */
 .h-section-wrapper {
-  background-image: linear-gradient(to bottom,$brand-primary 0,adjust-hue($brand-primary, 15%) 100%);
+//  background-image: linear-gradient(to bottom,$brand-primary 0,adjust-hue($brand-primary, 15%) 100%);
+  background-color: $body-bg;
+  color: $body-bg;
 }
 .h-section-bg {
   min-height: initial !important;
@@ -271,9 +291,28 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     padding-top: 15px;
     height: 290px;
     border-radius: 0 0 0 0;
-    box-shadow: 00 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
+//    box-shadow: 00 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    h1 {
+      color: $body-bg;
+    }
+    .btn-info {
+      color: $brand-primary;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
   }
+}
+.h-section.pink {
+  background-color: #D6366B;
+  .btn-info {
+    color: #D6366B;
+    &:hover {
+      color: #D6366B;
+    }
+  }
+  a {color: rgba($body-bg, 0.5)}
 }
 .services.active .h-section {border-radius: 0 0 30px 0;}
 .jobs.active .h-section {border-radius: 0 0 0 30px;}
@@ -283,18 +322,23 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     padding: 0;
   }
   .btn-info {
-    background-color: white;
-    color: $gray-dark;
+    background-color: $brand-primary;
+    color: $body-bg !important;
     font-weight: bold;
-    border: none;
     padding-top: 8px;
     padding-bottom: 7px;
+    border-color: $brand-primary;
+    letter-spacing: 1px;
     &:hover {
-      background-color: $gray-lighter;
+      background-color: rgba($brand-primary, 0.4);
+      .br-tint {
+        color: darken($brand-primary, 15%) !important;
+      }
     }
   }
   .br-tint {
-    color: $brand-primary !important;
+    transition: all .2s linear;
+    color: $section-bg-3 !important;
   }
 }
 .ht-t {
@@ -319,11 +363,11 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     line-height: 30px;
     text-transform: uppercase;
     font-weight: bold;
-    color: $body-bg;
+    color: $brand-primary;
     transition: opacity .2s ease-in-out;
     font-size: 20px;
     padding-top: 10px;
-    opacity: 0.5;
+    opacity: 0.7;
     .glyphicon {
       display: block;
       opacity: .4;
@@ -334,12 +378,12 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
       margin: 0;
     }
     &.active {
-      background-color: $section-bg-2;
+      background-color: $section-bg-3;
       border-radius: 0 0 5px 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      color: $brand-primary;
+//      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       z-index: 9;
       opacity: 1;
+      color: $body-bg;
       .glyphicon {
         opacity: 0.8;
         margin-top: -10px;
@@ -354,7 +398,10 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
     }
     &:hover {
       text-decoration: none;
-      opacity: .8;
+      opacity: 1;
+      .glyphicon {
+        transform: rotateY(360deg);
+      }
     }
   }
 }
@@ -577,7 +624,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
   /* rules for desktop (992 > 1200) */
 
   .h-job-form {
-    border-left: 1px solid #CCC; padding-left: 15px
+    border-left: 1px solid rgba($body-bg, 0.2); padding-left: 15px
   }
 
   .navbar-static-top {

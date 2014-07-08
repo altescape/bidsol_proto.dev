@@ -1,0 +1,104 @@
+<!-- JOBS TAB CONTENT -->
+
+<div class="row">
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="bid-services">Bid Services</a></li>
+            <li class="active"><span class="br-tint">{{ tint }}</span>{{ title }}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="h-section-wrapper pt-0 pb-45">
+    <section class="main-content ht-t ht-t-2 h-section-bg h-section-2  {{ selectedTab }}"
+             ng-show="selectedTab === 'jobs'"
+             ng-class="{'active':selectedTab === 'jobs'}"
+             ng-init="selectedTab = 'jobs'">
+        <div class="h-section pink">
+            <div class="col-md-7">
+                <div class="p-lr-10">
+                    <h1 class="mt-10 mb-20">A foundation for your success</h1>
+
+                    <p class="mt-0 mb-35 lead op-7">Knowing who you are, what skills you have to offer and why you seek a new
+                        challenge enables
+                        our consultants to find you the best opportunity.</p>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p><a ng-click="" class="btn btn-info btn-lg">REGISTER NOW</a></p>
+                        </div>
+                        <div class="col-sm-9">
+                            <p class="mt-15 btn-alt-cta"><a href="#">Search for all jobs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 h-job-form">
+
+                <h1 class="mt-10 mb-20">Job Search</h1>
+
+                <div class="form-group">
+                    <input type="text" class="form-control input-lg" placeholder="ENTER KEYWORD">
+                </div>
+                <div class="form-group">
+                    <select class="form-control input-lg">
+                        <option selected disabled>SELECT TYPE</option>
+                        <option>Job type</option>
+                        <option>Job type description</option>
+                        <option>Job</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-8 text-right">
+                        <p class="mt-15 btn-alt-cta"><a href="#">Advanced search</a></p>
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <button type="submit" class="btn btn-info btn-lg">SEARCH <span
+                              class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<div class="row color-{{ color }}">
+
+    <div class="col-md-5">
+        <h1>What next?</h1>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget nibh neque. Mauris semper
+            elementum velit id ultricies. Sed vel felis enim. Etiam massa purus, volutpat at imperdiet a, volutpat nec lacus. Sed
+            id</p>
+
+    </div>
+    <div class="col-md-3 col-md-offset-1 text-center">
+        <div class="panel h-panel panel-yellow pt-30 p-lr-10 section-bg-2">
+            <span class="glyphicon glyphicon-edit icon"></span>
+
+            <h2><a ui-sref="account.search-jobs" ng-click="selectedSubTab = 'search-jobs'">Get in touch</a></h2>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <p><a ui-sref="account.search-jobs" class="btn btn-primary" ng-click="selectedSubTab = 'search-jobs'">Contact us here</a></p>
+
+
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <div class="panel h-panel panel-pink pt-30 p-lr-10 section-bg-2">
+            <span class="glyphicon glyphicon-search icon"></span>
+
+            <h2><a ui-sref="account.search-jobs" ng-click="selectedSubTab = 'search-jobs'">Search jobs</a></h2>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+            <p><a ui-sref="account.search-jobs" class="btn btn-primary" ng-click="selectedSubTab = 'search-jobs'">View all jobs</a></p>
+
+
+        </div>
+    </div>
+</div>
