@@ -9,12 +9,11 @@ body { padding-top: 90px; }
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none;
+  display: none !important;
 }
 
 .reveal-animation.ng-enter {
-  -webkit-animation: enter_sequence 1s linear; /* Safari/Chrome */
-  animation: enter_sequence 1s linear; /* IE10+ and Future Browsers */
+  animation: enter_sequence 1s linear;
 }
 @-webkit-keyframes enter_sequence {
   from { opacity:0; }

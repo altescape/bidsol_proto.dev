@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-    .controller('MainNavCtrl', ['$scope', '$routeParams', '$location', '$timeout', 'localStorageService', '$animate', function ($scope, $routeParams, $location, $timeout, localStorageService, $animate) {
+    .controller('MainNavCtrl', ['$scope', '$routeParams', '$location', '$timeout', 'localStorageService', function ($scope, $routeParams, $location, $timeout, localStorageService) {
 
       $scope.loggedin = false;
       $scope.loggingout = false;

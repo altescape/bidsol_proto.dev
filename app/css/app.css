@@ -6669,461 +6669,459 @@ body {
 
 /* line 11, app.scss */
 [ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none; }
+  display: none !important; }
 
 /* line 15, app.scss */
 .reveal-animation.ng-enter {
   -webkit-animation: enter_sequence 1s linear;
-  /* Safari/Chrome */
-  animation: enter_sequence 1s linear;
-  /* IE10+ and Future Browsers */ }
+  animation: enter_sequence 1s linear; }
 
 @-webkit-keyframes enter_sequence {
-  /* line 20, app.scss */
+  /* line 19, app.scss */
   from {
     opacity: 0; }
 
-  /* line 21, app.scss */
+  /* line 20, app.scss */
   to {
     opacity: 1; } }
 
 @keyframes enter_sequence {
-  /* line 24, app.scss */
+  /* line 23, app.scss */
   from {
     opacity: 0; }
 
-  /* line 25, app.scss */
+  /* line 24, app.scss */
   to {
     opacity: 1; } }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-0 {
   margin-bottom: 0px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-5 {
   margin-bottom: 5px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-10 {
   margin-bottom: 10px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-15 {
   margin-bottom: 15px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-20 {
   margin-bottom: 20px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-25 {
   margin-bottom: 25px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-30 {
   margin-bottom: 30px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-35 {
   margin-bottom: 35px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-40 {
   margin-bottom: 40px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-45 {
   margin-bottom: 45px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-50 {
   margin-bottom: 50px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-55 {
   margin-bottom: 55px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-60 {
   margin-bottom: 60px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-65 {
   margin-bottom: 65px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-70 {
   margin-bottom: 70px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-75 {
   margin-bottom: 75px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-80 {
   margin-bottom: 80px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-85 {
   margin-bottom: 85px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-90 {
   margin-bottom: 90px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-95 {
   margin-bottom: 95px !important; }
 
-/* line 30, app.scss */
+/* line 29, app.scss */
 .mb-100 {
   margin-bottom: 100px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-0 {
   margin-top: 0px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-5 {
   margin-top: 5px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-10 {
   margin-top: 10px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-15 {
   margin-top: 15px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-20 {
   margin-top: 20px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-25 {
   margin-top: 25px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-30 {
   margin-top: 30px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-35 {
   margin-top: 35px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-40 {
   margin-top: 40px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-45 {
   margin-top: 45px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-50 {
   margin-top: 50px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-55 {
   margin-top: 55px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-60 {
   margin-top: 60px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-65 {
   margin-top: 65px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-70 {
   margin-top: 70px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-75 {
   margin-top: 75px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-80 {
   margin-top: 80px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-85 {
   margin-top: 85px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-90 {
   margin-top: 90px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-95 {
   margin-top: 95px !important; }
 
-/* line 37, app.scss */
+/* line 36, app.scss */
 .mt-100 {
   margin-top: 100px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-0 {
   padding-bottom: 0px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-5 {
   padding-bottom: 5px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-10 {
   padding-bottom: 10px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-15 {
   padding-bottom: 15px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-20 {
   padding-bottom: 20px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-25 {
   padding-bottom: 25px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-30 {
   padding-bottom: 30px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-35 {
   padding-bottom: 35px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-40 {
   padding-bottom: 40px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-45 {
   padding-bottom: 45px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-50 {
   padding-bottom: 50px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-55 {
   padding-bottom: 55px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-60 {
   padding-bottom: 60px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-65 {
   padding-bottom: 65px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-70 {
   padding-bottom: 70px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-75 {
   padding-bottom: 75px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-80 {
   padding-bottom: 80px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-85 {
   padding-bottom: 85px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-90 {
   padding-bottom: 90px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-95 {
   padding-bottom: 95px !important; }
 
-/* line 44, app.scss */
+/* line 43, app.scss */
 .pb-100 {
   padding-bottom: 100px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-0 {
   padding-top: 0px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-5 {
   padding-top: 5px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-10 {
   padding-top: 10px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-15 {
   padding-top: 15px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-20 {
   padding-top: 20px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-25 {
   padding-top: 25px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-30 {
   padding-top: 30px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-35 {
   padding-top: 35px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-40 {
   padding-top: 40px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-45 {
   padding-top: 45px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-50 {
   padding-top: 50px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-55 {
   padding-top: 55px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-60 {
   padding-top: 60px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-65 {
   padding-top: 65px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-70 {
   padding-top: 70px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-75 {
   padding-top: 75px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-80 {
   padding-top: 80px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-85 {
   padding-top: 85px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-90 {
   padding-top: 90px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-95 {
   padding-top: 95px !important; }
 
-/* line 51, app.scss */
+/* line 50, app.scss */
 .pt-100 {
   padding-top: 100px !important; }
 
-/* line 55, app.scss */
+/* line 54, app.scss */
 .p-lr-10 {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 59, app.scss */
+/* line 58, app.scss */
 .p-lr-15 {
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 64, app.scss */
+/* line 63, app.scss */
 .c-bl {
   color: #28899b !important; }
 
-/* line 68, app.scss */
+/* line 67, app.scss */
 .op-5 {
   opacity: .5; }
 
-/* line 72, app.scss */
+/* line 71, app.scss */
 .op-7 {
   opacity: .7; }
 
-/* line 76, app.scss */
+/* line 75, app.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #3f4944; }
-  /* line 77, app.scss */
+  /* line 76, app.scss */
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #3f4944; }
-    /* line 77, app.scss */
+    /* line 76, app.scss */
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
       color: #3f4944; }
 
-/* line 80, app.scss */
+/* line 79, app.scss */
 a {
   -webkit-transition: all .15s linear;
   transition: all .15s linear; }
-  /* line 82, app.scss */
+  /* line 81, app.scss */
   a:hover {
     color: #1e6572; }
 
-/* line 87, app.scss */
+/* line 86, app.scss */
 .padded-section {
   padding: 2em 0; }
 
-/* line 91, app.scss */
+/* line 90, app.scss */
 .required {
   color: #c02942 !important; }
 
-/* line 95, app.scss */
+/* line 94, app.scss */
 .underline {
   text-decoration: underline; }
 
-/* line 99, app.scss */
+/* line 98, app.scss */
 .nav, .pagination, .carousel, .panel-title a, a {
   cursor: pointer; }
 
 /* Section colours */
-/* line 106, app.scss */
+/* line 105, app.scss */
 .section-bg-0 {
   background-color: white; }
 
-/* line 109, app.scss */
+/* line 108, app.scss */
 .section-bg-1 {
   background-color: #efeddf; }
 
-/* line 112, app.scss */
+/* line 111, app.scss */
 .section-bg-2 {
   background-color: #e4e3d5; }
 
-/* line 115, app.scss */
+/* line 114, app.scss */
 .section-bg-3 {
   background-color: #69acbd; }
 
-/* line 118, app.scss */
+/* line 117, app.scss */
 .row-cover {
   overflow: hidden; }
-  /* line 120, app.scss */
+  /* line 119, app.scss */
   .row-cover .butted {
     padding-left: 0; }
 
-/* line 125, app.scss */
+/* line 124, app.scss */
 .type {
   color: #c02942;
   font-weight: bold; }
 
-/* line 130, app.scss */
+/* line 129, app.scss */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0; }
-  /* line 134, app.scss */
+  /* line 133, app.scss */
   .video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -7132,57 +7130,57 @@ a {
     height: 100%; }
 
 /* HORIZONTAL SUB NAV */
-/* line 145, app.scss */
+/* line 144, app.scss */
 .horizontal-sub-nav {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3) inset, 0 0 11px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3) inset, 0 0 11px rgba(0, 0, 0, 0.1) inset;
   padding-top: 3px !important; }
-  /* line 148, app.scss */
+  /* line 147, app.scss */
   .horizontal-sub-nav .nav {
     font-weight: bold; }
-    /* line 150, app.scss */
+    /* line 149, app.scss */
     .horizontal-sub-nav .nav .active {
       background-color: white;
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-bottom: none; }
-      /* line 154, app.scss */
+      /* line 153, app.scss */
       .horizontal-sub-nav .nav .active:hover {
         background-color: white;
         color: #18535e; }
-    /* line 159, app.scss */
+    /* line 158, app.scss */
     .horizontal-sub-nav .nav a {
       border-radius: 5px 5px 0 0;
       border: 1px solid rgba(0, 0, 0, 0);
       border-bottom: none; }
-      /* line 163, app.scss */
+      /* line 162, app.scss */
       .horizontal-sub-nav .nav a:hover {
         background-color: rgba(239, 237, 223, 0.7); }
 
 /* FIVE PANELS ON HOME PAGE */
-/* line 172, app.scss */
+/* line 171, app.scss */
 .h-panel h2 {
   font-weight: bold; }
-  /* line 174, app.scss */
+  /* line 173, app.scss */
   .h-panel h2 a:hover {
     text-decoration: none; }
-/* line 178, app.scss */
+/* line 177, app.scss */
 .h-panel .br-tint {
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
-/* line 179, app.scss */
+/* line 178, app.scss */
 .h-panel .lead {
   font-size: 16px;
   line-height: 26px;
   padding: 20px;
   margin-bottom: 5px; }
-/* line 185, app.scss */
+/* line 184, app.scss */
 .h-panel .btn {
   border: none;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 16px; }
-/* line 192, app.scss */
+/* line 191, app.scss */
 .h-panel .icon {
   background-color: #333;
   padding: 5px;
@@ -7193,394 +7191,394 @@ a {
   line-height: 90px;
   font-size: 45px; }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-pink h2 {
   color: #d6366b; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-pink h2 .br-tint {
     color: rgba(214, 54, 107, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-pink h2 a {
     color: #d6366b; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-pink h2 a:hover {
       color: #9f204a; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-pink h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-pink .btn {
   background-color: #d6366b; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-pink .btn:hover, .panel-pink .btn:focus {
     background-color: #b42554; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-pink .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-pink .icon {
   color: #d6366b;
   -webkit-box-shadow: 0 0 0 5px rgba(214, 54, 107, 0.3);
   box-shadow: 0 0 0 5px rgba(214, 54, 107, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-green h2 {
   color: #37a883; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-green h2 .br-tint {
     color: rgba(55, 168, 131, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-green h2 a {
     color: #37a883; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-green h2 a:hover {
       color: #246e56; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-green h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-green .btn {
   background-color: #37a883; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-green .btn:hover, .panel-green .btn:focus {
     background-color: #2a8265; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-green .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-green .icon {
   color: #37a883;
   -webkit-box-shadow: 0 0 0 5px rgba(55, 168, 131, 0.3);
   box-shadow: 0 0 0 5px rgba(55, 168, 131, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-yellow h2 {
   color: #fcaf17; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-yellow h2 .br-tint {
     color: rgba(252, 175, 23, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-yellow h2 a {
     color: #fcaf17; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-yellow h2 a:hover {
       color: #c48303; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-yellow h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-yellow .btn {
   background-color: #fcaf17; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-yellow .btn:hover, .panel-yellow .btn:focus {
     background-color: #dd9403; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-yellow .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-yellow .icon {
   color: #fcaf17;
   -webkit-box-shadow: 0 0 0 5px rgba(252, 175, 23, 0.3);
   box-shadow: 0 0 0 5px rgba(252, 175, 23, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-red h2 {
   color: #e0342b; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-red h2 .br-tint {
     color: rgba(224, 52, 43, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-red h2 a {
     color: #e0342b; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-red h2 a:hover {
       color: #a61f18; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-red h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-red .btn {
   background-color: #e0342b; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-red .btn:hover, .panel-red .btn:focus {
     background-color: #bc241c; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-red .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-red .icon {
   color: #e0342b;
   -webkit-box-shadow: 0 0 0 5px rgba(224, 52, 43, 0.3);
   box-shadow: 0 0 0 5px rgba(224, 52, 43, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-purple h2 {
   color: #956daf; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-purple h2 .br-tint {
     color: rgba(149, 109, 175, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-purple h2 a {
     color: #956daf; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-purple h2 a:hover {
       color: #6e4986; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-purple h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-purple .btn {
   background-color: #956daf; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-purple .btn:hover, .panel-purple .btn:focus {
     background-color: #7c5297; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-purple .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-purple .icon {
   color: #956daf;
   -webkit-box-shadow: 0 0 0 5px rgba(149, 109, 175, 0.3);
   box-shadow: 0 0 0 5px rgba(149, 109, 175, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-blue h2 {
   color: #37c8e7; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-blue h2 .br-tint {
     color: rgba(55, 200, 231, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-blue h2 a {
     color: #37c8e7; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-blue h2 a:hover {
       color: #169ebb; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-blue h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-blue .btn {
   background-color: #37c8e7; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-blue .btn:hover, .panel-blue .btn:focus {
     background-color: #19b1d2; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-blue .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-blue .icon {
   color: #37c8e7;
   -webkit-box-shadow: 0 0 0 5px rgba(55, 200, 231, 0.3);
   box-shadow: 0 0 0 5px rgba(55, 200, 231, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-orange h2 {
   color: #e53319; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-orange h2 .br-tint {
     color: rgba(229, 51, 25, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-orange h2 a {
     color: #e53319; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-orange h2 a:hover {
       color: #a02411; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-orange h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-orange .btn {
   background-color: #e53319; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-orange .btn:hover, .panel-orange .btn:focus {
     background-color: #b72914; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-orange .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-orange .icon {
   color: #e53319;
   -webkit-box-shadow: 0 0 0 5px rgba(229, 51, 25, 0.3);
   box-shadow: 0 0 0 5px rgba(229, 51, 25, 0.3); }
 
-/* line 207, app.scss */
+/* line 206, app.scss */
 .panel-grey h2 {
   color: #626e8d; }
-  /* line 209, app.scss */
+  /* line 208, app.scss */
   .panel-grey h2 .br-tint {
     color: rgba(98, 110, 141, 0.5) !important; }
-  /* line 210, app.scss */
+  /* line 209, app.scss */
   .panel-grey h2 a {
     color: #626e8d; }
-    /* line 212, app.scss */
+    /* line 211, app.scss */
     .panel-grey h2 a:hover {
       color: #434b60; }
-      /* line 214, app.scss */
+      /* line 213, app.scss */
       .panel-grey h2 a:hover .br-tint {
         opacity: .5; }
-/* line 218, app.scss */
+/* line 217, app.scss */
 .panel-grey .btn {
   background-color: #626e8d; }
-  /* line 220, app.scss */
+  /* line 219, app.scss */
   .panel-grey .btn:hover, .panel-grey .btn:focus {
     background-color: #4d576f; }
-  /* line 223, app.scss */
+  /* line 222, app.scss */
   .panel-grey .btn .br-tint {
     color: rgba(255, 255, 255, 0.5) !important; }
-/* line 225, app.scss */
+/* line 224, app.scss */
 .panel-grey .icon {
   color: #626e8d;
   -webkit-box-shadow: 0 0 0 5px rgba(98, 110, 141, 0.3);
   box-shadow: 0 0 0 5px rgba(98, 110, 141, 0.3); }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-pink {
   height: 6px;
   background-color: #d6366b; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-green {
   height: 6px;
   background-color: #37a883; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-yellow {
   height: 6px;
   background-color: #fcaf17; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-red {
   height: 6px;
   background-color: #e0342b; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-purple {
   height: 6px;
   background-color: #956daf; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-blue {
   height: 6px;
   background-color: #37c8e7; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-orange {
   height: 6px;
   background-color: #e53319; }
 
-/* line 233, app.scss */
+/* line 232, app.scss */
 .goo-box-grey {
   height: 6px;
   background-color: #626e8d; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-pink .nav-pills > li.active > a, .color-pink .nav-pills > li.active > a:hover, .color-pink .nav-pills > li.active > a:focus {
   background-color: #d6366b; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-pink .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-pink h1, .color-pink h2, .color-pink h3, .color-pink h4, .color-pink h5, .color-pink h6 {
   color: #d6366b; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-green .nav-pills > li.active > a, .color-green .nav-pills > li.active > a:hover, .color-green .nav-pills > li.active > a:focus {
   background-color: #37a883; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-green .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-green h1, .color-green h2, .color-green h3, .color-green h4, .color-green h5, .color-green h6 {
   color: #37a883; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-yellow .nav-pills > li.active > a, .color-yellow .nav-pills > li.active > a:hover, .color-yellow .nav-pills > li.active > a:focus {
   background-color: #fcaf17; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-yellow .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-yellow h1, .color-yellow h2, .color-yellow h3, .color-yellow h4, .color-yellow h5, .color-yellow h6 {
   color: #fcaf17; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-red .nav-pills > li.active > a, .color-red .nav-pills > li.active > a:hover, .color-red .nav-pills > li.active > a:focus {
   background-color: #e0342b; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-red .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-red h1, .color-red h2, .color-red h3, .color-red h4, .color-red h5, .color-red h6 {
   color: #e0342b; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-purple .nav-pills > li.active > a, .color-purple .nav-pills > li.active > a:hover, .color-purple .nav-pills > li.active > a:focus {
   background-color: #956daf; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-purple .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-purple h1, .color-purple h2, .color-purple h3, .color-purple h4, .color-purple h5, .color-purple h6 {
   color: #956daf; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-blue .nav-pills > li.active > a, .color-blue .nav-pills > li.active > a:hover, .color-blue .nav-pills > li.active > a:focus {
   background-color: #37c8e7; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-blue .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-blue h1, .color-blue h2, .color-blue h3, .color-blue h4, .color-blue h5, .color-blue h6 {
   color: #37c8e7; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-orange .nav-pills > li.active > a, .color-orange .nav-pills > li.active > a:hover, .color-orange .nav-pills > li.active > a:focus {
   background-color: #e53319; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-orange .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-orange h1, .color-orange h2, .color-orange h3, .color-orange h4, .color-orange h5, .color-orange h6 {
   color: #e53319; }
 
-/* line 241, app.scss */
+/* line 240, app.scss */
 .color-grey .nav-pills > li.active > a, .color-grey .nav-pills > li.active > a:hover, .color-grey .nav-pills > li.active > a:focus {
   background-color: #626e8d; }
-/* line 246, app.scss */
+/* line 245, app.scss */
 .color-grey .nav-pills .active .br-tint {
   color: rgba(255, 255, 255, 0.5) !important; }
-/* line 251, app.scss */
+/* line 250, app.scss */
 .color-grey h1, .color-grey h2, .color-grey h3, .color-grey h4, .color-grey h5, .color-grey h6 {
   color: #626e8d; }
 
-/* line 256, app.scss */
+/* line 255, app.scss */
 .main-footer {
   background-color: #3f4944;
   color: #bfbeb2; }
-  /* line 259, app.scss */
+  /* line 258, app.scss */
   .main-footer a {
     color: #bfbeb2; }
-  /* line 263, app.scss */
+  /* line 262, app.scss */
   .main-footer ul li {
     margin: 0.5em 0; }
-    /* line 266, app.scss */
+    /* line 265, app.scss */
     .main-footer ul li a:hover {
       color: #d6d6ce; }
-    /* line 271, app.scss */
+    /* line 270, app.scss */
     .main-footer ul li:first-child a {
       text-decoration: underline; }
 
 /* SERVICE AND JOBS SECTION ON HOME PAGE */
-/* line 280, app.scss */
+/* line 279, app.scss */
 .h-section-wrapper {
   background-color: white;
   color: white; }
 
-/* line 285, app.scss */
+/* line 284, app.scss */
 .h-section-bg {
   min-height: initial !important;
   position: relative; }
-  /* line 288, app.scss */
+  /* line 287, app.scss */
   .h-section-bg .h-section {
     position: relative;
     z-index: 2;
@@ -7588,42 +7586,42 @@ a {
     height: 290px;
     border-radius: 0 0 0 0;
     overflow: hidden; }
-    /* line 296, app.scss */
+    /* line 295, app.scss */
     .h-section-bg .h-section h1 {
       color: white; }
-    /* line 299, app.scss */
+    /* line 298, app.scss */
     .h-section-bg .h-section .btn-info {
       color: #28899b; }
-      /* line 301, app.scss */
+      /* line 300, app.scss */
       .h-section-bg .h-section .btn-info:hover {
         color: #28899b; }
 
-/* line 307, app.scss */
+/* line 306, app.scss */
 .h-section.pink {
   background-color: #D6366B; }
-  /* line 309, app.scss */
+  /* line 308, app.scss */
   .h-section.pink .btn-info {
     color: #D6366B; }
-    /* line 311, app.scss */
+    /* line 310, app.scss */
     .h-section.pink .btn-info:hover {
       color: #D6366B; }
-  /* line 315, app.scss */
+  /* line 314, app.scss */
   .h-section.pink a {
     color: rgba(255, 255, 255, 0.5); }
 
-/* line 317, app.scss */
+/* line 316, app.scss */
 .services.active .h-section {
   border-radius: 0 0 30px 0; }
 
-/* line 318, app.scss */
+/* line 317, app.scss */
 .jobs.active .h-section {
   border-radius: 0 0 0 30px; }
 
-/* line 320, app.scss */
+/* line 319, app.scss */
 .banner-services-links li {
   line-height: 20px;
   padding: 0; }
-/* line 324, app.scss */
+/* line 323, app.scss */
 .banner-services-links .btn-info {
   background-color: #28899b;
   color: white !important;
@@ -7632,37 +7630,37 @@ a {
   padding-bottom: 7px;
   border-color: #28899b;
   letter-spacing: 1px; }
-  /* line 332, app.scss */
+  /* line 331, app.scss */
   .banner-services-links .btn-info:hover {
     background-color: rgba(40, 137, 155, 0.4); }
-    /* line 334, app.scss */
+    /* line 333, app.scss */
     .banner-services-links .btn-info:hover .br-tint {
       color: #18535e !important; }
-/* line 339, app.scss */
+/* line 338, app.scss */
 .banner-services-links .br-tint {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   color: #69acbd !important; }
 
-/* line 344, app.scss */
+/* line 343, app.scss */
 .ht-t {
   min-height: 380px; }
-  /* line 346, app.scss */
+  /* line 345, app.scss */
   .ht-t .btn-lg, .ht-t .btn-group-lg > .btn {
     font-weight: bold;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 14px;
     letter-spacing: 1px; }
-  /* line 353, app.scss */
+  /* line 352, app.scss */
   .ht-t .btn-alt-cta {
     font-style: italic;
     font-size: 17px; }
 
-/* line 358, app.scss */
+/* line 357, app.scss */
 .ht-nav {
   background-color: transparent; }
-  /* line 360, app.scss */
+  /* line 359, app.scss */
   .ht-nav .ht-nav-link-wrap {
     display: block;
     height: 70px;
@@ -7675,7 +7673,7 @@ a {
     font-size: 20px;
     padding-top: 10px;
     opacity: 0.7; }
-    /* line 371, app.scss */
+    /* line 370, app.scss */
     .ht-nav .ht-nav-link-wrap .glyphicon {
       display: block;
       opacity: .4;
@@ -7688,14 +7686,14 @@ a {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       margin: 0; }
-    /* line 380, app.scss */
+    /* line 379, app.scss */
     .ht-nav .ht-nav-link-wrap.active {
       background-color: #69acbd;
       border-radius: 0 0 5px 5px;
       z-index: 9;
       opacity: 1;
       color: white; }
-      /* line 387, app.scss */
+      /* line 386, app.scss */
       .ht-nav .ht-nav-link-wrap.active .glyphicon {
         opacity: 0.8;
         margin-top: -10px;
@@ -7704,21 +7702,21 @@ a {
         transform: rotateX(0deg);
         -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg); }
-      /* line 394, app.scss */
+      /* line 393, app.scss */
       .ht-nav .ht-nav-link-wrap.active:hover {
         opacity: 1;
         color: #206c7b; }
-    /* line 399, app.scss */
+    /* line 398, app.scss */
     .ht-nav .ht-nav-link-wrap:hover {
       text-decoration: none;
       opacity: 1; }
-      /* line 402, app.scss */
+      /* line 401, app.scss */
       .ht-nav .ht-nav-link-wrap:hover .glyphicon {
         -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg); }
 
 /* TOPIC CARDS */
-/* line 410, app.scss */
+/* line 409, app.scss */
 .img-label {
   position: absolute;
   background: #c02942;
@@ -7726,19 +7724,19 @@ a {
   padding: 5px 10px;
   font-weight: bold; }
 
-/* line 418, app.scss */
+/* line 417, app.scss */
 .topics-cards {
   overflow: hidden;
   height: 400px;
   padding: 30px 15px 15px;
   position: relative; }
-  /* line 423, app.scss */
+  /* line 422, app.scss */
   .topics-cards .desc {
     margin: 0;
     max-height: 250px;
     overflow: hidden; }
 
-/* line 429, app.scss */
+/* line 428, app.scss */
 .topics-img {
   background: #FFF;
   -webkit-box-sizing: border-box;
@@ -7749,7 +7747,7 @@ a {
   padding: 0 15px 15px;
   position: absolute;
   width: 100%; }
-  /* line 437, app.scss */
+  /* line 436, app.scss */
   .topics-img:before {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(80%, white));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 80%);
@@ -7761,36 +7759,36 @@ a {
     position: relative;
     top: -45px;
     width: 100%; }
-  /* line 447, app.scss */
+  /* line 446, app.scss */
   .topics-img .img {
     margin-bottom: 15px;
     display: block; }
 
-/* line 452, app.scss */
+/* line 451, app.scss */
 .topics-cards-tags {
   clear: both;
   line-height: 125%;
   list-style: none;
   margin: 0;
   position: relative; }
-  /* line 458, app.scss */
+  /* line 457, app.scss */
   .topics-cards-tags li {
     display: inline;
     font-size: 11px;
     text-transform: none;
     white-space: normal; }
-    /* line 463, app.scss */
+    /* line 462, app.scss */
     .topics-cards-tags li a {
       white-space: nowrap; }
-      /* line 465, app.scss */
+      /* line 464, app.scss */
       .topics-cards-tags li a:after {
         content: ","; }
-    /* line 470, app.scss */
+    /* line 469, app.scss */
     .topics-cards-tags li:last-child a:after {
       content: ""; }
 
 /* INVISIBLE INPUTS STYLES SO THEY LOOK LIKE TITLES */
-/* line 478, app.scss */
+/* line 477, app.scss */
 .sp-inp {
   border: none;
   background: transparent;
@@ -7800,61 +7798,61 @@ a {
   padding: 15px 0;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
-  /* line 486, app.scss */
+  /* line 485, app.scss */
   .sp-inp:hover {
     text-indent: 15px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2) inset; }
-  /* line 492, app.scss */
+  /* line 491, app.scss */
   .sp-inp:focus {
     outline: none; }
 
 /* TRANSPARENT BUTTON */
-/* line 498, app.scss */
+/* line 497, app.scss */
 .btn-trans {
   background-color: transparent;
   color: #28899b;
   border-color: #28899b; }
-  /* line 502, app.scss */
+  /* line 501, app.scss */
   .btn-trans:hover {
     border-color: #3f4944;
     color: #3f4944; }
 
 /* BIG BUTTON */
-/* line 509, app.scss */
+/* line 508, app.scss */
 .big-butt {
   padding-top: 18px;
   padding-bottom: 18px;
   line-height: 26px; }
-  /* line 513, app.scss */
+  /* line 512, app.scss */
   .big-butt .glyphicon {
     font-size: 14px; }
 
 /* LOG OUT */
 @-webkit-keyframes rotating {
-  /* line 520, app.scss */
+  /* line 519, app.scss */
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 523, app.scss */
+  /* line 522, app.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 @keyframes rotating {
-  /* line 520, app.scss */
+  /* line 519, app.scss */
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 523, app.scss */
+  /* line 522, app.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-/* line 527, app.scss */
+/* line 526, app.scss */
 .logging-out-icon {
   -webkit-transform-origin: 50% !important;
   -ms-transform-origin: 50% !important;
@@ -7862,38 +7860,38 @@ a {
   -webkit-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
   display: inline-block !important; }
-  /* line 531, app.scss */
+  /* line 530, app.scss */
   .logging-out-icon.ng-hide {
     display: none !important; }
 
 /* READING SIZE */
-/* line 537, app.scss */
+/* line 536, app.scss */
 .reading-size {
   font-size: 150%;
   line-height: 180%; }
-  /* line 540, app.scss */
+  /* line 539, app.scss */
   .reading-size h1, .reading-size h2, .reading-size h3, .reading-size h4, .reading-size h5, .reading-size h6 {
     font-size: 200%;
     line-height: 180%; }
-  /* line 544, app.scss */
+  /* line 543, app.scss */
   .reading-size p {
     margin: 0 0 2em;
     font-family: "freight-display-pro", Georgia, "Times New Roman", Times, serif; }
-  /* line 549, app.scss */
+  /* line 548, app.scss */
   .reading-size.sans p {
     font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
 
 /* BLOCK LINK */
-/* line 556, app.scss */
+/* line 555, app.scss */
 .block-link {
   display: block;
   position: relative; }
 
 /* NEWS AND ARTICLES TAGS */
-/* line 563, app.scss */
+/* line 562, app.scss */
 .m-tags .header {
   display: inline-block; }
-/* line 566, app.scss */
+/* line 565, app.scss */
 .m-tags .label {
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
@@ -7903,7 +7901,7 @@ a {
   font-weight: normal;
   margin: 0;
   padding: 0; }
-  /* line 573, app.scss */
+  /* line 572, app.scss */
   .m-tags .label a {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 10px;
@@ -7911,34 +7909,34 @@ a {
     color: #bfbeb2;
     display: block;
     border-radius: 5px; }
-  /* line 582, app.scss */
+  /* line 581, app.scss */
   .m-tags .label:hover a {
     text-decoration: none;
     background-color: rgba(40, 137, 155, 0.1);
     color: #28899b; }
 
 /* PAGE TRANSITIONS */
-/* line 592, app.scss */
+/* line 591, app.scss */
 .fade-content {
   opacity: 1; }
 
-/* line 598, app.scss */
+/* line 597, app.scss */
 .fade-content.ng-enter {
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
   opacity: 0; }
 
-/* line 602, app.scss */
+/* line 601, app.scss */
 .fade-content.ng-enter-active {
   -webkit-transition: opacity 0s ease;
   transition: opacity 0s ease;
   opacity: 1; }
 
-/* line 606, app.scss */
+/* line 605, app.scss */
 .fade-content.ng-leave {
   opacity: 1; }
 
-/* line 609, app.scss */
+/* line 608, app.scss */
 .fade-content.ng-leave-active {
   opacity: 0; }
 
@@ -7946,54 +7944,54 @@ a {
   /* rules for mobile horizontal (480 > 768)  */ }
 @media (min-width: 768px) {
   /* rules for tablet (768 > 992) */
-  /* line 618, app.scss */
+  /* line 617, app.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
     margin-top: 18px; } }
 @media (min-width: 992px) {
   /* rules for desktop (992 > 1200) */
-  /* line 626, app.scss */
+  /* line 625, app.scss */
   .h-job-form {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     padding-left: 15px; }
 
-  /* line 631, app.scss */
+  /* line 630, app.scss */
   .navbar-static-top .navbar-brand {
     float: left;
     padding: 0;
     margin-top: 12px; }
 
-  /* line 637, app.scss */
+  /* line 636, app.scss */
   .main-navigation {
     margin-top: 17px; }
-    /* line 639, app.scss */
+    /* line 638, app.scss */
     .main-navigation li {
       font-size: 0.9em;
       font-weight: bold;
       letter-spacing: 1px; }
-      /* line 644, app.scss */
+      /* line 643, app.scss */
       .main-navigation li.open > a.dropdown-toggle, .main-navigation li:hover > a.dropdown-toggle {
         background-color: #efeddf;
         color: #636365;
         border-radius: 5px 5px 0 0;
         -webkit-transition: none;
         transition: none; }
-      /* line 652, app.scss */
+      /* line 651, app.scss */
       .main-navigation li.dropdown:hover, .main-navigation li.dropdown.open, .main-navigation li.dropdown:focus {
         background-color: white;
         color: #636365;
         border-radius: 5px 5px 0 0; }
-        /* line 656, app.scss */
+        /* line 655, app.scss */
         .main-navigation li.dropdown:hover > ul.dropdown-menu, .main-navigation li.dropdown.open > ul.dropdown-menu, .main-navigation li.dropdown:focus > ul.dropdown-menu {
           margin-top: -22px;
           display: block; }
-      /* line 662, app.scss */
+      /* line 661, app.scss */
       .main-navigation li > a {
         -webkit-transition: none;
         transition: none;
         padding-top: 15px;
         padding-bottom: 15px; }
-        /* line 666, app.scss */
+        /* line 665, app.scss */
         .main-navigation li > a.btn {
           border: none;
           margin-left: 1em;
@@ -8003,37 +8001,37 @@ a {
           padding-top: 8px;
           padding-bottom: 8px;
           margin-top: 8px; }
-          /* line 675, app.scss */
+          /* line 674, app.scss */
           .main-navigation li > a.btn:hover, .main-navigation li > a.btn:focus {
             outline: none;
             background-color: #237787; }
-          /* line 679, app.scss */
+          /* line 678, app.scss */
           .main-navigation li > a.btn.btn-info {
             background-color: #bfbeb2;
             color: #636365; }
-            /* line 682, app.scss */
+            /* line 681, app.scss */
             .main-navigation li > a.btn.btn-info:hover, .main-navigation li > a.btn.btn-info:focus {
               outline: none;
               background-color: #b3b2a4; }
-        /* line 688, app.scss */
+        /* line 687, app.scss */
         .main-navigation li > a:hover {
           background-color: transparent; }
 
-  /* line 694, app.scss */
+  /* line 693, app.scss */
   .dropdown-menu {
     background-color: #efeddf;
     border: none;
     -webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1); }
-    /* line 698, app.scss */
+    /* line 697, app.scss */
     .dropdown-menu li {
       font-size: 1em;
       font-weight: initial; }
-      /* line 701, app.scss */
+      /* line 700, app.scss */
       .dropdown-menu li.divider {
         background-color: #dedabd; }
 
-  /* line 708, app.scss */
+  /* line 707, app.scss */
   .menu-list li a {
     display: block;
     padding-top: 5px;
@@ -8042,21 +8040,21 @@ a {
     text-transform: initial;
     padding-left: 8px;
     margin-left: -8px; }
-    /* line 716, app.scss */
+    /* line 715, app.scss */
     .menu-list li a:hover {
       color: #3f4944;
       background-color: #efeddf;
       text-decoration: none; }
 
-  /* line 724, app.scss */
+  /* line 723, app.scss */
   .br-tint {
     color: #928c8e !important; }
 
-  /* line 729, app.scss */
+  /* line 728, app.scss */
   .yamm-content blockquote p {
     text-transform: initial; }
 
-  /* line 734, app.scss */
+  /* line 733, app.scss */
   .form-background {
     background: #FFF;
     margin: 0;
@@ -8064,12 +8062,12 @@ a {
     border-left: 1px solid #DDD;
     border-bottom: 1px solid #DDD; }
 
-  /* line 741, app.scss */
+  /* line 740, app.scss */
   legend {
     color: #28899b;
     border-bottom: 1px solid rgba(40, 137, 155, 0.3); }
 
-  /* line 746, app.scss */
+  /* line 745, app.scss */
   .testimonial .quote {
     font-family: "museo-slab";
     font-style: italic;
@@ -8079,13 +8077,13 @@ a {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     text-align: left; }
-    /* line 754, app.scss */
+    /* line 753, app.scss */
     .testimonial .quote:hover {
       opacity: 1; }
-      /* line 756, app.scss */
+      /* line 755, app.scss */
       .testimonial .quote:hover:before {
         opacity: 1; }
-    /* line 760, app.scss */
+    /* line 759, app.scss */
     .testimonial .quote:before {
       content: "\201C";
       display: block;
