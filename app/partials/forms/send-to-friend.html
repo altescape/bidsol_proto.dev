@@ -1,0 +1,56 @@
+<div class="panel panel-default section-bg-2">
+    <div class="panel-heading hover-cursor" ng-click="isSendToFriendFormOpen = !isSendToFriendFormOpen">
+        <h5><i class="fa fa-envelope"></i> <strong>SEND TO A FRIEND</strong> <i class="fa fa-arrow-down pull-right text-muted" ng-hide="isSendToFriendFormOpen"></i> <i class="fa fa-arrow-up pull-right text-muted" ng-show="isSendToFriendFormOpen"></i></h5>
+    </div>
+    <div class="panel-body" ng-show="isSendToFriendFormOpen">
+        <form role="form">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="input1" class="control-label">Name<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="input1" placeholder="Name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="input4" class="control-label">Your email<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="input4" placeholder="Your email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="input1" class="control-label">Friend's Name<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="input1" placeholder="Friend's Name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="input4" class="control-label">Friend's email<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="input4" placeholder="Friend's email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="input5" class="control-label">Message</label>
+                        <textarea class="form-control" id="input5" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <button class="btn btn-success pull-right">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

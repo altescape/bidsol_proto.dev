@@ -1,0 +1,169 @@
+<section class="main-content section-bg-0 padded-section pt-20 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Shopping cart</h1>
+
+                <h3>Please review your order</h3>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><a ui-sref="bid-services.bidtraining.product-detail">Product title</a></td>
+                        <td>
+                            <div class="col-md-3"><input type="number" class="form-control" value="1"></div>
+                            <div class="col-md-3">
+                                <button class="btn btn-default">Update</button>
+                            </div>
+                        </td>
+                        <td>£1000.00</td>
+                        <td>£1000.00</td>
+                        <td class="text-center">
+                            <button class="btn btn-default">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a ui-sref="bid-services.bidtraining.product-detail">Product title</a></td>
+                        <td>
+                            <div class="col-md-3"><input type="number" class="form-control" value="1"></div>
+                            <div class="col-md-3">
+                                <button class="btn btn-default">Update</button>
+                            </div>
+                        </td>
+                        <td>£1000.00</td>
+                        <td>£1000.00</td>
+                        <td class="text-center">
+                            <button class="btn btn-default">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>Total</strong></td>
+                        <td colspan="2">£2000.00</td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Please enter your details</h3>
+                <form>
+                    <fieldset class="mt-70">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <legend>Email</legend>
+                                <div class="form-group">
+                                    <label for="input9" class="control-label">Email<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input9" placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mt-70">
+                        <legend>Name</legend>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label for="input0" class="control-label">Title<span class="required">*</span></label>
+                                    <select id="input0" class="form-control" required>
+                                        <option disabled selected>Title</option>
+                                        <option>Mr</option>
+                                        <option>Mrs</option>
+                                        <option>Miss</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="input1" class="control-label">First name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input1" placeholder="First name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <label for="input2" class="control-label">Last name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input2" placeholder="Last name" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mt-70">
+                        <legend>Your billing/contact details</legend>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="input3" class="control-label">Address 1<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input3" placeholder="Address 1" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="input4" class="control-label">Address 2<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input4" placeholder="Address 2" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="input5" class="control-label">Address 3</label>
+                                    <input type="text" class="form-control" id="input5" placeholder="Address 3">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="input6" class="control-label">Address 4</label>
+                                    <input type="text" class="form-control" id="input6" placeholder="Address 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="input7" class="control-label">Postcode<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input7" placeholder="Postcode" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="input8" class="control-label">Country<span class="required">*</span></label>
+                                    <select id="input8" class="form-control" required>
+                                        <option disabled selected>Select Country</option>
+                                        <option>UK</option>
+                                        <option>USA</option>
+                                        <option>Etc</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="input10" class="control-label">Telephone<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="input10" placeholder="Telephone" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mt-70">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-lg">Purchase</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

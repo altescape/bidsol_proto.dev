@@ -24,10 +24,11 @@
             Typekit.load();
         } catch (e) {
         }</script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body ng-cloak>
+<body ng-cloak ng-controller="MainNavCtrl">
 
-<div navbar-static-top ng-controller="MainNavCtrl" class="navbar-fixed-top section-bg-0"></div>
+<div navbar-static-top class="navbar-fixed-top nav-wrapper"></div>
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
@@ -39,7 +40,7 @@
 <main-footer></main-footer>
 
 <!-- SIGN IN -->
-<div ng-controller="MainNavCtrl" class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

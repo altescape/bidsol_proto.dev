@@ -1,4 +1,5 @@
-<header class="navbar navbar-static-top" id="top" role="banner">
+<header class="navbar navbar-static-top section-bg-grad" id="top" role="banner">
+    <div top-links class="top-links"></div>
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -12,7 +13,7 @@
         <nav class="yamm collapse navbar-collapse" role="navigation">
             <ul class="nav navbar-nav pull-right main-navigation">
                 <li class="dropdown">
-                    <a href="/#/bid-services" ui-sref="bid-services" class="dropdown-toggle" data-toggle="dropdown">BID SERVICES <span class="caret"></span></a>
+                    <a ui-sref="bid-services-home" class="dropdown-toggle" data-toggle="dropdown">BID SERVICES <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="yamm-content">
@@ -84,7 +85,6 @@
                 </li>
                 <li>
                     <a ng-hide="loggedin" class="btn btn-info" data-toggle="modal" data-target="#signInModal">SIGN IN</a>
-                    <a ng-show="loggedin" ng-click="logout()">SIGN OUT <span ng-show="loggingout" class="logging-out-icon glyphicon glyphicon-repeat"></span></a>
                 </li>
             </ul>
         </nav>

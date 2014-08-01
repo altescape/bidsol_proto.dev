@@ -1,0 +1,17 @@
+<h1>Events</h1>
+
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris erat nibh, fermentum et erat nec, scelerisque rutrum dolor.
+    Sed bibendum, libero id lobortis hendrerit.</p>
+
+<div class="row" ng-repeat="item in collection | limitTo: limit">
+    <div class="col-sm-12">
+        <hr>
+        <h3><a ui-sref="events.item">{{ item.title }}</a></h3>
+
+        <p class="text-muted">
+            <small class="text-primary text-capitalize">{{ item.type }}</small>
+            <small class=" text-muted pull-right">{{ item.day }} {{ date.month }} {{ date.year }}, {{ item.time }}</small>
+        </p>
+        <p>{{ item.desc }} <a ui-sref="events.item" class="">Read more <i class="fa fa-arrow-right"></i></a></p>
+    </div>
+</div>

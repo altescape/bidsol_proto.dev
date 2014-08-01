@@ -1,27 +1,23 @@
-<section class="section-bg-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4">
-                <goo-box></goo-box>
-            </div>
-        </div>
+<div class="row color-yellow">
+    <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a ui-sref="bid-services.bidtraining.index"><span class="br-tint">Bid</span>Training</a></li>
+            <li><a ui-sref="bid-services.bidtraining.apmp">APMP</a></li>
+            <li><a ui-sref="bid-services.bidtraining.prp-writing">Proposal writing</a></li>
+            <li><a ui-sref="bid-services.bidtraining.prp-master-class">Proposal master class</a></li>
+            <li><a ui-sref="bid-services.bidtraining.bidding">Bidding to public sector</a></li>
+            <li><a ui-sref="bid-services.bidtraining.tailored-courses">Tailored courses</a></li>
+            <li><a ui-sref="bid-services.bidtraining.training-packages">Training packages</a></li>
+            <li><a ui-sref="bid-services.bidtraining.videos">Videos</a></li>
+        </ul>
+        <hr>
+        <request-callback></request-callback>
+        <hr>
+        <bid-services-vertical-list></bid-services-vertical-list>
     </div>
-</section>
+    <div class="col-sm-8 col-sm-offset-1">
 
-<section class="main-content section-bg-0 padded-section pt-0 pb-30">
-    <div class="container">
-        <dummy-content-info-page title="Training" tint="Bid" color="yellow"></dummy-content-info-page>
-    </div>
-</section>
+        <div ui-view="bidServiceDetailView" autoscroll="false"></div>
 
-<section class="section-bg-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4">
-                <goo-box></goo-box>
-            </div>
-        </div>
     </div>
-</section>
+</div>

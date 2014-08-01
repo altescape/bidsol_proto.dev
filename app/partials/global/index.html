@@ -1,0 +1,17 @@
+<section class="main-content section-bg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 mt-30">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a ui-sref="{{sidenav_heading.state}}">{{ sidenav_heading.name }}</a></li>
+                    <li ng-repeat="nav in sidenav"><a ui-sref="{{ nav.state }}">{{ nav.name }}</a></li>
+                </ul>
+                <hr>
+                <send-to-friend></send-to-friend>
+                <request-callback></request-callback>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+                <div ui-view="genView" autoscroll="false" class="fade-content"></div>
+            </div>
+        </div>
+</section>

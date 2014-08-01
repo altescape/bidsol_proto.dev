@@ -3,7 +3,30 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
+
     .controller('MainNavCtrl', ['$scope', '$routeParams', '$location', '$timeout', 'localStorageService', function ($scope, $routeParams, $location, $timeout, localStorageService) {
+
+			$scope.qty = 1;
+			var emitted_qty = 1;
+			if (!localStorageService.get('cart_items')) {
+				localStorageService.set('cart_items', 0);
+				$scope.cart_items = 0;
+			} else {
+				$scope.cart_items = localStorageService.get('cart_items');
+			}
+
+			$scope.cartFilled = localStorageService.get('cart');
+			$scope.$on('fillCart', function(event, mess) {
+				$scope.cartFilled = mess;
+				localStorageService.set('cart', true);
+
+				localStorageService.set('cart_items', parseInt(localStorageService.get('cart_items'), 10) + emitted_qty);
+				$scope.cart_items = localStorageService.get('cart_items');
+			});
+
+			$scope.$on('setQty', function(event, mess) {
+				emitted_qty = mess;
+			});
 
       $scope.loggedin = false;
       $scope.loggingout = false;
@@ -53,6 +76,7 @@ angular.module('myApp.controllers', [])
 
       $scope.submit = function (signin) {
         localStorageService.set('signin', signin);
+				$scope.$broadcast('loggedIn', true);
         if (signin.type === 'Candidate') {
           $('#signInModal').modal('hide');
         }
@@ -64,12 +88,30 @@ angular.module('myApp.controllers', [])
         }
       };
     }])
+
     .controller('HomeCtrl', ['$scope', 'NewsFactory', function ($scope, NewsFactory) {
       $scope.news_collection = NewsFactory;
     }])
-    .controller('BidServicesCtrl', ['$scope', function ($scope) {
 
+    .controller('BidServicesCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
+			$scope.fillCart = function () {
+				// mock time
+				$scope.cart_feedback = true;
+				$timeout(function () {
+					$scope.cart_feedback = false;
+					$scope.$emit('fillCart', true);
+					$scope.cart_feedback_added = true;
+					$timeout(function () {
+					$scope.cart_feedback_added = false;
+					}, 2000);
+				}, 1000);
+
+			};
+			$scope.setQty = function () {
+				$scope.$emit('setQty', $scope.qty);
+			}
     }])
+
     .controller('TestimonialsCtrl', ['$scope', function ($scope) {
 
       $scope.testimonials = [
@@ -129,6 +171,7 @@ angular.module('myApp.controllers', [])
       }
 
     }])
+
     .controller('NewsCtrl', ['$scope', 'NewsFactory', function ($scope, NewsFactory) {
       $scope.news_collection = NewsFactory;
 
@@ -147,13 +190,58 @@ angular.module('myApp.controllers', [])
       $scope.bigTotalItems = 175;
       $scope.bigCurrentPage = 1;
     }])
+
+    .controller('BlogCtrl', ['$scope', 'BlogFactory', function ($scope, BlogFactory) {
+      $scope.blog_collection = BlogFactory;
+
+      $scope.totalItems = 64;
+      $scope.currentPage = 4;
+
+      $scope.setPage = function (pageNo) {
+        $scope.currentPage = pageNo;
+      };
+
+      $scope.pageChanged = function () {
+        console.log('Page changed to: ' + $scope.currentPage);
+      };
+
+      $scope.maxSize = 5;
+      $scope.bigTotalItems = 175;
+      $scope.bigCurrentPage = 1;
+    }])
+
+    .controller('AboutCtrl', ['$scope', 'TeamFactory', function ($scope, TeamFactory) {
+      $scope.team_collection = TeamFactory;
+    }])
+
+    .controller('EventsCtrl', ['$scope', 'EventsFactory', function ($scope, EventsFactory) {
+      $scope.collection = EventsFactory;
+			$scope.date = {
+				month: "January",
+				year : "2014"
+			}
+			$scope.limit = 12;
+    }])
+
     .controller('ResourcesCtrl', ['$scope', function ($scope) {
 
     }])
+
     .controller('CreateAccountCtrl', ['$scope', function ($scope) {
 
     }])
-    .controller('MyAccountCtrl', ['$scope', '$animate', function ($scope, $animate) {
+
+    .controller('MyAccountCtrl', ['$scope', '$animate', 'localStorageService', function ($scope, $animate, localStorageService) {
+
+			if (localStorageService.get('signin')) {
+				$scope.showNav = true;
+			} else {
+				$scope.showNav = false;
+			}
+
+			$scope.$on('loggedIn', function(event, mess) {
+				$scope.showNav = mess;
+			});
 
       $scope.industries = [
         {name: "Facilities management"},

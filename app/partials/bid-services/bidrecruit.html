@@ -1,27 +1,99 @@
-<section class="section-bg-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4">
-                <goo-box></goo-box>
-            </div>
-        </div>
+<div class="row color-pink">
+    <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a ui-sref="bid-services.bidrecruit.index"><span class="br-tint">Bid</span>Recruit</a></li>
+            <li class="nav-section">
+                <a ui-sref="bid-services.bidrecruit.candidates" class="header">Candidates</a>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a class="button" ui-sref="account.search-jobs"><i class="fa fa-search"></i> Search for a vacancy</a></li>
+                    <li><a ui-sref="account.search-jobs">View all vacancies</a></li>
+                    <li class="dropdown" ng-class="{'dropped' : isJobDescOpen}" ng-click="isJobDescOpen = !isJobDescOpen">
+                        <i ng-hide="isJobDescOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isJobDescOpen" class="fa fa-angle-up"></i>
+                        <a>Job descriptions</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>Bid Manager</a></li>
+                            <li><a>Proposal Manager</a></li>
+                            <li><a>Proposal Writer</a></li>
+                            <li><a>Document Manager</a></li>
+                            <li><a>Graphics/DTP Specialist</a></li>
+                            <li><a>Knowledgebase Manager</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" ng-class="{'dropped' : isIntPrepOpen}" ng-click="isIntPrepOpen = !isIntPrepOpen">
+                        <i ng-hide="isIntPrepOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isIntPrepOpen" class="fa fa-angle-up"></i>
+                        <a>Interview preparation</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>CV preparation</a></li>
+                            <li><a>Interview management</a></li>
+                            <li><a>Interview questions</a></li>
+                            <li><a>References</a></li>
+                            <li><a>Travel</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" ng-class="{'dropped' : isConServOpen}" ng-click="isConServOpen = !isConServOpen">
+                        <i ng-hide="isConServOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isConServOpen" class="fa fa-angle-up"></i>
+                        <a>Consultant services</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>Working as a consultant</a></li>
+                            <li><a>Setting up your own company</a></li>
+                            <li><a>Consultants' responsibilities</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" ng-class="{'dropped' : isConResOpen}" ng-click="isConResOpen = !isConResOpen">
+                        <i ng-hide="isConResOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isConResOpen" class="fa fa-angle-up"></i>
+                        <a>Consultant resources</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>Current legislation</a></li>
+                            <li><a>Insurance requirements</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-section">
+                <a ui-sref="bid-services.bidrecruit.clients" class="header">Clients</a>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a class="button" ui-sref="create-account"><i class="fa fa-check-square-o"></i> Register your company</a></li>
+                    <li><a>Bid lifecycle</a></li>
+                    <li class="dropdown" ng-class="{'dropped' : isServOptsOpen}" ng-click="isServOptsOpen = !isServOptsOpen">
+                        <i ng-hide="isServOptsOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isServOptsOpen" class="fa fa-angle-up"></i>
+                        <a>Service options</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>Recruitment solutions</a></li>
+                            <li><a>Consulting services</a></li>
+                            <li><a>Database search</a></li>
+                            <li><a>Direct advertising</a></li>
+                            <li><a>Single job posting</a></li>
+                            <li><a>Service pricing</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" ng-class="{'dropped' : isUrgHelpOpen}" ng-click="isUrgHelpOpen = !isUrgHelpOpen">
+                        <i ng-hide="isUrgHelpOpen" class="fa fa-angle-down"></i>
+                        <i ng-show="isUrgHelpOpen" class="fa fa-angle-up"></i>
+                        <a>Need urgent help?</a>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a>I need a Bid Manager</a></li>
+                            <li><a>I need a Proposal Manager</a></li>
+                            <li><a>I need a Bid/Proposal Writer</a></li>
+                            <li><a>I just need help!</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Our commitment</a></li>
+                    <li><a>Reference services</a></li>
+                </ul>
+            </li>
+        </ul>
+        <request-callback></request-callback>
+        <hr>
+        <bid-services-vertical-list></bid-services-vertical-list>
     </div>
-</section>
+    <div class="col-sm-8 col-sm-offset-1">
 
-<section class="main-content section-bg-0 padded-section pt-0 pb-70">
-    <div class="container">
-        <dummy-content-overview-page title="Recruit" tint="Bid" color="pink"></dummy-content-overview-page>
-    </div>
-</section>
+        <div ui-view="bidServiceRecruitView" autoscroll="false"></div>
 
-<section class="section-bg-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4">
-                <goo-box></goo-box>
-            </div>
-        </div>
     </div>
-</section>
+</div>

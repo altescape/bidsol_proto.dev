@@ -1,0 +1,23 @@
+<section class="main-content section-bg-0" ng-controller="AboutCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 mt-30">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a ui-sref="about.overview">About</a></li>
+                    <li><a ui-sref="about.history">History</a></li>
+                    <li><a ui-sref="about.team">Meet the team</a></li>
+                    <li><a ui-sref="about.sustainability">Sustainability Policy</a></li>
+                    <li><a ui-sref="about.careers">Career Opportunities</a></li>
+                    <li><a ui-sref="about.terms">Terms of business</a></li>
+                    <li><a ui-sref="about.global">Global coverage</a></li>
+                    <li><a ui-sref="contact">Contact us</a></li>
+                </ul>
+                <hr>
+                <send-to-friend></send-to-friend>
+                <request-callback></request-callback>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+                <div ui-view="aboutView" autoscroll="false" class="fade-content"></div>
+            </div>
+        </div>
+</section>

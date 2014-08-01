@@ -1,24 +1,75 @@
-<footer class="main-footer padded-section">
+<div id="fb-root"></div>
+<footer class="main-footer padded-section pt-0">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <ul class="list-unstyled" bid-services-menu>
+            <div class="col-sm-12">
+                <ul class="list-inline hoz-social-links ul-this-bottom pb-20 mb-20 pt-20">
+                    <li><i class="fa fa-twitter"></i> <a href="#" target="_blank">Bid Solutions on Twitter</a></li>
+                    <li><i class="fa fa-facebook"></i> <a href="#" target="_blank">Bid Solutions on Facebook</a></li>
+                    <li><i class="fa fa-linkedin"></i> <a href="#" target="_blank">Bid Solutions on LinkedIn</a></li>
+                    <li><i class="fa fa-list-alt"></i> <a href="#" target="_blank">Bid Solutions Blog</a></li>
+                    <li><i class="fa fa-rss"></i> <a href="#" target="_blank">What's New? RSS</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <h5><a ui-sref="bid-services"><span class="br-tint">Bid</span>Hub</a></h5>
+                <ul class="list-unstyled" bid-services-menu></ul>
+            </div>
+            <div class="col-md-2">
+                <h5><a ui-sref="about.overview">About</a></h5>
                 <ul class="list-unstyled">
-                    <li><a href="/#/about">About</a></li>
-                    <li><a href="/#/testimonials">Testimonials</a></li>
+                    <li><a ui-sref="testimonials">Testimonials</a></li>
                     <li><a href="/#/bid-resources">Bid resources</a></li>
-                    <li><a href="/#/news">News</a></li>
-                    <li><a href="/#/articles">Blog</a></li>
+                    <li><a ui-sref="news">News</a></li>
+                    <li><a ui-sref="blog">Blog</a></li>
                     <li><a href="/#/support">Support</a></li>
-                    <li><a href="/#/enquiry">Send an enquiry</a></li>
+                    <li><a ui-sref="events.overview">Upcoming events</a></li>
+                    <li><a ui-sref="contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2">
+                <h5><a ui-sref="gen.info">Information</a></h5>
+                <ul class="list-unstyled">
+                    <li ng-repeat="i in info_links"><a ui-sref="{{ i.state }}">{{ i.name }}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-sm-offset-1">
                 <p class="lead">A foundation for your success. Knowing who you are, what skills you have to offer and why you seek a new challenge enables our consultants to find you the best opportunity <a href="#" class="underline">Learn More</a>.</p>
+
+                <img src="/img/branding.png" style="width: 140px" class="pull-right">
+
+<!--                <section class="social-links">-->
+<!--                    <ul class="off-soc-buttons">-->
+<!--                        <li>-->
+<!--                            <script src="//platform.linkedin.com/in.js" type="text/javascript">-->
+<!--                                lang: en_US-->
+<!--                            </script>-->
+<!--                            <script type="IN/FollowCompany" data-id="137705" data-counter="none"></script>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="fb-follow" data-href="https://www.facebook.com/bidsolutions" data-colorscheme="dark" data-layout="button" data-show-faces="false"></div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="https://twitter.com/bidsolutions" class="twitter-follow-button" data-show-count="false">Follow @bidsolutions</a>-->
+<!--                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </section>-->
             </div>
         </div>
     </div>
 </footer>
+<div class="section-bg-3 legals">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <a>Site terms</a> | <a>Privacy</a>
+            </div>
+            <div class="col-sm-6 text-right">
+                © 2014, Bid Solutions and its affiliates. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>

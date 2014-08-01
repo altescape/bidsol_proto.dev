@@ -1,28 +1,14 @@
 <div class="panel panel-default section-bg-2">
-    <div class="panel-heading"><h5><span class="glyphicon glyphicon-phone-alt"></span> <strong>REQUEST A CALLBACK</strong></h5></div>
-    <div class="panel-body">
+    <div class="panel-heading hover-cursor" ng-click="isRequestCallbackFormOpen = !isRequestCallbackFormOpen">
+        <h5><i class="fa fa-phone"></i> <strong>REQUEST A CALLBACK</strong> <i class="fa fa-arrow-down pull-right text-muted" ng-hide="isRequestCallbackFormOpen"></i> <i class="fa fa-arrow-up pull-right text-muted" ng-show="isRequestCallbackFormOpen"></i></h5>
+    </div>
+    <div class="panel-body" ng-show="isRequestCallbackFormOpen">
         <form role="form">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <label for="input1" class="control-label">First name<span class="required">*</span></label>
-                        <input type="text" class="form-control" id="input1" placeholder="Forename" required>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label for="input2" class="control-label">Last name<span class="required">*</span></label>
-                        <input type="text" class="form-control" id="input2" placeholder="Surname" required>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label for="input3" class="control-label">Email<span class="required">*</span></label>
-                        <input type="text" class="form-control" id="input3" placeholder="Email" required>
+                        <label for="input1" class="control-label">Name<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="input1" placeholder="Name" required>
                     </div>
                 </div>
             </div>

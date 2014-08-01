@@ -1,243 +1,65 @@
 <div ng-controller="HomeCtrl">
 
-<!-- SERVICES TAB CONTENT -->
+    <!-- SERVICES TAB CONTENT -->
+    <bs-banner-altern></bs-banner-altern>
 
-<div class="h-section-wrapper pt-10 pb-45">
-
-  <section class="main-content">
-    <div class="container">
-      <div class="row">
-          <img alt="260x130" src="/img/home-banner.png" style="width: 100%; border-radius: 10px 10px 0 0">
-      </div>
-    </div>
-  </section>
-
-  <section class="main-content ht-t ht-t-1 h-section-bg h-section-1 {{ selectedTab }}"
-           ng-show="selectedTab === 'services'"
-           ng-class="{'active':selectedTab === 'services'}">
-    <div class="container">
-      <div class="row section-bg-3 h-section">
-        <div class="col-md-5">
-          <div class="video-wrapper">
-            <iframe src="//player.vimeo.com/video/40130084?title=0&amp;byline=0" width="455" height="253"
-                    frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <h1 class="mt-10 mb-30">Everything you need for your bid or proposal requirements</h1>
-
-          <p class="mt-30 mb-30"><a ng-click="" class="btn btn-info btn-lg" ui-sref="bid-services">VIEW OUR SERVICES</a></p>
-          <ul class="list-inline banner-services-links mt-30 mb-30">
-            <li>
-              <small>SERVICES:</small>
-            </li>
-            <li><a ui-sref="bidrecruit" class="btn btn-info btn-sm"><span class="br-tint">BID</span>RECRUIT</a></li>
-            <li><a ui-sref="bidconsult" class="btn btn-info btn-sm"><span class="br-tint">BID</span>CONSULT</a></li>
-            <li><a ui-sref="bidtraining" class="btn btn-info btn-sm"><span class="br-tint">BID</span>TRAINING</a></li>
-            <li><a ui-sref="bidsoftware" class="btn btn-info btn-sm"><span class="br-tint">BID</span>SOFTWARE</a></li>
-            <li><a ui-sref="biddesign" class="btn btn-info btn-sm"><span class="br-tint">BID</span>DESIGN</a></li>
-            <li><a ui-sref="bid-services"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- JOBS TAB CONTENT -->
-
-  <section class="main-content ht-t ht-t-2 h-section-bg h-section-2  {{ selectedTab }}"
-           ng-show="selectedTab === 'jobs'"
-           ng-class="{'active':selectedTab === 'jobs'}">
-    <div class="container">
-      <div class="row section-bg-3 h-section">
-        <div class="col-md-7">
-          <div class="p-lr-10">
-            <h1 class="mt-10 mb-20">A foundation for your success</h1>
-
-            <p class="mt-0 mb-35 lead op-7">Knowing who you are, what skills you have to offer and why you seek a new
-              challenge enables
-              our consultants to find you the best opportunity.</p>
-
+    <!-- 8 PANELS -->
+    <section class="main-content section-bg-2 pt-30">
+        <div class="container">
             <div class="row">
-              <div class="col-sm-3">
-                <p><a ng-click="" class="btn btn-info btn-lg" ui-sref="create-account">REGISTER NOW</a></p>
-              </div>
-              <div class="col-sm-9">
-                <p class="mt-15 btn-alt-cta"><a ui-sref="account.search-jobs">Search for all jobs</a></p>
-              </div>
+                <div class="col-sm-12 text-center"><h1><strong>OUR SERVICES</strong></h1></div>
             </div>
-          </div>
         </div>
-        <div class="col-md-5 h-job-form">
+    </section>
+    <bs-services-all></bs-services-all>
 
-          <h1 class="mt-10 mb-20">Job Search</h1>
+    <!-- FEATURED NEWS PREVIEW -->
+    <section class="main-content section-bg-3 padded-section pt-45 pb-45">
+        <div class="container">
+            <div class="row-cover section-bg-0">
+                <a ui-sref="news.item" class="col-sm-4 butted block-link">
+                    <span class="img-label">FEATURED</span>
+                    <img alt="260x130" src="http://fillmurray.com/365/203" style="width: 100%">
+                </a>
 
-          <div class="form-group">
-            <input type="text" class="form-control input-lg" placeholder="ENTER KEYWORD">
-          </div>
-          <div class="form-group">
-            <select class="form-control input-lg">
-              <option selected disabled>SELECT TYPE</option>
-              <option>Job type</option>
-              <option>Job type description</option>
-              <option>Job</option>
-            </select>
-          </div>
-          <div class="form-group row">
-            <div class="col-sm-8 text-right">
-              <p class="mt-15 btn-alt-cta"><a ui-sref="account.search-jobs">Advanced search</a></p>
+                <div class="col-sm-8 pt-30">
+                    <small class="type">ARTICLE</small>
+                    <h3><a ui-sref="news.item">Google for Government Solutions</a></h3>
+
+                    <p>Whether your goal is to educate citizens on important issues, reach special audiences, inspire behavior
+                        change, or
+                        encourage immediate action, your communications efforts must reside online. Learn how Google's technology
+                        solutions
+                        can deepen your communications strategy across devices and reach Americans where they spend time.</p>
+                </div>
             </div>
-            <div class="col-sm-4 text-right">
-              <button type="submit" class="btn btn-info btn-lg" ui-sref="account.search-jobs">SEARCH <span
-                  class="glyphicon glyphicon-search"></span>
-              </button>
+        </div>
+    </section>
+
+    <!-- TOP 4 NEWS -->
+
+    <section class="main-content section-bg-3 padded-section pt-0 pb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" ng-repeat="news in news_collection">
+                    <div class="topics-cards panel">
+                        <small class="type">{{ news.type }}</small>
+                        <h4><a ui-sref="news.item">{{ news.title }}</a></h4>
+
+                        <p class="desc">{{ news.desc }}</p>
+
+                        <div class="topics-img">
+                            <a ui-sref="news.item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
+                            <ul class="topics-cards-tags list-unstyled">
+                                <li ng-repeat="tag in news.tags">
+                                    <a ui-sref="news.item">{{ tag }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES/JOBS TAB NAVIGATION -->
-
-  <section class="main-content section-bg-1 ht-nav">
-    <div class="container">
-      <div class="row" ng-init="selectedTab = 'services'">
-        <a ng-click="selectedTab = 'services'" ng-class="{'active':selectedTab === 'services'}"
-           class="col-xs-6 text-center ht-nav-link-wrap">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-          View our services
-        </a>
-        <a ng-click="selectedTab = 'jobs'" ng-class="{'active':selectedTab === 'jobs'}"
-           class="col-xs-6 text-center ht-nav-link-wrap">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-          Search for a job
-        </a>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-
-<!-- 5 PANELS -->
-
-<section class="main-content section-bg-2 padded-section pt-50 pb-30">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5ths text-center">
-        <div class="panel h-panel panel-pink pt-30 p-lr-10">
-          <span class="glyphicon glyphicon-search icon"></span>
-
-          <h2><a ui-sref="bidrecruit"><span class="br-tint">bid</span>recruit</a></h2>
-
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-          <p><a ui-sref="bidrecruit" class="btn btn-primary">View <span
-              class="br-tint">bid</span>recruit</a></p>
-        </div>
-      </div>
-      <div class="col-md-5ths text-center">
-        <div class="panel h-panel panel-green pt-30 p-lr-10">
-          <span class="glyphicon glyphicon-comment icon"></span>
-
-          <h2><a ui-sref="bidconsult"><span class="br-tint">bid</span>consult</a></h2>
-
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-          <p><a ui-sref="bidconsult" class="btn btn-primary">View <span
-              class="br-tint">bid</span>consult</a></p>
-        </div>
-      </div>
-      <div class="col-md-5ths text-center">
-        <div class="panel h-panel panel-yellow pt-30 p-lr-10">
-          <span class="glyphicon glyphicon-thumbs-up icon"></span>
-
-          <h2><a ui-sref="bidtraining"><span class="br-tint">bid</span>training</a></h2>
-
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-          <p><a ui-sref="bidtraining" class="btn btn-primary">View <span class="br-tint">bid</span>training</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-5ths text-center">
-        <div class="panel h-panel panel-red pt-30 p-lr-10">
-          <span class="glyphicon glyphicon-leaf icon"></span>
-
-          <h2><a ui-sref="bidsoftware"><span class="br-tint">bid</span>software</a></h2>
-
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-          <p><a ui-sref="bidsoftware" class="btn btn-primary">View <span class="br-tint">bid</span>software</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-5ths text-center">
-        <div class="panel h-panel panel-purple pt-30 p-lr-10">
-          <span class="glyphicon glyphicon-picture icon"></span>
-
-          <h2><a ui-sref="biddesign"><span class="br-tint">bid</span>design</a></h2>
-
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-
-          <p><a ui-sref="biddesign" class="btn btn-primary">View <span class="br-tint">bid</span>design</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED NEWS PREVIEW -->
-
-<section class="main-content section-bg-1 padded-section pt-45 pb-45">
-  <div class="container">
-    <div class="row-cover section-bg-0">
-        <a ui-sref="news.item" class="col-sm-4 butted block-link">
-            <span class="img-label">FEATURED</span>
-            <img alt="260x130" src="http://fillmurray.com/365/203" style="width: 100%">
-        </a>
-      <div class="col-sm-8 pt-30">
-        <small class="type">ARTICLE</small>
-        <h3><a ui-sref="news.item">Google for Government Solutions</a></h3>
-
-        <p>Whether your goal is to educate citizens on important issues, reach special audiences, inspire behavior
-          change, or
-          encourage immediate action, your communications efforts must reside online. Learn how Google's technology
-          solutions
-          can deepen your communications strategy across devices and reach Americans where they spend time.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TOP 4 NEWS -->
-
-<section class="main-content section-bg-1 padded-section pt-0 pb-30">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3" ng-repeat="news in news_collection">
-        <div class="topics-cards panel">
-          <small class="type">{{ news.type }}</small>
-          <h4><a ui-sref="news.item">{{ news.title }}</a></h4>
-
-          <p class="desc">{{ news.desc }}</p>
-
-          <div class="topics-img">
-            <a ui-sref="news.item" class="img"><img alt="img" ng-src="{{ news.img }}" style="width: 100%"></a>
-            <ul class="topics-cards-tags list-unstyled">
-              <li ng-repeat="tag in news.tags">
-                <a ui-sref="news.item">{{ tag }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 </div>

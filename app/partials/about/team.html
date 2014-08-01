@@ -1,0 +1,45 @@
+<article class="mt-30 mb-70">
+    <h1>Meet the team</h1>
+    <p class="lead">
+        In viverra sapien condimentum tincidunt ultricies. Nulla facilisi. Sed placerat ultrices massa eu tempus. Morbi et
+        augue nisl. Mauris id mattis neque, non bibendum tellus.
+    </p>
+
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="team in team_collection | limitTo:3">
+            <img alt="img" ng-src="{{ team.img }}" style="width: 100%">
+            <div class="topics-cards panel" style="height: 250px">
+                <small class="type">{{ team.type }}</small>
+                <h4>{{ team.title }}</h4>
+                <p>{{ team.desc }}</p>
+                <div class="topics-img">
+                    <ul class="topics-cards-tags list-unstyled">
+                        <li class="social-link facebook"><a><i class="fa fa-facebook-square"></i> <span class="txt">Facebook</span></a></li>
+                        <li class="social-link linkedin"><a><i class="fa fa-linkedin-square"></i> <span class="txt">LinkedIn</span></a></li>
+                        <li class="social-link twitter"><a><i class="fa fa-twitter-square"></i> <span class="txt">Twitter</span></a></li>
+                        <li class="social-link google"><a><i class="fa fa-google-plus-square"></i> <span class="txt">Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="team in team_collection | limitTo:3">
+            <img alt="img" ng-src="{{ team.img }}" style="width: 100%">
+            <div class="topics-cards panel" style="height: 250px">
+                <small class="type">{{ team.type }}</small>
+                <h4>{{ team.title }}</h4>
+                <p>{{ team.desc }}</p>
+                <div class="topics-img">
+                    <ul class="topics-cards-tags list-unstyled">
+                        <li class="social-link facebook"><a><i class="fa fa-facebook-square"></i> <span class="txt">Facebook</span></a></li>
+                        <li class="social-link linkedin"><a><i class="fa fa-linkedin-square"></i> <span class="txt">LinkedIn</span></a></li>
+                        <li class="social-link twitter"><a><i class="fa fa-twitter-square"></i> <span class="txt">Twitter</span></a></li>
+                        <li class="social-link google"><a><i class="fa fa-google-plus-square"></i> <span class="txt">Google+</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

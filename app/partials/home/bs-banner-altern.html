@@ -1,0 +1,121 @@
+<div class="bs-banner-section-wrapper" ng-class="{'cover-1':selectedTab === 'consultant', 'cover-2':selectedTab === 'services', 'cover-3':selectedTab === 'jobs'}">
+
+    <!-- TAB NAVIGATION -->
+
+    <section class="main-content bs-banner-nav-wrapper">
+        <div class="container">
+            <div class="row" ng-init="selectedTab = 'consultant'">
+                <a ng-click="selectedTab = 'consultant'" ng-class="{'active':selectedTab === 'consultant'}"
+                   class="col-xs-4 text-center bs-banner-nav bs-banner-nav-1">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span class="header">Search for a consultant</span>
+                    <span class="sub-header">Top professionals from across the bid and proposal industry</span>
+                </a>
+                <a ng-click="selectedTab = 'services'" ng-class="{'active':selectedTab === 'services'}"
+                   class="col-xs-4 text-center bs-banner-nav bs-banner-nav-2">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <span class="header">View our services</span>
+                    <span class="sub-header">Everything you need for your bid or proposal requirements</span>
+                </a>
+                <a ng-click="selectedTab = 'jobs'" ng-class="{'active':selectedTab === 'jobs'}"
+                   class="col-xs-4 text-center bs-banner-nav bs-banner-nav-3">
+                    <span class="glyphicon glyphicon-dashboard"></span>
+                    <span class="header">Search for a job</span>
+                    <span class="sub-header">Seek a new challenge, our consultants find the best opportunities</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH FOR A CONSULTANT -->
+
+    <section class="main-content bs-banner bs-banner-section-1 {{ selectedTab }}"
+             ng-show="selectedTab === 'consultant'"
+             ng-class="{'active':selectedTab === 'consultant'}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 content">
+                    <span class="cat">Search for a consultant</span>
+                    <h1 class="bs-banner-header">Supporting Growth</h1>
+                    <h2 class="mt-10 mb-10">Helping you achieve business success</h2>
+                    <p class="lead mb-0">As the market leader we attract top professionals from across the bid and proposal industry.</p>
+                    <p class="mt-30 mb-30"><a ng-click="" class="btn btn-info btn-lg" ui-sref="bid-services">SEARCH NOW</a></p>
+                </div>
+<!--                <div class="col-md-8 mt-40">-->
+<!--                    <img alt="458/257" src="/img/bs-banner/placeholder-1.jpg" style="width: 100%">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- VIEW OUR SERVICES -->
+
+    <section class="main-content bs-banner bs-banner-section-2 {{ selectedTab }}"
+             ng-show="selectedTab === 'services'"
+             ng-class="{'active':selectedTab === 'services'}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 content">
+                    <span class="cat">View our services</span>
+                    <h1 class="bs-banner-header">People who win</h1>
+                    <h2 class="mt-10 mb-10">Everything you need for your bid or proposal requirements</h2>
+                    <div class="dropdown">
+                        <div class="btn-group mt-30 mb-30">
+                            <button ui-sref="bid-services" class="btn btn-info btn-lg" type="button">VIEW OUR SERVICES</button>
+                            <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu bs-banner-dropdown-menu" role="menu" bid-services-menu></ul>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="col-md-8 mt-40">-->
+<!--                    <img alt="458/257" src="/img/bs-banner/placeholder-2.jpg" style="width: 100%">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH FOR A JOB -->
+
+    <section class="main-content bs-banner bs-banner-section-3  {{ selectedTab }}"
+             ng-show="selectedTab === 'jobs'"
+             ng-class="{'active':selectedTab === 'jobs'}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 content">
+                    <span class="cat">Search for a job</span>
+                    <h1 class="bs-banner-header">Job Search</h1>
+                    <p class="lead">A foundation for your success, find you the best opportunities with us.</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="ENTER KEYWORD">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-lg">
+                            <option selected disabled>SELECT TYPE</option>
+                            <option>Job type</option>
+                            <option>Job type description</option>
+                            <option>Job</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-7 text-right">
+                            <p class="mt-15 btn-alt-cta"><a ui-sref="account.search-jobs">Advanced search</a></p>
+                        </div>
+                        <div class="col-sm-5 text-right">
+                            <button type="submit" class="btn btn-info btn-lg" ui-sref="account.search-jobs">SEARCH <span
+                                  class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="col-md-8 mt-40">-->
+<!--                    <img alt="458/257" src="/img/bs-banner/placeholder-3.jpg" style="width: 100%">-->
+<!--                </div>-->
+            </div>
+        </div>
+    </section>
+
+</div>

@@ -1,0 +1,26 @@
+<section class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="list-inline pull-left" social-link></ul>
+                <p class="pull-left p-lr-10"><a ui-sref="contact"><strong><i class="fa fa-phone"></i> +44 (0)208 9732461</strong></a></p>
+            </div>
+            <div class="col-sm-6 text-right">
+                <div class="light-links-wrapper" ng-show="loggedin || cartFilled">
+                    <ul class="list-inline pull-left account" ng-show="loggedin">
+                        <li>
+                            <a ng-show="loggedin" ui-sref="account"><i class="fa fa-user"></i> <strong>View account</strong></a>
+                        </li>
+                        <li>
+                            <a ng-click="logout()"><i class="fa fa-sign-out"></i> <strong>Sign out</strong> <span ng-show="loggingout" class="logging-out-icon fa fa-cog"></span></a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline pull-left basket" ng-show="cartFilled">
+                        <li>
+                            <a ui-sref="cart">
+                                <i class="fa fa-shopping-cart"></i> <strong>Basket</strong> {{ cart_items }} <ng-pluralize count="cart_items" when="{'1': 'item', 'other': 'items'}"></ng-pluralize> - £{{ cart_items * 1000 }}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+</section>

@@ -1,0 +1,150 @@
+<div class="h-section-wrapper pb-45">
+
+    <!-- GRAPHIC BANNER -->
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 banner-img">
+                    <h1 ng-show="selectedTab === 'consultant'">Supporting Growth</h1>
+                    <h1 ng-show="selectedTab === 'services'">A Foundation for your success</h1>
+                    <h1 ng-show="selectedTab === 'jobs'">People who win</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH FOR A CONSULTANT -->
+
+    <section class="main-content ht-t ht-t-1 h-section-bg h-section-1 {{ selectedTab }}"
+             ng-show="selectedTab === 'consultant'"
+             ng-class="{'active':selectedTab === 'consultant'}">
+        <div class="container">
+            <div class="row section-bg-3 h-section">
+                <div class="col-md-5">
+                    <img alt="458/257" src="http://fillmurray.com/470/265" style="width: 100%">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="mt-10 mb-10">Helping you achieve the business success you crave</h1>
+                    <p class="lead mb-0">As the market leader we attract top professionals from across the bid and proposal industry</p>
+                    <p class="mt-30 mb-30"><a ng-click="" class="btn btn-info btn-lg" ui-sref="bid-services">VIEW OUR SERVICES</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIEW OUR SERVICES -->
+
+    <section class="main-content ht-t ht-t-1 h-section-bg h-section-1 {{ selectedTab }}"
+             ng-show="selectedTab === 'services'"
+             ng-class="{'active':selectedTab === 'services'}">
+        <div class="container">
+            <div class="row section-bg-3 h-section">
+                <div class="col-md-5">
+                    <div class="video-wrapper">
+                        <iframe src="//player.vimeo.com/video/40130084?title=0&amp;byline=0" width="455" height="253"
+                                frameborder="0"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h1 class="mt-10 mb-30">Everything you need for your bid or proposal requirements</h1>
+
+                    <p class="mt-30 mb-30"><a ng-click="" class="btn btn-info btn-lg" ui-sref="bid-services">VIEW OUR SERVICES</a></p>
+                    <ul class="list-inline banner-services-links mt-30 mb-30">
+                        <li>
+                            <small>SERVICES:</small>
+                        </li>
+                        <li><a ui-sref="bidrecruit" class="btn btn-info btn-sm"><span class="br-tint">BID</span>RECRUIT</a></li>
+                        <li><a ui-sref="bidconsult" class="btn btn-info btn-sm"><span class="br-tint">BID</span>CONSULT</a></li>
+                        <li><a ui-sref="bidtraining" class="btn btn-info btn-sm"><span class="br-tint">BID</span>TRAINING</a></li>
+                        <li><a ui-sref="bidsoftware" class="btn btn-info btn-sm"><span class="br-tint">BID</span>SOFTWARE</a></li>
+                        <li><a ui-sref="biddesign" class="btn btn-info btn-sm"><span class="br-tint">BID</span>DESIGN</a></li>
+                        <li><a ui-sref="bid-services"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH FOR A JOB -->
+
+    <section class="main-content ht-t ht-t-2 h-section-bg h-section-2  {{ selectedTab }}"
+             ng-show="selectedTab === 'jobs'"
+             ng-class="{'active':selectedTab === 'jobs'}">
+        <div class="container">
+            <div class="row section-bg-3 h-section">
+                <div class="col-md-7">
+                    <div class="p-lr-10">
+                        <h1 class="mt-10 mb-20">A foundation for your success</h1>
+
+                        <p class="mt-0 mb-35 lead op-7">Knowing who you are, what skills you have to offer and why you seek a new
+                            challenge enables
+                            our consultants to find you the best opportunity.</p>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p><a ng-click="" class="btn btn-info btn-lg" ui-sref="create-account">REGISTER NOW</a></p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="mt-15 btn-alt-cta"><a ui-sref="account.search-jobs">Search for all jobs</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 h-job-form">
+
+                    <h1 class="mt-10 mb-20">Job Search</h1>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="ENTER KEYWORD">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-lg">
+                            <option selected disabled>SELECT TYPE</option>
+                            <option>Job type</option>
+                            <option>Job type description</option>
+                            <option>Job</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-8 text-right">
+                            <p class="mt-15 btn-alt-cta"><a ui-sref="account.search-jobs">Advanced search</a></p>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <button type="submit" class="btn btn-info btn-lg" ui-sref="account.search-jobs">SEARCH <span
+                                  class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB NAVIGATION -->
+
+    <section class="main-content section-bg-1 ht-nav">
+        <div class="container">
+            <div class="row" ng-init="selectedTab = 'consultant'">
+                <a ng-click="selectedTab = 'consultant'" ng-class="{'active':selectedTab === 'consultant'}"
+                   class="col-xs-4 text-center ht-nav-link-wrap">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    Search for a consultant
+                </a>
+                <a ng-click="selectedTab = 'services'" ng-class="{'active':selectedTab === 'services'}"
+                   class="col-xs-4 text-center ht-nav-link-wrap">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    View our services
+                </a>
+                <a ng-click="selectedTab = 'jobs'" ng-class="{'active':selectedTab === 'jobs'}"
+                   class="col-xs-4 text-center ht-nav-link-wrap">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                    Search for a job
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>

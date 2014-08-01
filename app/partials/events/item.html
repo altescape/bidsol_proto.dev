@@ -1,0 +1,16 @@
+<div class="row" ng-repeat="item in collection | limitTo: 1">
+    <div class="col-sm-12">
+        <h1>{{ item.title }}</h1>
+
+        <p class="text-muted">
+            <small class="text-primary text-capitalize">{{ item.type }}</small>
+            <small class=" text-muted pull-right">{{ item.day }} {{ date.month }} {{ date.year }}, {{ item.time }}</small>
+        </p>
+        <p>{{ item.desc }} {{ item.desc }}</p>
+        <hr>
+        <p><a class="btn btn-danger">Actions?</a></p>
+        <hr>
+        <h4>Share this...</h4>
+        <ul class="list-inline social-links block-links" social-link></ul>
+    </div>
+</div>

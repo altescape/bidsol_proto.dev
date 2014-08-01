@@ -1,0 +1,39 @@
+<section class="main-content section-bg-0 mb-70" ng-controller="EventsCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 mt-30">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a ui-sref="events.overview">Events</a></li>
+                    <li><a ng-click="isCategoryOpen = !isCategoryOpen">Events by type <i class="fa fa-angle-down pull-right text-muted" ng-hide="isCategoryOpen"></i> <i class="fa fa-angle-up pull-right text-muted" ng-show="isCategoryOpen"></i></a>
+                        <ul class="nav nav-pills nav-stacked" ng-show="isCategoryOpen">
+                            <li><a>Event type one <span class="badge">1</span></a></li>
+                            <li><a>Event type two <span class="badge">1</span></a></li>
+                            <li><a>Event type three <span class="badge">2</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="is2014Open = !is2014Open">Events in 2014 <i class="fa fa-angle-down pull-right text-muted" ng-hide="is2014Open"></i> <i class="fa fa-angle-up pull-right text-muted" ng-show="is2014Open"></i></a>
+                        <ul class="nav nav-pills nav-stacked" ng-show="is2014Open">
+                            <li><a ng-click="date.month = 'January'; date.year = '2014'; limit = 2">January <span class="badge">2</span></a></li>
+                            <li><a ng-click="date.month = 'February'; date.year = '2014'; limit = 1">February <span class="badge">1</span></a></li>
+                            <li><a ng-click="date.month = 'March'; date.year = '2014'; limit = 6">March  <span class="badge">6</span></a></li>
+                            <li><a ng-click="date.month = 'June'; date.year = '2014'; limit = 3">June <span class="badge">3</span></a></li>
+                            <li><a ng-click="date.month = 'August'; date.year = '2014'; limit = 3">August <span class="badge">3</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a ng-click="is2015Open = !is2015Open">Events in 2015 <i class="fa fa-angle-down pull-right text-muted" ng-hide="is2015Open"></i> <i class="fa fa-angle-up pull-right text-muted" ng-show="is2015Open"></i></a>
+                        <ul class="nav nav-pills nav-stacked" ng-show="is2015Open">
+                            <li><a ng-click="date.month = 'May'; date.year = '2015'; limit = 1">May <span class="badge">1</span></a></li>
+                            <li><a ng-click="date.month = 'June'; date.year = '2015'; limit = 1">June <span class="badge">1</span></a></li>
+                            <li><a ng-click="date.month = 'July'; date.year = '2015'; limit = 2">July <span class="badge">2</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr>
+                <send-to-friend></send-to-friend>
+                <request-callback></request-callback>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+                <div ui-view="eventsView" autoscroll="false" class="fade-content"></div>
+            </div>
+        </div>
+</section>
