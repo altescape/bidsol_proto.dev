@@ -63,7 +63,11 @@ angular.module('myApp', [
             views : {
 							"mainView" : {templateUrl: "partials/bid-services/index.html"},
               "bidServiceView" : {templateUrl: "partials/bid-services/bidconsult.html"}
-            }
+            },
+						controller: function ($scope, $location, $anchorScroll) {
+							$location.hash('top');
+							$anchorScroll();
+						}
           })
           .state('bid-services.bidtraining', {
             url: "/bidtraining",

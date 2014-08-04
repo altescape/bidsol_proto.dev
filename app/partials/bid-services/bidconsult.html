@@ -1,19 +1,115 @@
-<div class="row color-green">
+<div class="row color-green" ng-controller="MyAccountCtrl">
     <div class="col-sm-3">
         <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a><span class="br-tint">Bid</span>Consult</a></li>
-            <li><a>Benchmarking</a></li>
-            <li><a>Outsourcing</a></li>
-            <li><a>Capture and win strategy</a></li>
-            <li><a>Pitch and Presentation management</a></li>
-            <li><a>Public sector expertise</a></li>
-            <li><a>Knowledgebase design</a></li>
-            <li><a>Organisational design</a></li>
-            <li><a>OJEU notification services</a></li>
+            <li class="active"><a ui-sref="bid-services.bidconsult"><span class="br-tint">Bid</span>Consult</a></li>
+                <li><a>Benchmarking</a></li>
+                <li><a>Outsourcing</a></li>
+                <li><a>Capture and win strategy</a></li>
+                <li><a>Pitch and Presentation management</a></li>
+                <li><a>Public sector expertise</a></li>
+                <li><a>Knowledgebase design</a></li>
+                <li><a>Organisational design</a></li>
+                <li><a>OJEU notification services</a></li>
         </ul>
+
         <hr>
+
+        <div class="panel panel-default section-bg-2">
+            <div class="panel-heading hover-cursor" ng-click="isSearchConsultantFormOpen = !isSearchConsultantFormOpen">
+                <h6><i class="fa fa-search"></i> <strong>SEARCH FOR CONSULTANT</strong> <i class="fa fa-arrow-down pull-right text-muted" ng-hide="isSearchConsultantFormOpen"></i> <i class="fa fa-arrow-up pull-right text-muted" ng-show="isSearchConsultantFormOpen"></i></h6>
+            </div>
+            <div class="panel-body" ng-show="isSearchConsultantFormOpen">
+                <form>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option selected disabled>Experience</option>
+                            <option>0-3 yrs</option>
+                            <option>3-5 yrs</option>
+                            <option>10+ yrs</option>
+                            <option>Any</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option selected disabled>Hourly rate</option>
+                            <option>£150 per hr</option>
+                            <option>£250 per hr</option>
+                            <option>£500 per hr</option>
+                            <option>£500+ per hr</option>
+                        </select>
+                    </div>
+                    <div class="form-group panel panel-default">
+                        <div class="panel-heading"><label class="control-label">Location</label> <span class="pull-right">{{ countLocations }} selected</span></div>
+                        <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                            <div class="checkbox" ng-repeat="location in locations">
+                                <label>
+                                    <input ng-model="location.checked" type="checkbox" value="{{ location.name }}">
+                                    {{ location.name }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button class="btn btn-default btn-sm" ng-click="uncheckAll(location)">deselect all</button>
+                                    <button class="btn btn-default btn-sm" ng-click="checkAll(location)">select all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group panel panel-default">
+                        <div class="panel-heading"><label class="control-label">Industry</label> <span class="pull-right">{{ countIndustries }} selected</span></div>
+                        <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                            <div class="checkbox" ng-repeat="industry in industries">
+                                <label>
+                                    <input ng-model="industry.checked" type="checkbox" value="{{ industry.name }}">
+                                    {{ industry.name }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button class="btn btn-default btn-sm" ng-click="uncheckAll(industries)">deselect all</button>
+                                    <button class="btn btn-default btn-sm" ng-click="checkAll(industries)">select all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group panel panel-default">
+                        <div class="panel-heading"><label class="control-label">Disciplines</label> <span class="pull-right">{{ countPositions }} selected</span></div>
+                        <div class="panel-body" style="height: 100px; overflow-y: scroll">
+                            <div class="checkbox" ng-repeat="position in positions">
+                                <label>
+                                    <input ng-model="position.checked" type="checkbox" value="{{ position.name }}">
+                                    {{ position.name }}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-12 text-right">
+                                    <button class="btn btn-default btn-sm" ng-click="uncheckAll(positions)">deselect all</button>
+                                    <button class="btn btn-default btn-sm" ng-click="checkAll(positions)">select all</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 mt-5">
+                            <a ng-click="showAdvanced = false" ng-show="showAdvanced === true">Hide Advanced search</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-primary pull-right">Search <span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
         <request-callback></request-callback>
-        <hr>
+
         <bid-services-vertical-list></bid-services-vertical-list>
     </div>
     <div class="col-sm-8 col-sm-offset-1">

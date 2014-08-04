@@ -1,6 +1,8 @@
-<div class="panel panel-grey">
-    <div class="panel-body">
-        <h4>Our Services</h4>
+<div class="panel panel-default section-bg-2">
+    <div class="panel-heading hover-cursor" ng-click="isServicesListOpen = !isServicesListOpen">
+        <h6><i class="fa fa-cog"></i> <strong>VIEW ALL SERVICES</strong> <i class="fa fa-arrow-down pull-right text-muted" ng-hide="isServicesListOpen"></i> <i class="fa fa-arrow-up pull-right text-muted" ng-show="isServicesListOpen"></i></h6>
+    </div>
+    <div class="panel-body" ng-show="isServicesListOpen">
         <ul class="nav nav-pills nav-stacked" bid-services-menu></ul>
     </div>
 </div>
