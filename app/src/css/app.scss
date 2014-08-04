@@ -659,6 +659,29 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 	}
 }
 
+/* PANELS */
+// Pink
+.panel-action-pink {
+	h1, h2, h3, h4, h5, h5, h6, p, ul, li {color: $body-bg}
+	h1, h2, h3, h4, h5, h5, h6 {margin-top: 0; margin-bottom: 0}
+	p, ul, li {
+		color: lighten(nth($panel-color, 1), 30%);
+	}
+	background-color: nth($panel-color, 1);
+	.panel-heading {
+		background-color: darken(nth($panel-color, 1), 10%);
+	}
+	.btn {
+		background-color: $body-bg;
+		color: nth($panel-color, 1);
+		border: none;
+		&:hover {
+			background-color: darken(nth($panel-color, 1), 20%);
+			color: $body-bg;
+		}
+	}
+}
+
 /* BANNER ALTERNATIVE */
 .bs-banner-section-wrapper {
 	$banner-colour-1: #37a883;
