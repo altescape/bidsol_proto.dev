@@ -36,14 +36,34 @@
             <div class="row">
                 <div class="col-md-4 content">
                     <span class="cat">Search for a consultant</span>
-                    <h1 class="bs-banner-header">Supporting Growth</h1>
-                    <h2 class="mt-10 mb-10">Helping you achieve business success</h2>
-                    <p class="lead mb-0">As the market leader we attract top professionals from across the bid and proposal industry.</p>
-                    <p class="mt-30 mb-30"><a ng-click="" class="btn btn-info btn-lg" ui-sref="bid-services.bidconsult">SEARCH NOW</a></p>
+                    <h1 class="bs-banner-header">Consultant Search</h1>
+                    <p class="lead">Helping you achieve business success</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="ENTER KEYWORD">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-lg">
+                            <option selected disabled>SELECT TYPE</option>
+                            <option>Job type</option>
+                            <option>Job type description</option>
+                            <option>Job</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-7 text-right">
+                            <p class="mt-15 btn-alt-cta"><a ui-sref="bid-services.bidconsult">Advanced search</a></p>
+                        </div>
+                        <div class="col-sm-5 text-right">
+                            <button type="submit" class="btn btn-info btn-lg" ui-sref="bid-services.bidconsult">SEARCH <span
+                                  class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-<!--                <div class="col-md-8 mt-40">-->
-<!--                    <img alt="458/257" src="/img/bs-banner/placeholder-1.jpg" style="width: 100%">-->
-<!--                </div>-->
+
+                <!--                <div class="col-md-8 mt-40">-->
+                <!--                    <img alt="458/257" src="/img/bs-banner/placeholder-3.jpg" style="width: 100%">-->
+                <!--                </div>-->
             </div>
         </div>
     </section>
