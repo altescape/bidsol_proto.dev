@@ -11,17 +11,29 @@ body {
 }
 
 .reveal-animation.ng-enter {
-	animation: enter_sequence 1s linear;
+	animation: enter_sequence 1.0s linear;
 }
 
 .hover-cursor {
 	cursor: pointer;
 }
+
 .panel-heading.hover-cursor:hover {
 	background-color: darken(#F5F5F5, 5%);
 }
 
-.text-capitalize {text-transform: uppercase;}
+.text-capitalize {
+	text-transform: uppercase;
+}
+
+.navbar-toggle {
+	margin-top: 18px;
+	.icon-bar {background-color: $gray-dark;}
+}
+.navbar-brand {padding: 10px 15px;}
+.navbar-nav.main-navigation {
+	float: none;
+}
 
 @-webkit-keyframes enter_sequence {
 	from {
@@ -166,6 +178,7 @@ $section-bg-3: darken($gray-even-lighter, 10%);
 	overflow: hidden;
 	.butted {
 		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -191,6 +204,7 @@ $section-bg-3: darken($gray-even-lighter, 10%);
 .nav-wrapper {
 	background-color: $gray-even-lighter;
 }
+
 .navbar-static-top {
 	margin: 0;
 	min-height: $nav-static-top-height;
@@ -199,6 +213,7 @@ $section-bg-3: darken($gray-even-lighter, 10%);
 	border-bottom: 1px solid darken($gray-even-lighter, 10%);
 	border-top: 1px solid darken($gray-even-lighter, 10%);
 }
+
 $facebook-color: #3b5998;
 $linkedin-color: #0e76a8;
 $twitter-color: #4099ff;
@@ -208,7 +223,9 @@ $google-color: #d34836;
 	color: $text-color;
 	font-size: 12px;
 	line-height: 30px;
-	ul {margin: 0}
+	ul {
+		margin: 0
+	}
 	a {
 		display: block;
 		color: $text-color;
@@ -218,6 +235,7 @@ $google-color: #d34836;
 		}
 	}
 }
+
 .light-links-wrapper {
 	margin-top: 0px;
 	background: $gray-even-lighter;
@@ -244,35 +262,48 @@ $google-color: #d34836;
 			background-image: linear-gradient(to bottom, $gray-even-lighter 0, $gray-lighter 100%);
 			li {
 				border-left: 1px solid darken($gray-even-lighter, 10%);
-				&:first-child {border: none}
+				&:first-child {
+					border: none
+				}
 			}
 		}
 		&.basket {
 			background-image: linear-gradient(to bottom, $gray-even-lighter 0, rgba($brand-info, 0.4) 100%);
-			a:hover {color: darken($brand-info, 35%)}
+			a:hover {
+				color: darken($brand-info, 35%)
+			}
 		}
 	}
 }
+
 .social-link {
 	&.facebook {
 		a {
-			.fa, &:hover {color: $facebook-color;}
+			.fa, &:hover {
+				color: $facebook-color;
+			}
 
 		}
 	}
 	&.linkedin {
 		a {
-			.fa, &:hover {color: $linkedin-color;}
+			.fa, &:hover {
+				color: $linkedin-color;
+			}
 		}
 	}
 	&.twitter {
 		a {
-			.fa, &:hover {color: $twitter-color;}
+			.fa, &:hover {
+				color: $twitter-color;
+			}
 		}
 	}
 	&.google {
 		a {
-			.fa, &:hover {color: $google-color;}
+			.fa, &:hover {
+				color: $google-color;
+			}
 		}
 	}
 }
@@ -291,7 +322,9 @@ $google-color: #d34836;
 				line-height: 40px;
 				text-align: center;
 				margin-bottom: 5px;
-				.fa {transition: all .2s linear;}
+				.fa {
+					transition: all .2s linear;
+				}
 			}
 			&.facebook {
 				.fa {
@@ -326,7 +359,9 @@ $google-color: #d34836;
 				}
 			}
 		}
-		.txt {display: none}
+		.txt {
+			display: none
+		}
 	}
 	&.small {
 		font-size: 26px;
@@ -358,6 +393,7 @@ $google-color: #d34836;
 			border-radius: 5px 5px 0 0;
 			border: 1px solid rgba(0, 0, 0, 0);
 			border-bottom: none;
+			font-size: 12px;
 			&:hover {
 				background-color: rgba($section-bg-1, 0.7);
 			}
@@ -482,6 +518,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 		font-size: 18px;
 	}
 }
+
 .hoz-social-links {
 	li {
 		a {
@@ -489,6 +526,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 		}
 	}
 }
+
 .ul-this-bottom {
 	border-bottom: 1px solid darken($gray-even-lighter, 10%);
 }
@@ -662,8 +700,13 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 /* PANELS */
 // Pink
 .panel-action-pink {
-	h1, h2, h3, h4, h5, h5, h6, p, ul, li {color: $body-bg}
-	h1, h2, h3, h4, h5, h5, h6 {margin-top: 0; margin-bottom: 0}
+	h1, h2, h3, h4, h5, h5, h6, p, ul, li {
+		color: $body-bg
+	}
+	h1, h2, h3, h4, h5, h5, h6 {
+		margin-top: 0;
+		margin-bottom: 0
+	}
 	p, ul, li {
 		color: lighten(nth($panel-color, 1), 30%);
 	}
@@ -688,7 +731,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 	$banner-colour-2: #fcaf17;
 	$banner-colour-3: #D6366B;
 
-	@mixin section-btn ($colour) {
+	@mixin section-btn($colour) {
 		background-color: $colour;
 		border-color: $colour;
 		color: $body-bg;
@@ -702,9 +745,15 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 	background-image: url(http://www.hdwallpapersos.com/wp-content/uploads/2014/07/seas-wind-boats-sailing-sail-boat-fresh-new-wallpaper-best-quality_470471.jpg);
 	background-size: cover;
 
-	&.cover-1 {background-image: url(/img/bs-banner/cover-1.jpg);}
-	&.cover-2 {background-image: url(/img/bs-banner/cover-2.jpg);}
-	&.cover-3 {background-image: url(/img/bs-banner/cover-3.jpg);}
+	&.cover-1 {
+		background-image: url(/img/bs-banner/cover-1.jpg);
+	}
+	&.cover-2 {
+		background-image: url(/img/bs-banner/cover-2.jpg);
+	}
+	&.cover-3 {
+		background-image: url(/img/bs-banner/cover-3.jpg);
+	}
 
 	.bs-banner {
 		min-height: 550px;
@@ -714,32 +763,52 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 			line-height: 0.9;
 		}
 		&.bs-banner-section-1 {
-			.bs-banner-header {color: $banner-colour-1}
+			.bs-banner-header {
+				color: $banner-colour-1
+			}
 			.btn {
 				@include section-btn($banner-colour-1);
 			}
-			a {color: $banner-colour-1;}
-			.cat {background-color: rgba($banner-colour-1, 0.4)}
+			a {
+				color: $banner-colour-1;
+			}
+			.cat {
+				background-color: rgba($banner-colour-1, 0.4)
+			}
 		}
 		&.bs-banner-section-2 {
-			.bs-banner-header {color: $banner-colour-2}
+			.bs-banner-header {
+				color: $banner-colour-2
+			}
 			.btn {
 				@include section-btn($banner-colour-2);
 			}
-			a {color: $banner-colour-2;}
-			.cat {background-color: rgba($banner-colour-2, 0.4)}
+			a {
+				color: $banner-colour-2;
+			}
+			.cat {
+				background-color: rgba($banner-colour-2, 0.4)
+			}
 		}
 		&.bs-banner-section-3 {
-			.bs-banner-header {color: $banner-colour-3}
+			.bs-banner-header {
+				color: $banner-colour-3
+			}
 			.btn {
 				@include section-btn($banner-colour-3);
 			}
-			a {color: $banner-colour-3;}
-			.cat {background-color: rgba($banner-colour-3, 0.4)}
+			a {
+				color: $banner-colour-3;
+			}
+			.cat {
+				background-color: rgba($banner-colour-3, 0.4)
+			}
 		}
 
 		// Overall styles
-		h2, p {color: $body-bg}
+		h2, p {
+			color: $body-bg
+		}
 		.content {
 			background: rgba(255, 255, 255, 0.2);
 			top: 0;
@@ -764,23 +833,29 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 				.glyphicon {
 					background-color: $banner-colour-1;
 				}
-				.header {color: $banner-colour-1;}
+				.header {
+					color: $banner-colour-1;
+				}
 			}
 			&.bs-banner-nav-2 {
 				.glyphicon {
 					background-color: $banner-colour-2;
 				}
-				.header {color: $banner-colour-2;}
+				.header {
+					color: $banner-colour-2;
+				}
 			}
 			&.bs-banner-nav-3 {
 				.glyphicon {
 					background-color: $banner-colour-3;
 				}
-				.header {color: $banner-colour-3;}
+				.header {
+					color: $banner-colour-3;
+				}
 			}
-			background-color: rgba(0,0,0,0.1);
+			background-color: rgba(0, 0, 0, 0.1);
 			&.active {
-				background-color: rgba(0,0,0,0.4);
+				background-color: rgba(0, 0, 0, 0.4);
 			}
 			&:hover {
 				text-decoration: none;
@@ -805,16 +880,16 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 			}
 			.header {
 				display: block;
-				font-size: 21px;
+				font-size: 14px;
 				text-transform: uppercase;
 				color: $text-color;
 				font-weight: bold;
 				margin-bottom: 10px;
-				margin-top: 30px;
+				margin-top: 10px;
 			}
 			.sub-header {
 				display: block;
-				font-size: 18px;
+				font-size: 12px;
 				width: 60%;
 				margin: 0 auto;
 				color: $body-bg;
@@ -985,9 +1060,12 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 				text-decoration: underline;
 			}
 		}
-		.nav > li:first-child a {padding-top: 6px;}
+		.nav > li:first-child a {
+			padding-top: 6px;
+		}
 	}
 }
+
 ul.nav {
 	ul.nav {
 		margin-bottom: 15px;
@@ -1003,6 +1081,7 @@ ul.nav {
 		}
 	}
 }
+
 .nav a.button {
 	background: rgba(nth($panel-color, 1), .2) !important;
 	margin: 6px 0 6px 15px !important;
@@ -1016,6 +1095,7 @@ ul.nav {
 		color: darken(nth($panel-color, 1), 10%) !important
 	}
 }
+
 .dropdown .fa {
 	margin-top: 0.6em;
 	z-index: 9;
@@ -1024,16 +1104,23 @@ ul.nav {
 	margin-right: 0.6em;
 	float: right;
 }
+
 .nav-section {
 	background: $gray-even-lighter;
 	border-radius: 5px 5px 0 0;
 	margin-top: 15px !important;
-	ul {margin-left: 0 !important}
+	ul {
+		margin-left: 0 !important
+	}
 	.nav > li > a {
 		margin-left: 0 !important;
-		&:hover {background-color: darken($gray-even-lighter, 5%)}
+		&:hover {
+			background-color: darken($gray-even-lighter, 5%)
+		}
 	}
-	.nav a.button {margin: 0 6px 6px !important}
+	.nav a.button {
+		margin: 0 6px 6px !important
+	}
 	.header {
 		text-transform: uppercase;
 		font-weight: bold;
@@ -1041,7 +1128,6 @@ ul.nav {
 		background: $gray-lighter;
 	}
 }
-
 
 /* LOG OUT */
 @keyframes rotating {
@@ -1141,8 +1227,11 @@ ul.nav {
 
 /* SOCIAL LINKS */
 .social-links {
-	a {text-decoration: none !important;}
+	a {
+		text-decoration: none !important;
+	}
 }
+
 .main-footer {
 	.social-links {
 		margin-top: 40px;
@@ -1173,10 +1262,13 @@ ul.nav {
 			transition: all .2s linear;
 		}
 		&:hover {
-			.play-icon {opacity: 1}
+			.play-icon {
+				opacity: 1
+			}
 		}
 	}
 }
+
 .video-controls {
 	background-color: #000000;
 	color: $gray;
@@ -1200,30 +1292,73 @@ ul.nav {
 
 @media (min-width: $screen-xs-min) {
 	/* rules for mobile horizontal (480 > 768)  */
+	.bs-banner-section-wrapper {
+		.bs-banner-nav-wrapper {
+			.bs-banner-nav {
+				.header {
+					font-size: 14px;
+					margin-top: 30px;
+				}
+				.sub-header {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.row-cover .butted {
+		padding-right: 15px;
+	}
+	.horizontal-sub-nav .nav li {float: left}
+	.horizontal-sub-nav .nav li a {padding-left: 5px; padding-right: 5px}
 }
 
 @media (min-width: $screen-sm-min) {
 	/* rules for tablet (768 > 992) */
-	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-		margin-left: 0;
-		margin-top: 6px;
+
+	.bs-banner-section-wrapper {
+		.bs-banner-nav-wrapper {
+			.bs-banner-nav {
+				.header {
+					font-size: 14px;
+					margin-top: 40px;
+				}
+				.sub-header {
+					font-size: 14px;
+				}
+			}
+		}
 	}
+	.horizontal-sub-nav .nav li a {padding-left: 5px; padding-right: 5px}
 }
 
 @media (min-width: $screen-md-min) {
 	/* rules for desktop (992 > 1200) */
 
+	.main-navigation li > a {
+		font-size: 12px;
+	}
+
+	.navbar-nav.main-navigation {
+		float: right;
+	}
+
+	.bs-banner-section-wrapper {
+		.bs-banner-nav-wrapper {
+			.bs-banner-nav {
+				.header {
+					font-size: 21px;
+					margin-top: 30px;
+				}
+				.sub-header {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
 	.h-job-form {
 		border-left: 1px solid rgba($body-bg, 0.2);
 		padding-left: 15px
-	}
-
-	.navbar-static-top {
-		.navbar-brand {
-			float: left;
-			padding: 0;
-			margin-top: 12px;
-		}
 	}
 	$menu-background-color: $section-bg-2;
 	.main-navigation {
@@ -1366,8 +1501,27 @@ ul.nav {
 			}
 		}
 	}
+	.bs-banner-section-wrapper {
+		.bs-banner {
+			.bs-banner-header {
+				font-size: 50px
+			}
+		}
+	}
+	.horizontal-sub-nav .nav a {
+		font-size: 14px;
+	}
 }
 
 @media (min-width: $screen-lg-min) {
-	/* rules for large (> 1200) */
+	.bs-banner-section-wrapper {
+		.bs-banner {
+			.bs-banner-header {
+				font-size: 70px
+			}
+		}
+	}
+	.main-navigation li > a {
+		font-size: 14px;
+	}
 }

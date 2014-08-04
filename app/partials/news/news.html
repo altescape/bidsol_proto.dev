@@ -42,7 +42,7 @@
                     <small class="type">NEWS</small>
                     <h3><a ui-sref="news.item">Google for Government Solutions</a></h3>
 
-                    <p>Whether your goal is to educate citizens on important issues, reach special audiences, inspire behavior change, or
+                    <p class="hidden-sm">Whether your goal is to educate citizens on important issues, reach special audiences, inspire behavior change, or
                         encourage immediate action, your communications efforts must reside online.</p>
                 </div>
             </div>
@@ -54,7 +54,7 @@
     <section class="main-content section-bg-1 padded-section pt-0 pb-50">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3" ng-repeat="news in news_collection">
+                <div class="col-xs-6 col-sm-6 col-md-3" ng-repeat="news in news_collection">
                     <div class="topics-cards panel">
                         <small class="type">NEWS</small>
                         <h4><a ui-sref="news.item">{{ news.title }}</a></h4>

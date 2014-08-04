@@ -2,18 +2,18 @@
     <div top-links class="top-links"></div>
     <div class="container">
         <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/#/home" class="navbar-brand"><img src="/img/branding.png" style="width: 190px"></a>
+            <a href="/#/home" class="navbar-brand"><img src="/img/branding.png" style="width: 170px"></a>
         </div>
         <nav class="yamm collapse navbar-collapse" role="navigation">
-            <ul class="nav navbar-nav pull-right main-navigation">
+            <ul class="nav navbar-nav main-navigation">
                 <li class="dropdown">
-                    <a ui-sref="bid-services-home" class="dropdown-toggle" data-toggle="dropdown">BID SERVICES <span class="caret"></span></a>
+                    <a ui-sref="bid-services-home" class="dropdown-toggle" data-toggle="dropdown">BID SERVICES <span class="caret hidden-xs hidden-sm"></span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <div class="yamm-content">
@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="/#/testimonials" ui-sref="testimonials" class="dropdown-toggle" data-toggle="dropdown">TESTIMONIALS <span class="caret"></span></a>
+                    <a href="/#/testimonials" ui-sref="testimonials" class="dropdown-toggle" data-toggle="dropdown">TESTIMONIALS <span class="caret hidden-xs hidden-sm"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li>
                             <div class="yamm-content">
@@ -79,11 +79,22 @@
                 <li>
                     <a ui-sref="gen.resources">RESOURCES</a>
                 </li>
-                <li>
+
+                <!-- Hide for larger screens -->
+                <li class="hidden-md hidden-lg">
+                    <a ng-hide="loggedin" ui-sref="create-account">CREATE ACCOUNT</a>
+                    <a ng-show="loggedin" ui-sref="account">MY ACCOUNT</a>
+                </li>
+                <li class="hidden-md hidden-lg">
+                    <a ng-hide="loggedin" data-toggle="modal" data-target="#signInModal">SIGN IN</a>
+                </li>
+
+                <!-- hide for smaller screens -->
+                <li class="hidden-xs hidden-sm">
                     <a ng-hide="loggedin" class="btn btn-primary" ui-sref="create-account">CREATE ACCOUNT</a>
                     <a ng-show="loggedin" ui-sref="account">MY ACCOUNT</a>
                 </li>
-                <li>
+                <li class="hidden-xs hidden-sm">
                     <a ng-hide="loggedin" class="btn btn-info" data-toggle="modal" data-target="#signInModal">SIGN IN</a>
                 </li>
             </ul>

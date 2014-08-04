@@ -2,7 +2,7 @@
 <footer class="main-footer padded-section pt-0">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-xs-12">
                 <ul class="list-inline hoz-social-links ul-this-bottom pb-20 mb-20 pt-20">
                     <li><i class="fa fa-twitter"></i> <a href="#" target="_blank">Bid Solutions on Twitter</a></li>
                     <li><i class="fa fa-facebook"></i> <a href="#" target="_blank">Bid Solutions on Facebook</a></li>
@@ -13,11 +13,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-xs-4 col-sm-2">
                 <h5><a ui-sref="bid-services"><span class="br-tint">Bid</span>Hub</a></h5>
                 <ul class="list-unstyled" bid-services-menu></ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-4 col-sm-2">
                 <h5><a ui-sref="about.overview">About</a></h5>
                 <ul class="list-unstyled">
                     <li><a ui-sref="testimonials">Testimonials</a></li>
@@ -29,13 +29,13 @@
                     <li><a ui-sref="contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-4 col-sm-2">
                 <h5><a ui-sref="gen.info">Information</a></h5>
                 <ul class="list-unstyled">
                     <li ng-repeat="i in info_links"><a ui-sref="{{ i.state }}">{{ i.name }}</a></li>
                 </ul>
             </div>
-            <div class="col-md-5 col-sm-offset-1">
+            <div class="hidden-xs col-sm-5 col-sm-offset-1">
                 <p class="lead">A foundation for your success. Knowing who you are, what skills you have to offer and why you seek a new challenge enables our consultants to find you the best opportunity <a ui-sref="bid-services.bidrecruit.index" class="underline">Learn More</a>.</p>
 
                 <img src="/img/branding.png" style="width: 140px" class="pull-right">
