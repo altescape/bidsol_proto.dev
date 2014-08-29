@@ -95,6 +95,15 @@ angular.module('myApp.controllers', [])
 				$location.hash('top');
 				$anchorScroll();
 			});
+
+			$scope.showAlternHeader = false;
+			$scope.showAlternHeaderFunction = function () {
+				if ($scope.showAlternHeader === true) {
+					$scope.showAlternHeader = false;
+				} else {
+					$scope.showAlternHeader = true;
+				}
+			}
     }])
 
     .controller('HomeCtrl', ['$scope', 'NewsFactory', function ($scope, NewsFactory) {

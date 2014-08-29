@@ -28,6 +28,10 @@
 </head>
 <body ng-cloak ng-controller="MainNavCtrl">
 
+<div style="position: absolute; top: 50%; left: 0px; padding: 1px; background: white; border: 1px solid #CCC; z-index: 999">
+    <input type="checkbox" ng-model="showAlternHeader" ng-click="showAlternHeaderFunction()">
+</div>
+
 <div navbar-static-top class="navbar-fixed-top nav-wrapper"></div>
 
 <!--[if lt IE 7]>

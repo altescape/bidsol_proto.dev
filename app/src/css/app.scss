@@ -170,6 +170,10 @@ $section-bg-3: darken($gray-even-lighter, 10%);
 	background-color: $section-bg-3;
 }
 
+.section-bg-4 {
+	background-color: #CCC;
+}
+
 .section-bg-grad {
 	background-image: linear-gradient(to bottom, $body-bg 0, #F3F3F3 100%);
 }
@@ -562,7 +566,7 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 		//    box-shadow: 00 0 35px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.3);
 		overflow: hidden;
 		h1 {
-			color: $body-bg;
+//			color: $body-bg;
 		}
 		.btn-info {
 			color: $brand-primary;
@@ -657,7 +661,6 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 			border-radius: 0 0 5px 5px;
 			z-index: 9;
 			opacity: 1;
-			color: $body-bg;
 			.glyphicon {
 				opacity: 0.8;
 				margin-top: -10px;
@@ -682,11 +685,11 @@ $panel-color: #D6366B, #37a883, #fcaf17, #e0342b, #956daf, #37C8E7, #E53319, #62
 
 .banner-img {
 	height: 100px;
-	background-image: url(/img/home-banner.png);
 	background-position: left top;
 	background-repeat: none;
 	background-size: cover;
 	border-radius: 10px 10px 0 0;
+	background-color: #CCC;
 	h1 {
 		line-height: 100px;
 		white-space: nowrap;
