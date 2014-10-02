@@ -4,7 +4,9 @@
 
 angular.module('myApp.controllers', [])
 
-    .controller('MainNavCtrl', ['$rootScope', '$scope', '$routeParams', '$location', '$anchorScroll', '$timeout', 'localStorageService', function ($rootScope, $scope, $routeParams, $location, $anchorScroll, $timeout, localStorageService) {
+    .controller('MainNavCtrl', ['$rootScope', '$scope', '$routeParams', '$location', '$anchorScroll', '$timeout', 'localStorageService', '$templateCache', function ($rootScope, $scope, $routeParams, $location, $anchorScroll, $timeout, localStorageService, $templateCache) {
+
+			$templateCache.removeAll();
 
 			$scope.qty = 1;
 			var emitted_qty = 1;
@@ -95,15 +97,6 @@ angular.module('myApp.controllers', [])
 				$location.hash('top');
 				$anchorScroll();
 			});
-
-			$scope.showAlternHeader = false;
-			$scope.showAlternHeaderFunction = function () {
-				if ($scope.showAlternHeader === true) {
-					$scope.showAlternHeader = false;
-				} else {
-					$scope.showAlternHeader = true;
-				}
-			}
     }])
 
     .controller('HomeCtrl', ['$scope', 'NewsFactory', function ($scope, NewsFactory) {
